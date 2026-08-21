@@ -114,13 +114,7 @@ class RetroEmulatorManager {
     iframe.className = "w-full h-full border-0 bg-black";
     iframe.allow = "autoplay; fullscreen; gamepad";
 
-    let romUrl = customFile ? URL.createObjectURL(customFile) : game.romUrl;
-    
-    // Ensure Archive.org URLs use the CORS endpoint to avoid "Network Error"
-    if (romUrl.includes("archive.org/download/")) {
-      romUrl = romUrl.replace("archive.org/download/", "archive.org/cors/");
-    }
-
+    const romUrl = customFile ? URL.createObjectURL(customFile) : game.romUrl;
     const core = game.core || "nes";
 
     const iframeHtml = `
@@ -137,14 +131,14 @@ class RetroEmulatorManager {
       <body>
         <div id="game"></div>
         <script>
-          EJS_player = '#game';
-          EJS_core = '${core}';
-          EJS_gameUrl = '${romUrl}';
-          EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
-          EJS_startOnLoaded = true;
-          EJS_color = '#00f0ff';
-          EJS_loadStateURL = '';
-          EJS_ready = function() {
+          window.EJS_player = '#game';
+          window.EJS_core = '${core}';
+          window.EJS_gameUrl = '${romUrl}';
+          window.EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
+          window.EJS_startOnLoaded = true;
+          window.EJS_color = '#00f0ff';
+          ${core === 'psx' ? "window.EJS_biosUrl = 'https://cdn.emulatorjs.org/stable/data/scph5501.bin';" : ""}
+          window.EJS_ready = function() {
             window.parent.postMessage({ type: "EMULATOR_READY" }, "*");
           };
         </script>

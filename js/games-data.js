@@ -21,7 +21,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     description: "เป๊ปซี่แมนฮีโร่วิ่งส่งเป๊ปซี่ระดับตำนาน หลบสิ่งกีดขวางและกระป๋องยักษ์ไล่หลัง",
     controls: "ลูกศร: ซ้าย/ขวา | Z: สไลด์ (X) | X: กระโดด (Square) | A: พุ่งชน (Circle)",
-    romUrl: "https://archive.org/cors/Pepsiman_PS1_ISO/Pepsiman%20%28Japan%29.chd",
+    romUrl: "https://archive.org/download/Pepsiman_PS1_ISO/Pepsiman%20%28Japan%29.chd",
     emulatorType: "emulatorjs",
     core: "psx"
   },
@@ -39,7 +39,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f45.jpg",
     description: "เกมปลูกผัก เลี้ยงวัว จีบสาว ที่ครองใจเกมเมอร์ไทยมากที่สุดตลอดกาล",
     controls: "ลูกศร: เดิน | Z: หยิบ/คุย (X) | X: ใช้อุปกรณ์ (Square) | A: กิน/เก็บ (Triangle) | S: วิ่ง (R1)",
-    romUrl: "https://archive.org/cors/HarvestMoonBackToNature_PS1/Harvest%20Moon%20-%20Back%20to%20Nature%20%28USA%29.chd",
+    romUrl: "https://archive.org/download/HarvestMoonBackToNature_PS1/Harvest%20Moon%20-%20Back%20to%20Nature%20%28USA%29.chd",
     emulatorType: "emulatorjs",
     core: "psx"
   },
@@ -57,7 +57,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f42.jpg",
     description: "สุดยอดมินิเกมแข่งรัวปุ่ม แดง เขียว น้ำเงิน สุดฮาเล่นกับเพื่อน",
     controls: "Z: ปุ่มแดง (Square) | X: ปุ่มเขียว (X) | C: ปุ่มน้ำเงิน (Circle)",
-    romUrl: "https://archive.org/cors/BishiBashiSpecial_PS1/Bishi%20Bashi%20Special%20%28Europe%29.chd",
+    romUrl: "https://archive.org/download/BishiBashiSpecial_PS1/Bishi%20Bashi%20Special%20%28Europe%29.chd",
     emulatorType: "emulatorjs",
     core: "psx"
   },
@@ -75,7 +75,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f3t.jpg",
     description: "ศึกแข่งรถโกคาร์ทดริฟท์พ่นไฟและยิงอาวุธสุดมันส์ของเจ้าหมา Crash Bandicoot",
     controls: "ลูกศร: เลี้ยว | Z: เร่งความเร็ว (X) | X: ยิงอาวุธ (Circle) | A/S: กระโดดดริฟท์ (L1/R1)",
-    romUrl: "https://archive.org/cors/CrashTeamRacing_PS1/Crash%20Team%20Racing%20%28USA%29.chd",
+    romUrl: "https://archive.org/download/CrashTeamRacing_PS1/Crash%20Team%20Racing%20%28USA%29.chd",
     emulatorType: "emulatorjs",
     core: "psx"
   },
@@ -93,7 +93,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f44.jpg",
     description: "สุดยอดเกมต่อสู้ 3D ในตำนาน หมัดเหล็ก Jin Kazama, Hwoarang, Eddy Gordo",
     controls: "ลูกศร: เคลื่อนที่ | A: ต่อยซ้าย | S: ต่อยขวา | Z: เตะซ้าย | X: เตะขวา",
-    romUrl: "https://archive.org/cors/Tekken3_PS1_CHD/Tekken%203%20%28USA%29.chd",
+    romUrl: "https://archive.org/download/Tekken3_PS1_CHD/Tekken%203%20%28USA%29.chd",
     emulatorType: "emulatorjs",
     core: "psx"
   },
@@ -111,7 +111,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f44.jpg",
     description: "ศึกต่อสู้แปลงร่างเป็นสัตว์ดุร้าย เสือโคร่ง หมาป่า ตุ่น สิงโต พร้อมท่าไม้ตายสัตว์ป่าสุดโหด",
     controls: "ลูกศร: ทิศทาง | A: ต่อย | Z: เตะ | X: ปุ่มแปลงร่างสัตว์ (Beast)",
-    romUrl: "https://archive.org/cors/BloodyRoarII_PS1/Bloody%20Roar%20II%20%28USA%29.chd",
+    romUrl: "https://archive.org/download/BloodyRoarII_PS1/Bloody%20Roar%20II%20%28USA%29.chd",
     emulatorType: "emulatorjs",
     core: "psx"
   },
@@ -129,7 +129,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f45.jpg",
     description: "เกมการ์ดยูกิโออียิปต์โบราณ ผสมการ์ดมังกรทองตาคู่และตามหาไอเทมพันปี",
     controls: "ลูกศร: เลื่อนการ์ด | Z: วางการ์ด (X) | X: ผสมการ์ด (Square) | A: ดูรายละเอียด",
-    romUrl: "https://archive.org/cors/YuGiOhForbiddenMemories_PS1/Yu-Gi-Oh%21%20-%20Forbidden%20Memories%20%28USA%29.chd",
+    romUrl: "https://archive.org/download/YuGiOhForbiddenMemories_PS1/Yu-Gi-Oh%21%20-%20Forbidden%20Memories%20%28USA%29.chd",
     emulatorType: "emulatorjs",
     core: "psx"
   },
@@ -147,7 +147,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f3t.jpg",
     description: "แข่งรถแฟนตาซี ดริฟท์เก็บลูกแก้วเวทมนตร์ ปล่อยคาถาไฟ สายฟ้า และบาฮามุท",
     controls: "ลูกศร: เลี้ยว | Z: เร่งความเร็ว | X: ใช้เวทมนตร์ | A: สกิลประจำตัว",
-    romUrl: "https://archive.org/cors/ChocoboRacing_PS1/Chocobo%20Racing%20%28USA%29.chd",
+    romUrl: "https://archive.org/download/ChocoboRacing_PS1/Chocobo%20Racing%20%28USA%29.chd",
     emulatorType: "emulatorjs",
     core: "psx"
   },
@@ -165,7 +165,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f45.jpg",
     description: "เกมกระดานมิตรภาพแตกหักในตำนาน ทอยลูกเต๋า เดินช่อง แย่งหมู่บ้าน ปราบเพื่อนสนิท",
     controls: "ลูกศร: เลือกคำสั่ง/ทิศทาง | Z: ตกลง (Circle) | X: ยกเลิก (X)",
-    romUrl: "https://archive.org/cors/DokaponIkariNoTekken_PS1/Dokapon%21%20-%20Ikari%20no%20Tekken%20%28Japan%29.chd",
+    romUrl: "https://archive.org/download/DokaponIkariNoTekken_PS1/Dokapon%21%20-%20Ikari%20no%20Tekken%20%28Japan%29.chd",
     emulatorType: "emulatorjs",
     core: "psx"
   },
@@ -183,7 +183,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f45.jpg",
     description: "พาคู่หูดิจิมอนฝึกฝน ให้อาหาร พาเข้าห้องน้ำ พัฒนาร่าง และฟื้นฟูเกาะ File Island",
     controls: "ลูกศร: เดิน | Z: สำรวจ/คุย | X: ยกเลิก | A: เมนูคำสั่ง",
-    romUrl: "https://archive.org/cors/DigimonWorld_PS1/Digimon%20World%20%28USA%29.chd",
+    romUrl: "https://archive.org/download/DigimonWorld_PS1/Digimon%20World%20%28USA%29.chd",
     emulatorType: "emulatorjs",
     core: "psx"
   },
@@ -201,7 +201,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f39.jpg",
     description: "หนีตายจากฝูงซอมบี้ในสถานีตำรวจเมืองแรคคูนซิตีกับ Leon S. Kennedy และ Claire Redfield",
     controls: "ลูกศร: หมุน/เดินหน้า | Z: ยิง/สำรวจ (X) | X: ยกเลิก/วิ่ง (Square) | A: ยกปืนเล็ง (R1)",
-    romUrl: "https://archive.org/cors/ResidentEvil2DualShock_PS1/Resident%20Evil%202%20-%20Dual%20Shock%20Ver.%20%28USA%29%20%28Disc%201%29%20%28Leon%29.chd",
+    romUrl: "https://archive.org/download/ResidentEvil2DualShock_PS1/Resident%20Evil%202%20-%20Dual%20Shock%20Ver.%20%28USA%29%20%28Disc%201%29%20%28Leon%29.chd",
     emulatorType: "emulatorjs",
     core: "psx"
   },
@@ -219,7 +219,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f39.jpg",
     description: "Jill Valentine หนีการตามล่าอย่างไร้ความปรานีของอสูรชีวภาพ Nemesis 'STARS...'",
     controls: "ลูกศร: เคลื่อนที่ | Z: ยิง/สำรวจ | X: วิ่ง/หลบหลีก | A: เล็งปืน",
-    romUrl: "https://archive.org/cors/ResidentEvil3Nemesis_PS1/Resident%20Evil%203%20-%20Nemesis%20%28USA%29.chd",
+    romUrl: "https://archive.org/download/ResidentEvil3Nemesis_PS1/Resident%20Evil%203%20-%20Nemesis%20%28USA%29.chd",
     emulatorType: "emulatorjs",
     core: "psx"
   },
@@ -237,7 +237,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f39.jpg",
     description: "เมืองสายหมอกหลอนในมิติสนิม ตามหาลูกสาวท่ามกลางเสียงวิทยุเตือนปีศาจ",
     controls: "ลูกศร: เดิน | Z: สำรวจ/ยิง | X: วิ่ง | A: เล็งอาวุธ",
-    romUrl: "https://archive.org/cors/SilentHill_PS1_CHD/Silent%20Hill%20%28USA%29.chd",
+    romUrl: "https://archive.org/download/SilentHill_PS1_CHD/Silent%20Hill%20%28USA%29.chd",
     emulatorType: "emulatorjs",
     core: "psx"
   },
