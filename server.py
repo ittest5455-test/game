@@ -4,18 +4,21 @@ import webbrowser
 import os
 import sys
 
+# Ensure UTF-8 output on Windows
+if sys.platform == "win32":
+    import io
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+
 PORT = 3000
 
 class RetroHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
     def end_headers(self):
-        # Enable CORS and SharedArrayBuffer headers required for optimal WASM performance
         self.send_header("Access-Control-Allow-Origin", "*")
         self.send_header("Cross-Origin-Opener-Policy", "same-origin-allow-popups")
         self.send_header("Cache-Control", "no-cache, must-revalidate")
         super().end_headers()
 
     def guess_type(self, path):
-        # Ensure correct MIME types for WASM and ROM files
         if path.endswith(".wasm"):
             return "application/wasm"
         if path.endswith(".jsdos") or path.endswith(".zip"):
@@ -30,14 +33,12 @@ if __name__ == "__main__":
     
     with socketserver.TCPServer(("", PORT), Handler) as httpd:
         print("=" * 60)
-        print(f"🕹️  RETRO GAMES HUB SERVER RUNNING!")
-        print(f"👉 Local URL : http://localhost:{PORT}")
-        print(f"👉 On TV/Phone: Open your browser and go to http://<YOUR_IP>:{PORT}")
+        print(f"[+] PENNUENG GAME LOCAL SERVER RUNNING!")
+        print(f"[+] Local URL : http://localhost:{PORT}")
         print("=" * 60)
-        print("Press Ctrl+C to stop the server.\n")
+        print("Press Ctrl+C to stop server.\n")
         
         try:
-            # Auto open browser
             webbrowser.open(f"http://localhost:{PORT}")
             httpd.serve_forever()
         except KeyboardInterrupt:
