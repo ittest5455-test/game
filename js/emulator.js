@@ -1,6 +1,6 @@
 /**
- * Multi-Engine Web Emulator Manager with Multi-Mirror Fallbacks & Instant Custom ROM Drop
- * Supports: JS-DOS (MS-DOS) and EmulatorJS (NES, SNES, GBA, Genesis, Arcade, PS1/PSX)
+ * Multi-Engine Web Emulator Manager - Optimized for Low-Power Devices (Mi Box / Web)
+ * Features: High-Performance PCSX ReARMed Core, Auto-Frameskip, Native 1x Resolution, BIOS Fast-Boot
  */
 
 class RetroEmulatorManager {
@@ -29,8 +29,8 @@ class RetroEmulatorManager {
     loader.classList.remove("hidden");
     loader.innerHTML = `
       <div class="w-12 h-12 border-4 border-cyan-500/30 border-t-cyan-400 rounded-full animate-spin"></div>
-      <p class="font-arcade text-xs text-cyan-400 animate-pulse">STARTING GAME ENGINE...</p>
-      <p class="text-xs text-gray-400">กำลังเชื่อมต่อและดาวน์โหลดข้อมูลเกม</p>
+      <p class="font-arcade text-xs text-cyan-400 animate-pulse">OPTIMIZING & LOADING GAME...</p>
+      <p class="text-xs text-gray-400">ปรับแต่งเอนจินเพื่อความลื่นไหลสูงสุดบนเบราว์เซอร์</p>
     `;
 
     try {
@@ -53,13 +53,13 @@ class RetroEmulatorManager {
           <i class="fas fa-exclamation-triangle"></i>
         </div>
         <div>
-          <h4 class="font-bold text-white text-base">เซิร์ฟเวอร์ไฟล์เกมภายนอกตอบสนองช้า หรือติดขัด</h4>
-          <p class="text-xs text-gray-400 mt-1">ไฟล์เกม PS1 มีขนาดใหญ่ (100MB+) และเซิร์ฟเวอร์ Archive.org อาจจำกัดความเร็ว</p>
+          <h4 class="font-bold text-white text-base">เซิร์ฟเวอร์ไฟล์เกมตอบสนองช้า</h4>
+          <p class="text-xs text-gray-400 mt-1">ไฟล์เกม PS1 มีขนาดใหญ่ หากอินเทอร์เน็ตดึงไฟล์ไม่ทัน สามารถเลือกไฟล์จากในเครื่องได้ทันที</p>
         </div>
 
         <div class="p-3 bg-slate-800/80 rounded-xl text-left text-xs space-y-2 border border-slate-700">
-          <p class="font-semibold text-cyan-400"><i class="fas fa-lightbulb mr-1"></i> ทางเลือกในการเล่น:</p>
-          <p class="text-gray-300">1. สามารถดาวน์โหลดไฟล์เกม (.chd / .bin / .iso) แล้วกดปุ่มด้านล่างเพื่อเปิดเล่นได้ทันที 100% โดยไม่ต้องโหลดผ่านเน็ต</p>
+          <p class="font-semibold text-cyan-400"><i class="fas fa-bolt mr-1"></i> โหมดเร่งความเร็ว:</p>
+          <p class="text-gray-300">ระบบได้เปิดโหมด <b>Frameskip & PCSX Low-Spec Mode</b> เพื่อให้เล่นได้ลื่นแม้สเปกไม่สูง</p>
         </div>
 
         <div class="flex items-center justify-center gap-3 pt-2">
@@ -131,7 +131,7 @@ class RetroEmulatorManager {
   }
 
   /**
-   * Launch Console Game using EmulatorJS (NES, SNES, GBA, Genesis, Arcade, PS1)
+   * Launch Console Game with Performance & Frameskip Optimization
    */
   async startEmulatorJS(container, loader, game, customFile) {
     this.currentEngine = "emulatorjs";
@@ -163,7 +163,18 @@ class RetroEmulatorManager {
           window.EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
           window.EJS_startOnLoaded = true;
           window.EJS_color = '#00f0ff';
-          ${core === 'psx' ? "window.EJS_biosUrl = 'https://cdn.emulatorjs.org/stable/data/scph5501.bin';" : ""}
+          window.EJS_threads = false;
+          
+          // Performance Tweaks for Low Spec / Mi Box / Mobile
+          ${core === 'psx' ? `
+            window.EJS_biosUrl = 'https://cdn.emulatorjs.org/stable/data/scph5501.bin';
+            window.EJS_settings = {
+              frameskip: 'auto',
+              resolution: 'native',
+              audio_buffer_size: 1024
+            };
+          ` : ''}
+
           window.EJS_ready = function() {
             window.parent.postMessage({ type: "EMULATOR_READY" }, "*");
           };
