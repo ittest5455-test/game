@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="th" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>RETRO GAMES HUB - เล่นเกมเก่าคลาสสิกออนไลน์</title>
+  <meta name="description" content="เว็บเล่นเกมเก่าคลาสสิก MS-DOS, NES, SNES, GBA, Sega Genesis, Arcade เล่นฟรีบนบราวเซอร์และ Mi Box TV" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            arcade: {
+              bg: '#0b0e17',
+              card: '#121829',
+              cyan: '#00f0ff',
+              purple: '#b026ff',
+              pink: '#ff007f',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-[#0b0e17] text-slate-100 min-h-screen flex flex-col selection:bg-cyan-500 selection:text-black">
+
+  <!-- TOP NAVBAR -->
+  <header class="sticky top-0 z-30 bg-[#0b0e17]/90 backdrop-blur-md border-b border-slate-800/80 px-4 lg:px-8 py-3">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      
+      <!-- LOGO -->
+      <div class="flex items-center gap-3 cursor-pointer" onclick="location.reload()">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-purple-600 flex items-center justify-center shadow-lg shadow-cyan-500/20">
+          <i class="fas fa-gamepad text-xl text-black"></i>
+        </div>
+        <div>
+          <h1 class="font-arcade text-sm text-cyan-400 tracking-wider flex items-center gap-2">
+            RETRO<span class="text-purple-400">HUB</span>
+          </h1>
+          <p class="text-[10px] text-gray-400 tracking-wider uppercase font-tech">Web & TV Arcade Games</p>
+        </div>
+      </div>
+
+      <!-- SEARCH BAR -->
+      <div class="flex-1 max-w-md relative hidden md:block">
+        <i class="fas fa-search absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+        <input type="text" id="search-input" placeholder="ค้นหาชื่อเกม, แพลตฟอร์ม... (กด / เพื่อค้นหา)" 
+               class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl pl-10 pr-4 py-2 text-sm text-slate-200 placeholder-gray-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all" />
+      </div>
+
+      <!-- ACTION BUTTONS & CONTROLLER STATUS -->
+      <div class="flex items-center gap-3">
+        <!-- Gamepad Connected Badge -->
+        <div id="gamepad-status-badge" class="hidden flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-950/80 border border-emerald-500/40 text-emerald-400 text-xs font-semibold animate-pulse">
+          <i class="fas fa-gamepad text-sm"></i>
+          <span id="gamepad-name">Controller Ready</span>
+        </div>
+
+        <!-- Custom ROM Upload Button -->
+        <button id="open-upload-btn" class="tv-focusable flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-800/80 hover:bg-slate-700 border border-slate-700 text-xs font-semibold text-cyan-300 transition-all">
+          <i class="fas fa-upload text-sm"></i>
+          <span class="hidden sm:inline">เล่น ROM ตัวเอง</span>
+        </button>
+
+        <!-- Favorites Counter -->
+        <button class="tv-focusable relative p-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-700 border border-slate-700 text-pink-400 transition-all platform-tab-btn" data-platform="favorites" title="เกมโปรดของฉัน">
+          <i class="fas fa-heart text-sm"></i>
+          <span id="fav-count-badge" class="hidden absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-pink-600 text-white text-[10px] font-bold flex items-center justify-center">0</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Search Bar -->
+    <div class="mt-2.5 md:hidden">
+      <input type="text" oninput="document.getElementById('search-input').value = this.value; window.retroApp.searchQuery = this.value; window.retroApp.renderGames();" placeholder="ค้นหาชื่อเกม..." 
+             class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-200" />
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="flex-1 max-w-7xl mx-auto w-full px-4 lg:px-8 py-6 space-y-8">
+
+    <!-- HERO FEATURED BANNER -->
+    <section id="featured-banner" class="relative rounded-2xl overflow-hidden min-h-[320px] lg:min-h-[380px] bg-cover bg-center border border-slate-800/80 p-6 lg:p-10 flex flex-col justify-end shadow-2xl transition-all duration-700">
+      <div class="relative z-10 max-w-2xl space-y-3">
+        <div class="flex items-center gap-2">
+          <span id="featured-platform-badge" class="text-xs font-bold px-2.5 py-1 rounded-md bg-cyan-500 text-black uppercase tracking-wider font-tech">MS-DOS</span>
+          <span id="featured-genre" class="text-xs px-2.5 py-1 rounded-md bg-slate-900/80 text-gray-300 border border-slate-700">Action</span>
+          <span id="featured-year" class="text-xs text-gray-400">1993</span>
+        </div>
+        <h2 id="featured-title" class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">DOOM (1993)</h2>
+        <p id="featured-desc" class="text-sm text-gray-300 line-clamp-2 max-w-xl">เกมยิงมุมมองบุคคลที่หนึ่งระดับตำนาน บุกตะลุยฝูงปีศาจจากนรกบนดาวอังคาร</p>
+        
+        <div class="pt-2 flex items-center gap-4">
+          <button id="featured-play-btn" class="tv-focusable px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-cyan-400 text-black font-bold text-sm flex items-center gap-2 shadow-lg shadow-cyan-500/30 hover:scale-105 transition-all">
+            <i class="fas fa-play"></i> เล่นเกมนี้เลย (PLAY NOW)
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLATFORM NAVIGATION TABS -->
+    <section class="space-y-4">
+      <div class="flex items-center justify-between">
+        <h3 class="text-base font-bold text-slate-200 flex items-center gap-2">
+          <i class="fas fa-layer-group text-cyan-400"></i> เลือกเครื่องเล่นเกม (Platforms)
+        </h3>
+        <span id="results-count" class="text-xs text-gray-400 font-medium">กำลังโหลด...</span>
+      </div>
+
+      <!-- Platforms Horizontal Scroll List -->
+      <div class="flex items-center gap-2.5 overflow-x-auto pb-2 scrollbar-none">
+        <button class="tv-focusable platform-tab-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap border transition-all bg-cyan-500 text-black border-cyan-400" data-platform="all">
+          <i class="fas fa-globe mr-1"></i> ทั้งหมด (ALL)
+        </button>
+        <button class="tv-focusable platform-tab-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap border transition-all bg-slate-800/80 text-gray-300 border-slate-700 hover:border-cyan-400" data-platform="dos">
+          <i class="fas fa-desktop mr-1 text-emerald-400"></i> MS-DOS (PC)
+        </button>
+        <button class="tv-focusable platform-tab-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap border transition-all bg-slate-800/80 text-gray-300 border-slate-700 hover:border-cyan-400" data-platform="nes">
+          <i class="fas fa-cube mr-1 text-red-400"></i> NES (Famicom)
+        </button>
+        <button class="tv-focusable platform-tab-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap border transition-all bg-slate-800/80 text-gray-300 border-slate-700 hover:border-cyan-400" data-platform="snes">
+          <i class="fas fa-gamepad mr-1 text-purple-400"></i> Super Nintendo (SNES)
+        </button>
+        <button class="tv-focusable platform-tab-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap border transition-all bg-slate-800/80 text-gray-300 border-slate-700 hover:border-cyan-400" data-platform="gba">
+          <i class="fas fa-mobile-alt mr-1 text-indigo-400"></i> Game Boy Advance (GBA)
+        </button>
+        <button class="tv-focusable platform-tab-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap border transition-all bg-slate-800/80 text-gray-300 border-slate-700 hover:border-cyan-400" data-platform="sega">
+          <i class="fas fa-bolt mr-1 text-blue-400"></i> Sega Genesis
+        </button>
+        <button class="tv-focusable platform-tab-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap border transition-all bg-slate-800/80 text-gray-300 border-slate-700 hover:border-cyan-400" data-platform="arcade">
+          <i class="fas fa-coins mr-1 text-amber-400"></i> Arcade (MAME)
+        </button>
+      </div>
+
+      <!-- Genre Pills -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-1 text-xs">
+        <span class="text-gray-400 text-xs font-medium mr-1">หมวดหมู่:</span>
+        <button class="genre-pill-btn px-3 py-1 rounded-lg bg-purple-600 text-white font-medium transition-colors" data-genre="all">ทุกแนว</button>
+        <button class="genre-pill-btn px-3 py-1 rounded-lg bg-slate-900/60 text-gray-400 hover:text-white font-medium transition-colors" data-genre="Platformer">Platformer</button>
+        <button class="genre-pill-btn px-3 py-1 rounded-lg bg-slate-900/60 text-gray-400 hover:text-white font-medium transition-colors" data-genre="Action">Action</button>
+        <button class="genre-pill-btn px-3 py-1 rounded-lg bg-slate-900/60 text-gray-400 hover:text-white font-medium transition-colors" data-genre="Shooter">Shooter</button>
+        <button class="genre-pill-btn px-3 py-1 rounded-lg bg-slate-900/60 text-gray-400 hover:text-white font-medium transition-colors" data-genre="RPG">RPG</button>
+        <button class="genre-pill-btn px-3 py-1 rounded-lg bg-slate-900/60 text-gray-400 hover:text-white font-medium transition-colors" data-genre="Racing">Racing</button>
+        <button class="genre-pill-btn px-3 py-1 rounded-lg bg-slate-900/60 text-gray-400 hover:text-white font-medium transition-colors" data-genre="Arcade">Arcade</button>
+      </div>
+    </section>
+
+    <!-- GAMES GRID -->
+    <section>
+      <div id="games-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 lg:gap-5">
+        <!-- Game Cards dynamically injected here -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="mt-16 border-t border-slate-800/80 bg-[#090b12] py-8 px-4 text-center text-xs text-gray-500 space-y-2">
+    <p class="font-tech text-sm text-gray-400">RETRO WEB GAMES HUB • รองรับ MI BOX TV, PC, SMARTPHONE & GAMEPADS</p>
+    <p>WebAssembly (JS-DOS & EmulatorJS) Engine • Open-Source Web Emulator Platform</p>
+  </footer>
+
+  <!-- ============================================== -->
+  <!-- MODAL: IN-BROWSER EMULATOR PLAYER (PLAY VIEW)  -->
+  <!-- ============================================== -->
+  <div id="player-modal" class="hidden fixed inset-0 z-50 bg-black/95 backdrop-blur-lg flex items-center justify-center p-2 sm:p-4">
+    
+    <div id="player-modal-container" class="relative w-full max-w-5xl h-[92vh] max-h-[850px] bg-[#101420] border border-slate-800 rounded-2xl flex flex-col overflow-hidden shadow-2xl">
+      
+      <!-- Modal Header -->
+      <div class="h-14 px-4 bg-[#141b2d] border-b border-slate-800 flex items-center justify-between flex-shrink-0">
+        <div class="flex items-center gap-3">
+          <div class="w-3 h-3 rounded-full bg-red-500 animate-pulse"></div>
+          <h3 id="player-modal-title" class="font-bold text-sm sm:text-base text-slate-100 line-clamp-1">Game Player</h3>
+        </div>
+
+        <!-- Controls Toolbar -->
+        <div class="flex items-center gap-2">
+          <!-- CRT Filter Toggle -->
+          <button id="crt-toggle-btn" class="p-2 text-gray-400 hover:text-cyan-400 rounded-lg hover:bg-slate-800 text-xs flex items-center gap-1.5 transition-colors" title="เปิด/ปิดเส้นสแกน CRT Filter">
+            <i class="fas fa-tv text-sm"></i>
+            <span class="hidden sm:inline">CRT Shaders</span>
+          </button>
+
+          <!-- Fullscreen Toggle -->
+          <button id="fullscreen-btn" class="p-2 text-gray-400 hover:text-cyan-400 rounded-lg hover:bg-slate-800 transition-colors" title="เล่นเต็มจอ (Fullscreen)">
+            <i class="fas fa-expand text-sm"></i>
+          </button>
+
+          <!-- Close Modal -->
+          <button id="close-player-btn" class="p-2 text-gray-400 hover:text-red-400 rounded-lg hover:bg-slate-800 transition-colors" title="ปิดเกม (ESC / Back)">
+            <i class="fas fa-times text-lg"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Emulator Screen Viewport -->
+      <div id="emulator-screen-wrapper" class="crt-overlay flex-1 relative bg-black flex items-center justify-center overflow-hidden">
+        
+        <!-- Loading Spinner -->
+        <div id="emulator-loading" class="absolute inset-0 z-20 bg-black/90 flex flex-col items-center justify-center space-y-4">
+          <div class="w-12 h-12 border-4 border-cyan-500/30 border-t-cyan-400 rounded-full animate-spin"></div>
+          <p class="font-arcade text-xs text-cyan-400 animate-pulse">LOADING GAME DATA...</p>
+          <p class="text-xs text-gray-500">กำลังดาวน์โหลดแพ็กเกจเกมเข้า WebAssembly Engine</p>
+        </div>
+
+        <div id="emulator-viewport" class="w-full h-full"></div>
+      </div>
+
+      <!-- Modal Footer Guide -->
+      <div class="h-10 px-4 bg-[#141b2d] border-t border-slate-800 flex items-center justify-between text-[11px] text-gray-400 flex-shrink-0">
+        <div class="flex items-center gap-2 line-clamp-1">
+          <i class="fas fa-keyboard text-cyan-400"></i>
+          <span id="player-controls-guide">ใช้ปุ่มลูกศร, Z, X, Space และ Gamepad ในการควบคุม</span>
+        </div>
+        <div class="hidden sm:flex items-center gap-3 text-gray-500">
+          <span>กด <b>ESC</b> เพื่อออก</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ============================================== -->
+  <!-- MODAL: CUSTOM ROM / FILE DRAG & DROP           -->
+  <!-- ============================================== -->
+  <div id="upload-modal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="w-full max-w-md bg-[#121829] border border-cyan-500/40 rounded-2xl p-6 space-y-5 shadow-2xl relative">
+      <button id="close-upload-btn" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+        <i class="fas fa-times text-lg"></i>
+      </button>
+
+      <div class="text-center space-y-1">
+        <div class="w-12 h-12 mx-auto rounded-full bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-2">
+          <i class="fas fa-file-arrow-up"></i>
+        </div>
+        <h3 class="font-bold text-lg text-white">เล่นไฟล์ ROM ของคุณเอง</h3>
+        <p class="text-xs text-gray-400">โยนไฟล์ ROM หรือไฟล์เกม DOS จากในเครื่องเพื่อเล่นทันที</p>
+      </div>
+
+      <div id="rom-dropzone" class="border-2 border-dashed border-slate-700 hover:border-cyan-400 rounded-xl p-8 text-center cursor-pointer transition-all bg-slate-900/50">
+        <i class="fas fa-cloud-upload-alt text-3xl text-gray-400 mb-2"></i>
+        <p class="text-sm font-semibold text-gray-300">ลากไฟล์มาวางที่นี่ หรือคลิกเพื่อเลือกไฟล์</p>
+        <p class="text-[11px] text-gray-500 mt-1">รองรับ .nes, .smc, .sfc, .gba, .md, .zip (DOS/Arcade)</p>
+        <input type="file" id="rom-file-input" class="hidden" accept=".nes,.sfc,.smc,.gba,.md,.gen,.bin,.zip,.jsdos" />
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="js/games-data.js"></script>
+  <script src="js/emulator.js"></script>
+  <script src="js/tv-navigation.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

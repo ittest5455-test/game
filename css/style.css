@@ -1,0 +1,124 @@
+/* Retro Web Games - Custom Arcade CSS Styles */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --neon-cyan: #00f0ff;
+  --neon-purple: #b026ff;
+  --neon-pink: #ff007f;
+  --neon-green: #39ff14;
+  --neon-amber: #ffaa00;
+  --arcade-bg: #0b0e17;
+  --card-bg: #121829;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--arcade-bg);
+  color: #e2e8f0;
+  overflow-x: hidden;
+}
+
+.font-arcade {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.font-tech {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Neon Glow Utilities */
+.neon-border-cyan {
+  border: 1px solid rgba(0, 240, 255, 0.4);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+}
+.neon-border-cyan:hover, .neon-border-cyan:focus-within {
+  border-color: #00f0ff;
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.45);
+}
+
+.neon-border-purple {
+  border: 1px solid rgba(176, 38, 255, 0.4);
+  box-shadow: 0 0 15px rgba(176, 38, 255, 0.2);
+}
+.neon-border-purple:hover {
+  border-color: #b026ff;
+  box-shadow: 0 0 25px rgba(176, 38, 255, 0.5);
+}
+
+.neon-text-glow {
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.7), 0 0 20px rgba(0, 240, 255, 0.4);
+}
+
+.neon-text-pink {
+  text-shadow: 0 0 10px rgba(255, 0, 127, 0.7), 0 0 20px rgba(255, 0, 127, 0.4);
+}
+
+/* TV 10-Foot Focus Mode (For Mi Box / Gamepad / Remote Navigation) */
+.tv-focusable {
+  outline: none;
+  transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.tv-focusable:focus,
+.tv-focusable.tv-focused {
+  transform: scale(1.05);
+  border-color: #00f0ff !important;
+  box-shadow: 0 0 0 3px #00f0ff, 0 0 30px rgba(0, 240, 255, 0.6) !important;
+  z-index: 20;
+}
+
+/* CRT Scanlines Shader Effect */
+.crt-overlay {
+  position: relative;
+}
+.crt-overlay.crt-enabled::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.35) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.04), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.04));
+  z-index: 10;
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Game Frame Container */
+#emulator-viewport {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#emulator-viewport canvas {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+/* Pulse Animation */
+@keyframes neonPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+.animate-neon-pulse {
+  animation: neonPulse 2s infinite ease-in-out;
+}
