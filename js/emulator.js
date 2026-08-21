@@ -1,5 +1,5 @@
 /**
- * Multi-Engine Web Emulator Manager (Same-Origin Player Architecture)
+ * Multi-Engine Web Emulator Manager
  * Supports: JS-DOS (MS-DOS) and EmulatorJS (NES, SNES, GBA, Genesis, Arcade, PS1/PSX)
  */
 
@@ -23,29 +23,19 @@ class RetroEmulatorManager {
     if (controlsGuide) controlsGuide.innerText = game.controls || "ใช้ปุ่มลูกศร, Z, X, C, Space และ Gamepad ในการควบคุม";
 
     viewport.innerHTML = "";
-    if (loader) loader.classList.remove("hidden");
+    if (loader) loader.classList.add("hidden");
 
     let gameUrl = customFile ? URL.createObjectURL(customFile) : (game.bundleUrl || game.romUrl);
     const type = game.emulatorType || "emulatorjs";
     const core = game.core || "nes";
 
-    // Create Same-Origin Player Iframe
+    // Embed standalone player.html directly
     const iframe = document.createElement("iframe");
     iframe.className = "w-full h-full border-0 bg-black";
     iframe.allow = "autoplay; fullscreen; gamepad";
-    iframe.src = `player.html?type=${encodeURIComponent(type)}&core=${encodeURIComponent(core)}&game=${encodeURIComponent(gameUrl)}`;
+    iframe.src = `player.html?type=${type}&core=${core}&game=${encodeURIComponent(gameUrl)}`;
 
     viewport.appendChild(iframe);
-
-    window.addEventListener("message", (event) => {
-      if (event.data && event.data.type === "EMULATOR_READY") {
-        if (loader) loader.classList.add("hidden");
-      }
-    }, { once: true });
-
-    setTimeout(() => {
-      if (loader) loader.classList.add("hidden");
-    }, 3000);
   }
 
   /**

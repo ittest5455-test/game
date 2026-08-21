@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Retro Player</title>
+  <title>Retro Game Player</title>
   
-  <!-- JS-DOS v8 CSS -->
-  <link rel="stylesheet" href="https://v8.js-dos.com/latest/js-dos.css" />
-  
+  <!-- JS-DOS v7 Player Stylesheet -->
+  <link rel="stylesheet" href="https://v7.js-dos.com/latest/js-dos.css" />
+
   <style>
     * { box-sizing: border-box; }
     html, body {
@@ -20,114 +20,140 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      color: #00f0ff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
-    #game-container, #dos-container {
+    #game, #dos {
       width: 100%;
       height: 100%;
+      display: block;
     }
     canvas {
       image-rendering: pixelated;
+      image-rendering: -moz-crisp-edges;
       image-rendering: crisp-edges;
     }
-    #loading-box {
-      position: absolute;
-      color: #00f0ff;
-      font-family: sans-serif;
-      font-size: 14px;
+    #error-notice {
+      display: none;
       text-align: center;
-      z-index: 10;
+      padding: 20px;
+      max-width: 480px;
+      background: #111827;
+      border: 1px solid #ef4444;
+      border-radius: 12px;
+      color: #fff;
     }
-    .spinner {
-      width: 40px;
-      height: 40px;
-      border: 3px solid rgba(0, 240, 255, 0.2);
-      border-top-color: #00f0ff;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-      margin: 0 auto 10px auto;
-    }
-    @keyframes spin {
-      to { transform: rotate(360deg); }
+    #error-notice button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #00f0ff;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-  <div id="loading-box">
-    <div class="spinner"></div>
-    <div id="status-text">กำลังโหลดเอนจินเกม...</div>
+  <!-- ERROR FALLBACK UI -->
+  <div id="error-notice">
+    <div style="font-size:32px; margin-bottom:10px;">⚠️</div>
+    <div style="font-size:16px; font-weight:bold; margin-bottom:6px;">เซิร์ฟเวอร์ไฟล์เกมตอบสนองช้า</div>
+    <div style="font-size:12px; color:#9ca3af;">ไฟล์เกมขนาดใหญ่จาก Archive.org อาจถูกจำกัดความเร็ว หรือดาวน์โหลดไม่สำเร็จ</div>
+    <button onclick="document.getElementById('file-fallback').click()">📂 เลือกไฟล์ ROM จากในเครื่องเพื่อเล่นทันที</button>
+    <input type="file" id="file-fallback" style="display:none;" onchange="loadLocalFile(this.files[0])" />
   </div>
 
-  <div id="game-container"></div>
-  <div id="dos-container" style="display:none;"></div>
+  <!-- EMULATOR CONTAINERS -->
+  <div id="game"></div>
+  <div id="dos" style="display:none;"></div>
 
-  <!-- JS-DOS v8 Script -->
-  <script src="https://v8.js-dos.com/latest/js-dos.js"></script>
+  <!-- JS-DOS v7 Library -->
+  <script src="https://v7.js-dos.com/latest/js-dos.js"></script>
 
   <script>
-    const params = new URLSearchParams(window.location.search);
-    const type = params.get("type") || "emulatorjs";
-    const core = params.get("core") || "nes";
-    const gameUrl = params.get("game") || "";
-    const statusText = document.getElementById("status-text");
+    const urlParams = new URLSearchParams(window.location.search);
+    const type = urlParams.get('type') || 'emulatorjs';
+    const core = urlParams.get('core') || 'nes';
+    let gameUrl = urlParams.get('game') || '';
 
-    function hideLoader() {
-      const loader = document.getElementById("loading-box");
-      if (loader) loader.style.display = "none";
-      try {
-        window.parent.postMessage({ type: "EMULATOR_READY" }, "*");
-      } catch (e) {}
+    function showFallbackError() {
+      document.getElementById('game').style.display = 'none';
+      document.getElementById('dos').style.display = 'none';
+      document.getElementById('error-notice').style.display = 'block';
     }
 
-    if (type === "jsdos") {
-      document.getElementById("game-container").style.display = "none";
-      const dosDiv = document.getElementById("dos-container");
-      dosDiv.style.display = "block";
-      statusText.innerText = "กำลังแตกไฟล์และเริ่มรัน MS-DOS...";
+    function loadLocalFile(file) {
+      if (!file) return;
+      document.getElementById('error-notice').style.display = 'none';
+      const localUrl = URL.createObjectURL(file);
+      
+      if (file.name.endsWith('.zip') || file.name.endsWith('.jsdos')) {
+        startJsDos(localUrl);
+      } else {
+        startEmulatorJS(core, localUrl);
+      }
+    }
 
-      Dos(dosDiv, {
-        url: gameUrl,
-        theme: "dark",
-        autoStart: true,
-        kiosk: true,
-        noCloud: true
-      }).then(() => {
-        hideLoader();
-      }).catch((err) => {
-        console.error("DOS Error:", err);
-        statusText.innerText = "เกิดข้อผิดพลาดในการโหลดเกม DOS";
-      });
+    function startJsDos(url) {
+      document.getElementById('game').style.display = 'none';
+      const dosContainer = document.getElementById('dos');
+      dosContainer.style.display = 'block';
 
-    } else {
-      // EmulatorJS (NES, SNES, GBA, Genesis, Arcade, PS1)
-      statusText.innerText = "กำลังดาวน์โหลด ROM เข้าสู่ WebAssembly...";
+      try {
+        Dos(dosContainer, {
+          wdosboxUrl: "https://v7.js-dos.com/latest/wdosbox.js",
+          cycles: "auto",
+          autolock: false
+        }).ready((fs, main) => {
+          fs.extract(url).then(() => {
+            main();
+          }).catch(err => {
+            console.error("Extract error:", err);
+            showFallbackError();
+          });
+        }).catch(err => {
+          console.error("JS-DOS init error:", err);
+          showFallbackError();
+        });
+      } catch (err) {
+        showFallbackError();
+      }
+    }
 
-      window.EJS_player = '#game-container';
-      window.EJS_core = core;
-      window.EJS_gameUrl = gameUrl;
+    function startEmulatorJS(coreType, rom) {
+      document.getElementById('dos').style.display = 'none';
+      document.getElementById('game').style.display = 'block';
+
+      window.EJS_player = '#game';
+      window.EJS_core = coreType;
+      window.EJS_gameUrl = rom;
       window.EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
       window.EJS_startOnLoaded = true;
       window.EJS_color = '#00f0ff';
       window.EJS_threads = false;
 
-      if (core === 'psx') {
+      if (coreType === 'psx') {
         window.EJS_biosUrl = 'https://cdn.emulatorjs.org/stable/data/scph5501.bin';
       }
 
-      window.EJS_ready = function() {
-        hideLoader();
-      };
-      window.EJS_onGameStart = function() {
-        hideLoader();
-      };
-
-      const loaderScript = document.createElement("script");
-      loaderScript.src = "https://cdn.emulatorjs.org/stable/data/loader.js";
-      loaderScript.onload = () => {
-        setTimeout(hideLoader, 3000);
-      };
-      document.body.appendChild(loaderScript);
+      // Check if loader script already loaded
+      const script = document.createElement('script');
+      script.src = 'https://cdn.emulatorjs.org/stable/data/loader.js';
+      script.onerror = () => showFallbackError();
+      document.body.appendChild(script);
     }
+
+    // Initialize on load
+    window.addEventListener('DOMContentLoaded', () => {
+      if (type === 'jsdos') {
+        startJsDos(gameUrl);
+      } else {
+        startEmulatorJS(core, gameUrl);
+      }
+    });
   </script>
 
 </body>
