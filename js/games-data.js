@@ -1,6 +1,6 @@
 /**
  * PENNUENG GAME - 100% Verified Match Game Database
- * Every game URL is verified to match the exact game title and cover art!
+ * All embed URLs are confirmed and tested to match the game titles and covers!
  */
 
 const RETRO_GAMES_DATABASE = [
@@ -21,7 +21,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     description: "เป๊ปซี่แมนฮีโร่วิ่งส่งเป๊ปซี่ระดับตำนาน หลบสิ่งกีดขวางและกระป๋องยักษ์ไล่หลัง",
     controls: "ลูกศร: ซ้าย/ขวา | Z: สไลด์ (X) | X: กระโดด (Square) | A: พุ่งชน (Circle) | Enter: Start",
-    embedUrl: "https://www.retrogames.cc/embed/41743-pepsiman-japan.html"
+    embedUrl: "https://www.retrogames.cc/embed/42754-pepsiman-japan.html"
   },
   {
     id: "ps1-harvest-moon-btn",
@@ -37,7 +37,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f45.jpg",
     description: "เกมปลูกผัก เลี้ยงวัว จีบสาว ที่ครองใจเกมเมอร์ไทยมากที่สุดตลอดกาล",
     controls: "ลูกศร: เดิน | Z: หยิบ/คุย (X) | X: ใช้อุปกรณ์ (Square) | A: กิน/เก็บ (Triangle) | S: วิ่ง (R1) | Enter: Start",
-    embedUrl: "https://www.retrogames.cc/embed/41706-harvest-moon-back-to-nature.html"
+    embedUrl: "https://www.retrogames.cc/embed/40055-harvest-moon-back-to-nature.html"
   },
   {
     id: "ps1-crash-team-racing",
@@ -53,7 +53,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f3t.jpg",
     description: "ศึกแข่งรถโกคาร์ทดริฟท์พ่นไฟและยิงอาวุธสุดมันส์ของเจ้าหมา Crash Bandicoot",
     controls: "ลูกศร: เลี้ยว | Z: เร่งความเร็ว (X) | X: ยิงอาวุธ (Circle) | A/S: กระโดดดริฟท์ (L1/R1)",
-    embedUrl: "https://www.retrogames.cc/embed/41675-crash-team-racing.html"
+    embedUrl: "https://www.retrogames.cc/embed/41687-crash-team-racing.html"
   },
   {
     id: "ps1-tekken-3",
@@ -69,7 +69,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f44.jpg",
     description: "สุดยอดเกมต่อสู้ 3D ในตำนาน หมัดเหล็ก Jin Kazama, Hwoarang, Eddy Gordo",
     controls: "ลูกศร: เคลื่อนที่ | A: ต่อยซ้าย | S: ต่อยขวา | Z: เตะซ้าย | X: เตะขวา | Enter: Start",
-    embedUrl: "https://www.retrogames.cc/embed/41724-tekken-3.html"
+    embedUrl: "https://www.retrogames.cc/embed/40238-tekken-3.html"
   },
   {
     id: "ps1-bloody-roar-2",
@@ -85,7 +85,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f44.jpg",
     description: "ศึกต่อสู้แปลงร่างเป็นสัตว์ดุร้าย เสือโคร่ง หมาป่า ตุ่น สิงโต พร้อมท่าไม้ตายสัตว์ป่าสุดโหด",
     controls: "ลูกศร: ทิศทาง | A: ต่อย | Z: เตะ | X: ปุ่มแปลงร่างสัตว์ (Beast)",
-    embedUrl: "https://www.retrogames.cc/embed/41668-bloody-roar-ii.html"
+    embedUrl: "https://www.retrogames.cc/embed/41623-bloody-roar-2-bringer-of-new-age.html"
   },
   {
     id: "ps1-yugioh",
@@ -101,7 +101,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f45.jpg",
     description: "เกมการ์ดยูกิโออียิปต์โบราณ ผสมการ์ดมังกรทองตาคู่และตามหาไอเทมพันปี",
     controls: "ลูกศร: เลื่อนการ์ด | Z: วางการ์ด (X) | X: ผสมการ์ด (Square) | A: ดูรายละเอียด",
-    embedUrl: "https://www.retrogames.cc/embed/41738-yu-gi-oh-forbidden-memories.html"
+    embedUrl: "https://www.retrogames.cc/embed/40173-yu-gi-oh-forbidden-memories.html"
   },
   {
     id: "ps1-chocobo-racing",
@@ -117,7 +117,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f3t.jpg",
     description: "แข่งรถแฟนตาซี ดริฟท์เก็บลูกแก้วเวทมนตร์ ปล่อยคาถาไฟ สายฟ้า และบาฮามุท",
     controls: "ลูกศร: เลี้ยว | Z: เร่งความเร็ว | X: ใช้เวทมนตร์ | A: สกิลประจำตัว",
-    embedUrl: "https://www.retrogames.cc/embed/41671-chocobo-racing.html"
+    embedUrl: "https://www.retrogames.cc/embed/41660-chocobo-racing.html"
   },
   {
     id: "ps1-digimon-world",
@@ -133,11 +133,11 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f45.jpg",
     description: "พาคู่หูดิจิมอนฝึกฝน ให้อาหาร พาเข้าห้องน้ำ พัฒนาร่าง และฟื้นฟูเกาะ File Island",
     controls: "ลูกศร: เดิน | Z: สำรวจ/คุย | X: ยกเลิก | A: เมนูคำสั่ง",
-    embedUrl: "https://www.retrogames.cc/embed/41680-digimon-world.html"
+    embedUrl: "https://www.retrogames.cc/embed/41731-digimon-world.html"
   },
   {
     id: "ps1-resident-evil-2",
-    title: "Resident Evil 2 (DualShock)",
+    title: "Resident Evil 2 (Leon)",
     platform: "ps1",
     platformName: "PlayStation 1",
     genre: "Action",
@@ -147,105 +147,9 @@ const RETRO_GAMES_DATABASE = [
     featured: true,
     thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Resident%20Evil%202%20-%20Dual%20Shock%20Ver.%20(USA)%20(Disc%201).png",
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f39.jpg",
-    description: "หนีตายจากฝูงซอมบี้ในสถานีตำรวจเมืองแรคคูนซิตีกับ Leon S. Kennedy และ Claire Redfield",
+    description: "หนีตายจากฝูงซอมบี้ในสถานีตำรวจเมืองแรคคูนซิตีกับ Leon S. Kennedy",
     controls: "ลูกศร: หมุน/เดินหน้า | Z: ยิง/สำรวจ (X) | X: ยกเลิก/วิ่ง (Square) | A: ยกปืนเล็ง (R1)",
-    embedUrl: "https://www.retrogames.cc/embed/41716-resident-evil-2-dual-shock-edition-disc-1.html"
-  },
-  {
-    id: "ps1-resident-evil-3",
-    title: "Resident Evil 3: Nemesis",
-    platform: "ps1",
-    platformName: "PlayStation 1",
-    genre: "Action",
-    year: 1999,
-    developer: "Capcom",
-    rating: 4.9,
-    featured: false,
-    thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Resident%20Evil%203%20-%20Nemesis%20(USA).png",
-    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f39.jpg",
-    description: "Jill Valentine หนีการตามล่าอย่างไร้ความปรานีของอสูรชีวภาพ Nemesis 'STARS...'",
-    controls: "ลูกศร: เคลื่อนที่ | Z: ยิง/สำรวจ | X: วิ่ง/หลบหลีก | A: เล็งปืน",
-    embedUrl: "https://www.retrogames.cc/embed/41717-resident-evil-3-nemesis.html"
-  },
-  {
-    id: "ps1-dino-crisis-2",
-    title: "Dino Crisis 2 (ไดโนเสาร์)",
-    platform: "ps1",
-    platformName: "PlayStation 1",
-    genre: "Action",
-    year: 2000,
-    developer: "Capcom",
-    rating: 4.9,
-    featured: true,
-    thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Dino%20Crisis%202%20(USA).png",
-    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f39.jpg",
-    description: "เกมยิงไดโนเสาร์สุดมันส์ เก็บแต้มคอมโบ อัปเกรดปืนลูกซองและปืนไฟ",
-    controls: "ลูกศร: เดิน | Z: ยิงปืน | X: วิ่ง | A: ดาบฟัน",
-    embedUrl: "https://www.retrogames.cc/embed/41682-dino-crisis-2.html"
-  },
-  {
-    id: "ps1-castlevania-sotn",
-    title: "Castlevania: Symphony of the Night",
-    platform: "ps1",
-    platformName: "PlayStation 1",
-    genre: "Action",
-    year: 1997,
-    developer: "Konami",
-    rating: 5.0,
-    featured: true,
-    thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Castlevania%20-%20Symphony%20of%20the%20Night%20(USA).png",
-    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f45.jpg",
-    description: "มาสเตอร์พีซแห่งปราสาทแดร็กคูล่า Alucard บุกปราสาทกลับหัว ระบบ RPG สมบูรณ์แบบ",
-    controls: "ลูกศร: เดิน | Z: ฟันดาบ (Square) | X: กระโดด (X) | A: แปลงร่างค้างคาว/หมอก",
-    embedUrl: "https://www.retrogames.cc/embed/41670-castlevania-symphony-of-the-night.html"
-  },
-  {
-    id: "ps1-megaman-x4",
-    title: "Mega Man X4 (Rockman X4)",
-    platform: "ps1",
-    platformName: "PlayStation 1",
-    genre: "Action",
-    year: 1997,
-    developer: "Capcom",
-    rating: 5.0,
-    featured: true,
-    thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Mega%20Man%20X4%20(USA).png",
-    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f41.jpg",
-    description: "เลือกเล่นเป็น X หรือดาบเซเบอร์ Zero เพลงประกอบและอนิเมะคัตซีนสุดมันส์",
-    controls: "ลูกศร: ทิศทาง | Z: ชาร์จยิง/ฟันดาบ (Square) | X: กระโดด (X) | A: แดช (Circle)",
-    embedUrl: "https://www.retrogames.cc/embed/41712-mega-man-x4.html"
-  },
-  {
-    id: "ps1-final-fantasy-7",
-    title: "Final Fantasy VII",
-    platform: "ps1",
-    platformName: "PlayStation 1",
-    genre: "RPG",
-    year: 1997,
-    developer: "Squaresoft",
-    rating: 5.0,
-    featured: true,
-    thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Final%20Fantasy%20VII%20(USA)%20(Disc%201).png",
-    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f45.jpg",
-    description: "มหากาพย์ของ Cloud Strife และดาบยักษ์ Buster Sword ปะทะ Sephiroth",
-    controls: "ลูกศร: เดิน | Z: สำรวจ/ตกลง (Circle) | X: ยกเลิก/วิ่ง (X) | A: เปิดเมนู (Triangle)",
-    embedUrl: "https://www.retrogames.cc/embed/41687-final-fantasy-vii-disc-1.html"
-  },
-  {
-    id: "ps1-metal-gear-solid",
-    title: "Metal Gear Solid (Disc 1)",
-    platform: "ps1",
-    platformName: "PlayStation 1",
-    genre: "Action",
-    year: 1998,
-    developer: "Konami",
-    rating: 5.0,
-    featured: false,
-    thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Metal%20Gear%20Solid%20(USA)%20(Disc%201).png",
-    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f40.jpg",
-    description: "สุดยอดเกมสายลับ Solid Snake ลอบเร้นฐานเกาะ Shadow Moses",
-    controls: "ลูกศร: ย่อง/หมอบ | Z: ต่อย/ยิง | X: หมอบคลาน | A: เรียกวิทยุ Codec",
-    embedUrl: "https://www.retrogames.cc/embed/41713-metal-gear-solid-disc-1.html"
+    embedUrl: "https://www.retrogames.cc/embed/42943-resident-evil-2-dual-shock-ver-disc-1-leon.html"
   },
   {
     id: "ps1-wwf-smackdown-2",
@@ -261,23 +165,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f44.jpg",
     description: "เกมมวยปล้ำยุคทอง The Rock, Stone Cold, Triple H, Undertaker โดดทับโต๊ะและเก้าอี้สุดมันส์",
     controls: "ลูกศร: เคลื่อนที่ | Z: ต่อย (Square) | X: จับล็อก (Circle) | A: วิ่ง (Triangle) | S: ขึ้นเชือก",
-    embedUrl: "https://www.retrogames.cc/embed/41737-wwf-smackdown-2-know-your-role.html"
-  },
-  {
-    id: "ps1-crash-bandicoot-3",
-    title: "Crash Bandicoot 3: Warped",
-    platform: "ps1",
-    platformName: "PlayStation 1",
-    genre: "Platformer",
-    year: 1998,
-    developer: "Naughty Dog",
-    rating: 4.9,
-    featured: false,
-    thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Crash%20Bandicoot%20-%20Warped%20(USA).png",
-    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
-    description: "ท่องกาลเวลา ขี่เสือน้อยกำแพงเมืองจีน ขับเจ็ทสกี และปราบ ดร.คอร์เทกซ์",
-    controls: "ลูกศร: เดิน | Z: กระโดด (X) | X: หมุนตัวสปิน (Square) | A: สไลด์/หมอบ",
-    embedUrl: "https://www.retrogames.cc/embed/41674-crash-bandicoot-3-warped.html"
+    embedUrl: "https://www.retrogames.cc/embed/42195-wwf-smackdown-2.html"
   },
 
   // ==========================================
@@ -347,38 +235,6 @@ const RETRO_GAMES_DATABASE = [
     controls: "ลูกศร / WASD: เคลื่อนที่ | Ctrl: ยิง | Space: เปิดประตู/สำรวจ | E: เตะ",
     embedUrl: "https://dos.zone/player/?bundleUrl=https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Fduke3d.jsdos"
   },
-  {
-    id: "dos-warcraft-2",
-    title: "Warcraft II: Tides of Darkness",
-    platform: "dos",
-    platformName: "MS-DOS",
-    genre: "Strategy",
-    year: 1995,
-    developer: "Blizzard Entertainment",
-    rating: 4.9,
-    featured: true,
-    thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/DOS/master/Named_Boxarts/Warcraft%20II%20-%20Tides%20of%20Darkness%20(1995).png",
-    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f40.jpg",
-    description: "มหากาพย์สงครามวางแผนการรบแบบ Real-Time ระหว่างเผ่ามนุษย์ (Humans) และ ออร์ค (Orcs)",
-    controls: "เมาส์: ควบคุม ยูนิต และสร้างสิ่งปลูกสร้าง",
-    embedUrl: "https://dos.zone/player/?bundleUrl=https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Fwarcraft-2.jsdos"
-  },
-  {
-    id: "dos-red-alert",
-    title: "Command & Conquer: Red Alert",
-    platform: "dos",
-    platformName: "MS-DOS",
-    genre: "Strategy",
-    year: 1996,
-    developer: "Westwood Studios",
-    rating: 5.0,
-    featured: true,
-    thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/DOS/master/Named_Boxarts/Command%20%26%20Conquer%20-%20Red%20Alert%20(1996).png",
-    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f42.jpg",
-    description: "สงครามเย็นย้อนเวลา ไอน์สไตน์ย้อนอดีตลบฮิตเลอร์ เกิดสงครามฝ่ายพันธมิตร vs โซเวียต",
-    controls: "เมาส์: สั่งการสร้างฐานและรถถังแมมมอธ",
-    embedUrl: "https://dos.zone/player/?bundleUrl=https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Fred-alert.jsdos"
-  },
 
   // ==========================================
   // --- NES / FAMICOM (8-BIT CLASSICS) ---
@@ -414,22 +270,6 @@ const RETRO_GAMES_DATABASE = [
     description: "เกมยิงบู๊ล้างผลาญระดับตำนาน พร้อมสูตร 30 ตัว บน บน ล่าง ล่าง ซ้าย ขวา ซ้าย ขวา B A",
     controls: "ลูกศร: เล็ง/เดิน | Z: ปุ่ม B (ยิง) | X: ปุ่ม A (กระโดด) | Enter: Start",
     embedUrl: "https://www.retrogames.cc/embed/16841-contra-usa.html"
-  },
-  {
-    id: "nes-rockman-2",
-    title: "Mega Man 2 / Rockman 2",
-    platform: "nes",
-    platformName: "NES / Famicom",
-    genre: "Action",
-    year: 1988,
-    developer: "Capcom",
-    rating: 4.9,
-    featured: false,
-    thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System/master/Named_Boxarts/Mega%20Man%202%20(USA).png",
-    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f41.jpg",
-    description: "ภาคที่ได้รับการยกย่องว่าดีที่สุดของร็อคแมน กำจัด 8 บอสเพื่อชิงอาวุธ",
-    controls: "ลูกศร: เดิน | Z: ยิงบัสเตอร์ | X: กระโดด | Enter: Start",
-    embedUrl: "https://www.retrogames.cc/embed/16783-mega-man-4-usa.html"
   },
   {
     id: "nes-battle-city",
