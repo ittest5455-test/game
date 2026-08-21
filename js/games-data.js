@@ -1,6 +1,6 @@
 /**
- * Retro Games Hub - Massive Game Database with 100% Official 1:1 Box Art from Libretro
- * Complete Collections: PS1, MS-DOS, NES, SNES, GBA, SEGA, Arcade
+ * PENNUENG GAME - 100% Working Web Player Catalog (Embedded Web Game Streams)
+ * Supports: PS1, MS-DOS, NES, SNES, GBA, SEGA, Arcade
  */
 
 const RETRO_GAMES_DATABASE = [
@@ -20,10 +20,8 @@ const RETRO_GAMES_DATABASE = [
     thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Pepsiman%20(Japan).png",
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     description: "เป๊ปซี่แมนฮีโร่วิ่งส่งเป๊ปซี่ระดับตำนาน หลบสิ่งกีดขวางและกระป๋องยักษ์ไล่หลัง",
-    controls: "ลูกศร: ซ้าย/ขวา | Z: สไลด์ (X) | X: กระโดด (Square) | A: พุ่งชน (Circle)",
-    romUrl: "https://archive.org/download/Pepsiman_PS1_ISO/Pepsiman%20%28Japan%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
+    controls: "ลูกศร: ซ้าย/ขวา | Z: สไลด์ (X) | X: กระโดด (Square) | A: พุ่งชน (Circle) | Enter: Start",
+    embedUrl: "https://www.retrogames.cc/embed/41743-pepsiman.html"
   },
   {
     id: "ps1-harvest-moon-btn",
@@ -38,28 +36,8 @@ const RETRO_GAMES_DATABASE = [
     thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Harvest%20Moon%20-%20Back%20to%20Nature%20(USA).png",
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f45.jpg",
     description: "เกมปลูกผัก เลี้ยงวัว จีบสาว ที่ครองใจเกมเมอร์ไทยมากที่สุดตลอดกาล",
-    controls: "ลูกศร: เดิน | Z: หยิบ/คุย (X) | X: ใช้อุปกรณ์ (Square) | A: กิน/เก็บ (Triangle) | S: วิ่ง (R1)",
-    romUrl: "https://archive.org/download/HarvestMoonBackToNature_PS1/Harvest%20Moon%20-%20Back%20to%20Nature%20%28USA%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
-  },
-  {
-    id: "ps1-bishi-bashi",
-    title: "Bishi Bashi Special (บิชิบาชิ)",
-    platform: "ps1",
-    platformName: "PlayStation 1",
-    genre: "Arcade",
-    year: 1998,
-    developer: "Konami",
-    rating: 5.0,
-    featured: true,
-    thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Bishi%20Bashi%20Special%20(Europe).png",
-    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f42.jpg",
-    description: "สุดยอดมินิเกมแข่งรัวปุ่ม แดง เขียว น้ำเงิน สุดฮาเล่นกับเพื่อน",
-    controls: "Z: ปุ่มแดง (Square) | X: ปุ่มเขียว (X) | C: ปุ่มน้ำเงิน (Circle)",
-    romUrl: "https://archive.org/download/BishiBashiSpecial_PS1/Bishi%20Bashi%20Special%20%28Europe%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
+    controls: "ลูกศร: เดิน | Z: หยิบ/คุย (X) | X: ใช้อุปกรณ์ (Square) | A: กิน/เก็บ (Triangle) | S: วิ่ง (R1) | Enter: Start",
+    embedUrl: "https://www.retrogames.cc/embed/41706-harvest-moon-back-to-nature.html"
   },
   {
     id: "ps1-crash-team-racing",
@@ -75,9 +53,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f3t.jpg",
     description: "ศึกแข่งรถโกคาร์ทดริฟท์พ่นไฟและยิงอาวุธสุดมันส์ของเจ้าหมา Crash Bandicoot",
     controls: "ลูกศร: เลี้ยว | Z: เร่งความเร็ว (X) | X: ยิงอาวุธ (Circle) | A/S: กระโดดดริฟท์ (L1/R1)",
-    romUrl: "https://archive.org/download/CrashTeamRacing_PS1/Crash%20Team%20Racing%20%28USA%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
+    embedUrl: "https://www.retrogames.cc/embed/41675-crash-team-racing.html"
   },
   {
     id: "ps1-tekken-3",
@@ -92,10 +68,8 @@ const RETRO_GAMES_DATABASE = [
     thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Tekken%203%20(USA).png",
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f44.jpg",
     description: "สุดยอดเกมต่อสู้ 3D ในตำนาน หมัดเหล็ก Jin Kazama, Hwoarang, Eddy Gordo",
-    controls: "ลูกศร: เคลื่อนที่ | A: ต่อยซ้าย | S: ต่อยขวา | Z: เตะซ้าย | X: เตะขวา",
-    romUrl: "https://archive.org/download/Tekken3_PS1_CHD/Tekken%203%20%28USA%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
+    controls: "ลูกศร: เคลื่อนที่ | A: ต่อยซ้าย | S: ต่อยขวา | Z: เตะซ้าย | X: เตะขวา | Enter: Start",
+    embedUrl: "https://www.retrogames.cc/embed/41724-tekken-3.html"
   },
   {
     id: "ps1-bloody-roar-2",
@@ -111,9 +85,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f44.jpg",
     description: "ศึกต่อสู้แปลงร่างเป็นสัตว์ดุร้าย เสือโคร่ง หมาป่า ตุ่น สิงโต พร้อมท่าไม้ตายสัตว์ป่าสุดโหด",
     controls: "ลูกศร: ทิศทาง | A: ต่อย | Z: เตะ | X: ปุ่มแปลงร่างสัตว์ (Beast)",
-    romUrl: "https://archive.org/download/BloodyRoarII_PS1/Bloody%20Roar%20II%20%28USA%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
+    embedUrl: "https://www.retrogames.cc/embed/41668-bloody-roar-ii.html"
   },
   {
     id: "ps1-yugioh",
@@ -129,9 +101,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f45.jpg",
     description: "เกมการ์ดยูกิโออียิปต์โบราณ ผสมการ์ดมังกรทองตาคู่และตามหาไอเทมพันปี",
     controls: "ลูกศร: เลื่อนการ์ด | Z: วางการ์ด (X) | X: ผสมการ์ด (Square) | A: ดูรายละเอียด",
-    romUrl: "https://archive.org/download/YuGiOhForbiddenMemories_PS1/Yu-Gi-Oh%21%20-%20Forbidden%20Memories%20%28USA%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
+    embedUrl: "https://www.retrogames.cc/embed/41738-yu-gi-oh-forbidden-memories.html"
   },
   {
     id: "ps1-chocobo-racing",
@@ -147,9 +117,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f3t.jpg",
     description: "แข่งรถแฟนตาซี ดริฟท์เก็บลูกแก้วเวทมนตร์ ปล่อยคาถาไฟ สายฟ้า และบาฮามุท",
     controls: "ลูกศร: เลี้ยว | Z: เร่งความเร็ว | X: ใช้เวทมนตร์ | A: สกิลประจำตัว",
-    romUrl: "https://archive.org/download/ChocoboRacing_PS1/Chocobo%20Racing%20%28USA%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
+    embedUrl: "https://www.retrogames.cc/embed/41671-chocobo-racing.html"
   },
   {
     id: "ps1-dokapon",
@@ -165,9 +133,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f45.jpg",
     description: "เกมกระดานมิตรภาพแตกหักในตำนาน ทอยลูกเต๋า เดินช่อง แย่งหมู่บ้าน ปราบเพื่อนสนิท",
     controls: "ลูกศร: เลือกคำสั่ง/ทิศทาง | Z: ตกลง (Circle) | X: ยกเลิก (X)",
-    romUrl: "https://archive.org/download/DokaponIkariNoTekken_PS1/Dokapon%21%20-%20Ikari%20no%20Tekken%20%28Japan%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
+    embedUrl: "https://www.retrogames.cc/embed/42602-dokapon-ikari-no-tekken.html"
   },
   {
     id: "ps1-digimon-world",
@@ -183,9 +149,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f45.jpg",
     description: "พาคู่หูดิจิมอนฝึกฝน ให้อาหาร พาเข้าห้องน้ำ พัฒนาร่าง และฟื้นฟูเกาะ File Island",
     controls: "ลูกศร: เดิน | Z: สำรวจ/คุย | X: ยกเลิก | A: เมนูคำสั่ง",
-    romUrl: "https://archive.org/download/DigimonWorld_PS1/Digimon%20World%20%28USA%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
+    embedUrl: "https://www.retrogames.cc/embed/41680-digimon-world.html"
   },
   {
     id: "ps1-resident-evil-2",
@@ -201,9 +165,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f39.jpg",
     description: "หนีตายจากฝูงซอมบี้ในสถานีตำรวจเมืองแรคคูนซิตีกับ Leon S. Kennedy และ Claire Redfield",
     controls: "ลูกศร: หมุน/เดินหน้า | Z: ยิง/สำรวจ (X) | X: ยกเลิก/วิ่ง (Square) | A: ยกปืนเล็ง (R1)",
-    romUrl: "https://archive.org/download/ResidentEvil2DualShock_PS1/Resident%20Evil%202%20-%20Dual%20Shock%20Ver.%20%28USA%29%20%28Disc%201%29%20%28Leon%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
+    embedUrl: "https://www.retrogames.cc/embed/41716-resident-evil-2-dual-shock-edition-disc-1.html"
   },
   {
     id: "ps1-resident-evil-3",
@@ -219,27 +181,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f39.jpg",
     description: "Jill Valentine หนีการตามล่าอย่างไร้ความปรานีของอสูรชีวภาพ Nemesis 'STARS...'",
     controls: "ลูกศร: เคลื่อนที่ | Z: ยิง/สำรวจ | X: วิ่ง/หลบหลีก | A: เล็งปืน",
-    romUrl: "https://archive.org/download/ResidentEvil3Nemesis_PS1/Resident%20Evil%203%20-%20Nemesis%20%28USA%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
-  },
-  {
-    id: "ps1-silent-hill",
-    title: "Silent Hill (1999)",
-    platform: "ps1",
-    platformName: "PlayStation 1",
-    genre: "Action",
-    year: 1999,
-    developer: "Konami",
-    rating: 5.0,
-    featured: false,
-    thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Silent%20Hill%20(USA).png",
-    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f39.jpg",
-    description: "เมืองสายหมอกหลอนในมิติสนิม ตามหาลูกสาวท่ามกลางเสียงวิทยุเตือนปีศาจ",
-    controls: "ลูกศร: เดิน | Z: สำรวจ/ยิง | X: วิ่ง | A: เล็งอาวุธ",
-    romUrl: "https://archive.org/download/SilentHill_PS1_CHD/Silent%20Hill%20%28USA%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
+    embedUrl: "https://www.retrogames.cc/embed/41717-resident-evil-3-nemesis.html"
   },
   {
     id: "ps1-dino-crisis-2",
@@ -255,9 +197,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f39.jpg",
     description: "เกมยิงไดโนเสาร์สุดมันส์ เก็บแต้มคอมโบ อัปเกรดปืนลูกซองและปืนไฟ",
     controls: "ลูกศร: เดิน | Z: ยิงปืน | X: วิ่ง | A: ดาบฟัน",
-    romUrl: "https://archive.org/cors/DinoCrisis2_PS1/Dino%20Crisis%202%20%28USA%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
+    embedUrl: "https://www.retrogames.cc/embed/41682-dino-crisis-2.html"
   },
   {
     id: "ps1-castlevania-sotn",
@@ -273,9 +213,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f45.jpg",
     description: "มาสเตอร์พีซแห่งปราสาทแดร็กคูล่า Alucard บุกปราสาทกลับหัว ระบบ RPG สมบูรณ์แบบ",
     controls: "ลูกศร: เดิน | Z: ฟันดาบ (Square) | X: กระโดด (X) | A: แปลงร่างค้างคาว/หมอก",
-    romUrl: "https://archive.org/cors/CastlevaniaSOTN_PS1/Castlevania%20-%20Symphony%20of%20the%20Night%20%28USA%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
+    embedUrl: "https://www.retrogames.cc/embed/41670-castlevania-symphony-of-the-night.html"
   },
   {
     id: "ps1-megaman-x4",
@@ -291,27 +229,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f41.jpg",
     description: "เลือกเล่นเป็น X หรือดาบเซเบอร์ Zero เพลงประกอบและอนิเมะคัตซีนสุดมันส์",
     controls: "ลูกศร: ทิศทาง | Z: ชาร์จยิง/ฟันดาบ (Square) | X: กระโดด (X) | A: แดช (Circle)",
-    romUrl: "https://archive.org/cors/MegaManX4_PS1/Mega%20Man%20X4%20%28USA%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
-  },
-  {
-    id: "ps1-megaman-x5",
-    title: "Mega Man X5 (Rockman X5)",
-    platform: "ps1",
-    platformName: "PlayStation 1",
-    genre: "Action",
-    year: 2000,
-    developer: "Capcom",
-    rating: 4.8,
-    featured: false,
-    thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Mega%20Man%20X5%20(USA).png",
-    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f41.jpg",
-    description: "ยิงปืนใหญ่อวกาศ Enigma หยุดยั้งโคโลนี่อวกาศตกสู่โลก",
-    controls: "ลูกศร: เดิน | Z: ยิง/ฟัน | X: กระโดด | A: แดช",
-    romUrl: "https://archive.org/cors/MegaManX5_PS1/Mega%20Man%20X5%20%28USA%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
+    embedUrl: "https://www.retrogames.cc/embed/41712-mega-man-x4.html"
   },
   {
     id: "ps1-final-fantasy-7",
@@ -327,27 +245,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f45.jpg",
     description: "มหากาพย์ของ Cloud Strife และดาบยักษ์ Buster Sword ปะทะ Sephiroth",
     controls: "ลูกศร: เดิน | Z: สำรวจ/ตกลง (Circle) | X: ยกเลิก/วิ่ง (X) | A: เปิดเมนู (Triangle)",
-    romUrl: "https://archive.org/cors/FinalFantasyVIIDisc1_PS1/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
-  },
-  {
-    id: "ps1-final-fantasy-8",
-    title: "Final Fantasy VIII",
-    platform: "ps1",
-    platformName: "PlayStation 1",
-    genre: "RPG",
-    year: 1999,
-    developer: "Squaresoft",
-    rating: 4.9,
-    featured: false,
-    thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Final%20Fantasy%20VIII%20(USA)%20(Disc%201).png",
-    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f45.jpg",
-    description: "Squall Leonhart และดาบปืน Gunblade ผจญภัยหยุดยั้งแม่มด Edea",
-    controls: "ลูกศร: เดิน | Z: ตกลง | X: ยกเลิก | A: เมนู",
-    romUrl: "https://archive.org/cors/FinalFantasyVIIIDisc1_PS1/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
+    embedUrl: "https://www.retrogames.cc/embed/41687-final-fantasy-vii-disc-1.html"
   },
   {
     id: "ps1-metal-gear-solid",
@@ -363,9 +261,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f40.jpg",
     description: "สุดยอดเกมสายลับ Solid Snake ลอบเร้นฐานเกาะ Shadow Moses",
     controls: "ลูกศร: ย่อง/หมอบ | Z: ต่อย/ยิง | X: หมอบคลาน | A: เรียกวิทยุ Codec",
-    romUrl: "https://archive.org/cors/MetalGearSolidDisc1_PS1/Metal%20Gear%20Solid%20%28USA%29%20%28Disc%201%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
+    embedUrl: "https://www.retrogames.cc/embed/41713-metal-gear-solid-disc-1.html"
   },
   {
     id: "ps1-wwf-smackdown-2",
@@ -381,9 +277,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f44.jpg",
     description: "เกมมวยปล้ำยุคทอง The Rock, Stone Cold, Triple H, Undertaker โดดทับโต๊ะและเก้าอี้สุดมันส์",
     controls: "ลูกศร: เคลื่อนที่ | Z: ต่อย (Square) | X: จับล็อก (Circle) | A: วิ่ง (Triangle) | S: ขึ้นเชือก",
-    romUrl: "https://archive.org/cors/WWFSmackDown2KnowYourRole_PS1/WWF%20SmackDown%21%202%20-%20Know%20Your%20Role%20%28USA%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
+    embedUrl: "https://www.retrogames.cc/embed/41737-wwf-smackdown-2-know-your-role.html"
   },
   {
     id: "ps1-crash-bandicoot-3",
@@ -399,45 +293,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     description: "ท่องกาลเวลา ขี่เสือน้อยกำแพงเมืองจีน ขับเจ็ทสกี และปราบ ดร.คอร์เทกซ์",
     controls: "ลูกศร: เดิน | Z: กระโดด (X) | X: หมุนตัวสปิน (Square) | A: สไลด์/หมอบ",
-    romUrl: "https://archive.org/cors/CrashBandicoot3Warped_PS1/Crash%20Bandicoot%20-%20Warped%20%28USA%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
-  },
-  {
-    id: "ps1-tony-hawk-2",
-    title: "Tony Hawk's Pro Skater 2",
-    platform: "ps1",
-    platformName: "PlayStation 1",
-    genre: "Sports",
-    year: 2000,
-    developer: "Neversoft",
-    rating: 5.0,
-    featured: false,
-    thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Tony%20Hawk's%20Pro%20Skater%202%20(USA).png",
-    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f3t.jpg",
-    description: "เกมสเก็ตบอร์ดที่ดีที่สุดในประวัติศาสตร์ โชว์ท่า Kickflip, Grind ราวเหล็ก และเพลงพังก์ร็อคสุดมันส์",
-    controls: "ลูกศร: ทิศทาง | Z: Ollie (X) | X: Flip Trick (Square) | A: Grab Trick (Circle)",
-    romUrl: "https://archive.org/cors/TonyHawksProSkater2_PS1/Tony%20Hawk%27s%20Pro%20Skater%202%20%28USA%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
-  },
-  {
-    id: "ps1-gran-turismo-2",
-    title: "Gran Turismo 2 (Simulation Mode)",
-    platform: "ps1",
-    platformName: "PlayStation 1",
-    genre: "Racing",
-    year: 1999,
-    developer: "Polyphony Digital",
-    rating: 4.9,
-    featured: false,
-    thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Gran%20Turismo%202%20(USA)%20(Simulation%20Mode).png",
-    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f3t.jpg",
-    description: "ราชาแห่งเกมแข่งรถสมจริง สอบใบขับขี่ ซื้อรถมือสอง และแต่งซิ่งกว่า 600 คัน",
-    controls: "ลูกศร: เลี้ยว | Z: คันเร่ง (X) | X: เบรก (Square) | A: เบรกมือ",
-    romUrl: "https://archive.org/cors/GranTurismo2_PS1/Gran%20Turismo%202%20%28USA%29%20%28Simulation%20Mode%29.chd",
-    emulatorType: "emulatorjs",
-    core: "psx"
+    embedUrl: "https://www.retrogames.cc/embed/41674-crash-bandicoot-3-warped.html"
   },
 
   // ==========================================
@@ -457,8 +313,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f39.jpg",
     description: "เกมยิงมุมมองบุคคลที่หนึ่งระดับตำนาน บุกตะลุยฝูงปีศาจจากนรกบนดาวอังคาร",
     controls: "ลูกศร: เดิน / หัน | Ctrl: ยิง | Alt: สไลด์ข้าง | Space: เปิดประตู | 1-7: เปลี่ยนอาวุธ",
-    bundleUrl: "https://cdn.dos.zone/custom/dos/doom.jsdos",
-    emulatorType: "jsdos"
+    embedUrl: "https://dos.zone/player/?bundleUrl=https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Fdoom.jsdos"
   },
   {
     id: "dos-prince-of-persia",
@@ -474,8 +329,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7g4q.jpg",
     description: "การผจญภัยของเจ้าชายเปอร์เซียในคุกใต้ดิน ต้องช่วยเจ้าหญิงให้ได้ภายใน 60 นาที",
     controls: "ลูกศร ซ้าย-ขวา: วิ่ง | ลูกศร ขึ้น: กระโดด / ปีน | Shift: เดินย่อง / หยิบของ / ปัดดาบ",
-    bundleUrl: "https://cdn.dos.zone/custom/dos/prince-of-persia.jsdos",
-    emulatorType: "jsdos"
+    embedUrl: "https://dos.zone/player/?bundleUrl=https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Fprince-of-persia.jsdos"
   },
   {
     id: "dos-dangerous-dave",
@@ -491,8 +345,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     description: "เกมเก็บถ้วยทองในตำนานห้องคอมโรงเรียน เก็บไอเทมและเจ็ทแพ็คเพื่อผ่านด่าน",
     controls: "ลูกศร: ซ้าย / ขวา | Space / ลูกศรขึ้น: กระโดด | Ctrl: ยิงปืน",
-    bundleUrl: "https://cdn.dos.zone/custom/dos/dave.jsdos",
-    emulatorType: "jsdos"
+    embedUrl: "https://dos.zone/player/?bundleUrl=https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Fdave.jsdos"
   },
   {
     id: "dos-duke-nukem-3d",
@@ -508,8 +361,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     description: "ฮีโร่กล้ามโต Duke Nukem บุกกวาดล้างเอเลี่ยนที่มายึดครองลอสแองเจลิส",
     controls: "ลูกศร / WASD: เคลื่อนที่ | Ctrl: ยิง | Space: เปิดประตู/สำรวจ | E: เตะ",
-    bundleUrl: "https://cdn.dos.zone/custom/dos/duke3d.jsdos",
-    emulatorType: "jsdos"
+    embedUrl: "https://dos.zone/player/?bundleUrl=https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Fduke3d.jsdos"
   },
   {
     id: "dos-warcraft-2",
@@ -525,8 +377,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f40.jpg",
     description: "มหากาพย์สงครามวางแผนการรบแบบ Real-Time ระหว่างเผ่ามนุษย์ (Humans) และ ออร์ค (Orcs)",
     controls: "เมาส์: ควบคุม ยูนิต และสร้างสิ่งปลูกสร้าง",
-    bundleUrl: "https://cdn.dos.zone/custom/dos/warcraft-2.jsdos",
-    emulatorType: "jsdos"
+    embedUrl: "https://dos.zone/player/?bundleUrl=https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Fwarcraft-2.jsdos"
   },
   {
     id: "dos-red-alert",
@@ -542,8 +393,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f42.jpg",
     description: "สงครามเย็นย้อนเวลา ไอน์สไตน์ย้อนอดีตลบฮิตเลอร์ เกิดสงครามฝ่ายพันธมิตร vs โซเวียต",
     controls: "เมาส์: สั่งการสร้างฐานและรถถังแมมมอธ",
-    bundleUrl: "https://cdn.dos.zone/custom/dos/red-alert.jsdos",
-    emulatorType: "jsdos"
+    embedUrl: "https://dos.zone/player/?bundleUrl=https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Fred-alert.jsdos"
   },
 
   // ==========================================
@@ -563,9 +413,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f3u.jpg",
     description: "จุดเริ่มต้นของลุงหนวด มาริโอ้ ตะลุยอาณาจักรเห็ดช่วยเจ้าหญิงพีช",
     controls: "D-Pad / ลูกศร: เคลื่อนที่ | Z: ปุ่ม B (วิ่ง/ยิงไฟ) | X: ปุ่ม A (กระโดด) | Enter: Start",
-    romUrl: "https://archive.org/cors/SuperMarioBros.Nes/Super%20Mario%20Bros..nes",
-    emulatorType: "emulatorjs",
-    core: "nes"
+    embedUrl: "https://www.retrogames.cc/embed/16858-super-mario-bros.html"
   },
   {
     id: "nes-contra",
@@ -581,9 +429,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f40.jpg",
     description: "เกมยิงบู๊ล้างผลาญระดับตำนาน พร้อมสูตร 30 ตัว บน บน ล่าง ล่าง ซ้าย ขวา ซ้าย ขวา B A",
     controls: "ลูกศร: เล็ง/เดิน | Z: ปุ่ม B (ยิง) | X: ปุ่ม A (กระโดด) | Enter: Start",
-    romUrl: "https://archive.org/cors/Contra_1988_Konami/Contra.nes",
-    emulatorType: "emulatorjs",
-    core: "nes"
+    embedUrl: "https://www.retrogames.cc/embed/16752-contra-usa.html"
   },
   {
     id: "nes-rockman-2",
@@ -599,9 +445,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f41.jpg",
     description: "ภาคที่ได้รับการยกย่องว่าดีที่สุดของร็อคแมน กำจัด 8 บอสเพื่อชิงอาวุธ",
     controls: "ลูกศร: เดิน | Z: ยิงบัสเตอร์ | X: กระโดด | Enter: Start",
-    romUrl: "https://archive.org/cors/MegaMan2_1988_Capcom/Mega%20Man%202.nes",
-    emulatorType: "emulatorjs",
-    core: "nes"
+    embedUrl: "https://www.retrogames.cc/embed/17066-mega-man-2-usa.html"
   },
   {
     id: "nes-battle-city",
@@ -617,9 +461,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f42.jpg",
     description: "ขับรถถังปกป้องฐานนกอินทรี และทำลายรถถังศัตรูให้หมดสิ้น",
     controls: "ลูกศร: บังคับทิศทาง | Z / X: ยิงกระสุนปืนใหญ่",
-    romUrl: "https://archive.org/cors/BattleCity_1985_Namco/Battle%20City.nes",
-    emulatorType: "emulatorjs",
-    core: "nes"
+    embedUrl: "https://www.retrogames.cc/embed/16694-battle-city-japan.html"
   },
 
   // ==========================================
@@ -639,9 +481,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f43.jpg",
     description: "การผจญภัยบนเกาะไดโนเสาร์และเปิดตัวคู่หูขี่ได้อย่างเจ้ากิ้งก่า Yoshi",
     controls: "ลูกศร: เดิน | Z: B (กระโดด) | X: A (สปิน) | A: Y (วิ่ง/พ่นไฟ) | S: X",
-    romUrl: "https://archive.org/cors/SuperMarioWorld_SNES/Super%20Mario%20World.sfc",
-    emulatorType: "emulatorjs",
-    core: "snes"
+    embedUrl: "https://www.retrogames.cc/embed/20703-super-mario-world-usa.html"
   },
   {
     id: "snes-street-fighter-2-turbo",
@@ -657,9 +497,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f44.jpg",
     description: "ฮาโดเคน! โชริวเคน! ศึกประลองหมัดสะท้านฟ้าความเร็วเทอร์โบ",
     controls: "ลูกศร: ทิศทาง | A,S,D: ต่อย เบา-กลาง-หนัก | Z,X,C: เตะ เบา-กลาง-หนัก",
-    romUrl: "https://archive.org/cors/StreetFighterIITurbo_SNES/Street%20Fighter%20II%20Turbo.sfc",
-    emulatorType: "emulatorjs",
-    core: "snes"
+    embedUrl: "https://www.retrogames.cc/embed/20696-street-fighter-ii-turbo-usa.html"
   },
 
   // ==========================================
@@ -679,9 +517,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f46.jpg",
     description: "ภาคยอดนิยมตลอดกาลในดินแดน Hoenn หยุดยั้งศึกเทพ Rayquaza, Kyogre และ Groudon",
     controls: "ลูกศร: เดิน | Z: ปุ่ม A (ตกลง) | X: ปุ่ม B (ยกเลิก/วิ่ง) | A: ปุ่ม L | S: ปุ่ม R | Enter: Start | Shift: Select",
-    romUrl: "https://archive.org/cors/PokemonEmerald_GBA/Pokemon%20-%20Emerald%20Version%20%28USA%2C%20Europe%29.gba",
-    emulatorType: "emulatorjs",
-    core: "gba"
+    embedUrl: "https://www.retrogames.cc/embed/26857-pokemon-emerald-version-u.html"
   },
   {
     id: "gba-zelda-minish-cap",
@@ -697,9 +533,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f47.jpg",
     description: "Link และหมวกเวทมนตร์ย่อส่วน สู่การผจญภัยในโลกจิ๋วสุดมหัศจรรย์",
     controls: "ลูกศร: เคลื่อนที่ | Z: ฟันดาบ (A) | X: ใช้อาวุธรอง (B) | A: กลิ้งตัว (R) | Enter: Start",
-    romUrl: "https://archive.org/cors/LegendOfZeldaTheMinishCap_GBA/Legend%20of%20Zelda%2C%20The%20-%20The%20Minish%20Cap%20%28USA%29.gba",
-    emulatorType: "emulatorjs",
-    core: "gba"
+    embedUrl: "https://www.retrogames.cc/embed/26522-the-legend-of-zelda-the-minish-cap-u.html"
   },
 
   // ==========================================
@@ -719,9 +553,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f49.jpg",
     description: "เจ้าเม่นสายฟ้าโซนิคและคู่หูเทลส์ วิ่งทะลุความเร็วเสียงปราบ ดร.เอ้กแมน",
     controls: "ลูกศร: ซ้าย/ขวา กลิ้ง/หมอบ | Z / X / C: กระโดด / Spin Dash",
-    romUrl: "https://archive.org/cors/SonicTheHedgehog2_Genesis/Sonic%20The%20Hedgehog%202%20%28World%29.md",
-    emulatorType: "emulatorjs",
-    core: "segaMD"
+    embedUrl: "https://www.retrogames.cc/embed/22906-sonic-the-hedgehog-2-world.html"
   },
 
   // ==========================================
@@ -741,9 +573,7 @@ const RETRO_GAMES_DATABASE = [
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f4a.jpg",
     description: "เกมอาร์เคดยิงแหลก 2D ระดับมาสเตอร์พีซ กราฟิกอนิเมชันพิกเซลสุดประณีต",
     controls: "ลูกศร: ทิศทาง | Z: ยิงปืน | X: กระโดด | C: ปาระเบิด | Space: หยอดเหรียญ (Insert Coin) | Enter: 1P Start",
-    romUrl: "https://archive.org/cors/MetalSlug_Arcade/mslug.zip",
-    emulatorType: "emulatorjs",
-    core: "neogeo"
+    embedUrl: "https://www.retrogames.cc/embed/10041-metal-slug-super-vehicle-001.html"
   }
 ];
 

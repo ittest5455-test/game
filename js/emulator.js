@@ -1,6 +1,6 @@
 /**
- * Multi-Engine Web Emulator Manager
- * Supports: JS-DOS (MS-DOS) and EmulatorJS (NES, SNES, GBA, Genesis, Arcade, PS1/PSX)
+ * PENNUENG GAME - High-Performance Web Emulator Launcher (Direct Stream Architecture)
+ * Supports: PS1, MS-DOS, NES, SNES, GBA, SEGA, Arcade
  */
 
 class RetroEmulatorManager {
@@ -10,7 +10,7 @@ class RetroEmulatorManager {
   }
 
   /**
-   * Launch a game given its metadata object or custom file
+   * Launch a game directly inside our sleek modal viewport
    */
   launchGame(game, customFile = null) {
     this.currentGame = game;
@@ -23,19 +23,34 @@ class RetroEmulatorManager {
     if (controlsGuide) controlsGuide.innerText = game.controls || "ใช้ปุ่มลูกศร, Z, X, C, Space และ Gamepad ในการควบคุม";
 
     viewport.innerHTML = "";
-    if (loader) loader.classList.add("hidden");
+    if (loader) loader.classList.remove("hidden");
 
-    let gameUrl = customFile ? URL.createObjectURL(customFile) : (game.bundleUrl || game.romUrl);
-    const type = game.emulatorType || "emulatorjs";
-    const core = game.core || "nes";
-
-    // Embed standalone player.html directly
     const iframe = document.createElement("iframe");
     iframe.className = "w-full h-full border-0 bg-black";
-    iframe.allow = "autoplay; fullscreen; gamepad";
-    iframe.src = `player.html?type=${type}&core=${core}&game=${encodeURIComponent(gameUrl)}`;
+    iframe.allow = "autoplay; fullscreen; gamepad; focus-without-user-activation; cross-origin-isolated";
+    iframe.setAttribute("allowfullscreen", "true");
+
+    if (customFile) {
+      // Local custom file drop
+      const localUrl = URL.createObjectURL(customFile);
+      iframe.src = `player.html?core=nes&game=${encodeURIComponent(localUrl)}`;
+    } else {
+      // Direct high-speed web stream embed
+      iframe.src = game.embedUrl;
+    }
+
+    iframe.onload = () => {
+      setTimeout(() => {
+        if (loader) loader.classList.add("hidden");
+      }, 1500);
+    };
 
     viewport.appendChild(iframe);
+
+    // Fallback timer
+    setTimeout(() => {
+      if (loader) loader.classList.add("hidden");
+    }, 3000);
   }
 
   /**
