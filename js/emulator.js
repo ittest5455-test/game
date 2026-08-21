@@ -114,7 +114,13 @@ class RetroEmulatorManager {
     iframe.className = "w-full h-full border-0 bg-black";
     iframe.allow = "autoplay; fullscreen; gamepad";
 
-    const romUrl = customFile ? URL.createObjectURL(customFile) : game.romUrl;
+    let romUrl = customFile ? URL.createObjectURL(customFile) : game.romUrl;
+    
+    // Ensure Archive.org URLs use the CORS endpoint to avoid "Network Error"
+    if (romUrl.includes("archive.org/download/")) {
+      romUrl = romUrl.replace("archive.org/download/", "archive.org/cors/");
+    }
+
     const core = game.core || "nes";
 
     const iframeHtml = `
@@ -137,7 +143,7 @@ class RetroEmulatorManager {
           EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
           EJS_startOnLoaded = true;
           EJS_color = '#00f0ff';
-          EJS_biosUrl = '${game.biosUrl || ""}';
+          EJS_loadStateURL = '';
           EJS_ready = function() {
             window.parent.postMessage({ type: "EMULATOR_READY" }, "*");
           };
