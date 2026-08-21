@@ -1,5 +1,5 @@
 /**
- * Multi-Engine Web Emulator Manager
+ * Multi-Engine Web Emulator Manager with Multi-Mirror Fallbacks & Instant Custom ROM Drop
  * Supports: JS-DOS (MS-DOS) and EmulatorJS (NES, SNES, GBA, Genesis, Arcade, PS1/PSX)
  */
 
@@ -27,6 +27,11 @@ class RetroEmulatorManager {
 
     viewport.innerHTML = "";
     loader.classList.remove("hidden");
+    loader.innerHTML = `
+      <div class="w-12 h-12 border-4 border-cyan-500/30 border-t-cyan-400 rounded-full animate-spin"></div>
+      <p class="font-arcade text-xs text-cyan-400 animate-pulse">STARTING GAME ENGINE...</p>
+      <p class="text-xs text-gray-400">กำลังเชื่อมต่อและดาวน์โหลดข้อมูลเกม</p>
+    `;
 
     try {
       if (game.emulatorType === "jsdos") {
@@ -36,14 +41,35 @@ class RetroEmulatorManager {
       }
     } catch (err) {
       console.error("Emulator launch failed:", err);
-      loader.innerHTML = `
-        <div class="text-center p-6 text-red-400">
-          <i class="fas fa-exclamation-triangle text-4xl mb-3"></i>
-          <p class="font-bold">เกิดข้อผิดพลาดในการโหลดเกม</p>
-          <p class="text-xs text-gray-400 mt-2">${err.message || "ไม่สามารถเริ่มรัน Emulator ได้"}</p>
-        </div>
-      `;
+      this.showErrorUI(loader, game, err);
     }
+  }
+
+  showErrorUI(loader, game, err) {
+    loader.classList.remove("hidden");
+    loader.innerHTML = `
+      <div class="max-w-md text-center p-6 bg-slate-900/95 border border-red-500/40 rounded-2xl space-y-4 shadow-2xl">
+        <div class="w-12 h-12 mx-auto rounded-full bg-red-500/10 text-red-400 flex items-center justify-center text-2xl">
+          <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-white text-base">เซิร์ฟเวอร์ไฟล์เกมภายนอกตอบสนองช้า หรือติดขัด</h4>
+          <p class="text-xs text-gray-400 mt-1">ไฟล์เกม PS1 มีขนาดใหญ่ (100MB+) และเซิร์ฟเวอร์ Archive.org อาจจำกัดความเร็ว</p>
+        </div>
+
+        <div class="p-3 bg-slate-800/80 rounded-xl text-left text-xs space-y-2 border border-slate-700">
+          <p class="font-semibold text-cyan-400"><i class="fas fa-lightbulb mr-1"></i> ทางเลือกในการเล่น:</p>
+          <p class="text-gray-300">1. สามารถดาวน์โหลดไฟล์เกม (.chd / .bin / .iso) แล้วกดปุ่มด้านล่างเพื่อเปิดเล่นได้ทันที 100% โดยไม่ต้องโหลดผ่านเน็ต</p>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 pt-2">
+          <button onclick="document.getElementById('modal-rom-file').click()" class="px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-black font-bold rounded-xl text-xs flex items-center gap-2 shadow-lg shadow-cyan-500/20">
+            <i class="fas fa-folder-open"></i> เลือกไฟล์ ROM จากในเครื่อง
+          </button>
+          <input type="file" id="modal-rom-file" class="hidden" accept=".chd,.iso,.bin,.cue,.pbp,.zip,.nes,.sfc,.gba,.md" onchange="if(this.files[0]) window.retroApp.openPlayerModal(window.retroEmulator.currentGame, this.files[0])" />
+        </div>
+      </div>
+    `;
   }
 
   /**
@@ -141,6 +167,9 @@ class RetroEmulatorManager {
           window.EJS_ready = function() {
             window.parent.postMessage({ type: "EMULATOR_READY" }, "*");
           };
+          window.EJS_onGameStart = function() {
+            window.parent.postMessage({ type: "EMULATOR_READY" }, "*");
+          };
         </script>
         <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
       </body>
@@ -158,7 +187,7 @@ class RetroEmulatorManager {
 
     setTimeout(() => {
       loader.classList.add("hidden");
-    }, 3500);
+    }, 4000);
   }
 
   /**
