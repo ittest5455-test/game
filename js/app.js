@@ -69,7 +69,7 @@ class RetroApp {
   }
 
   /**
-   * Fetch games from Internet Archive Live API (Over 10,000+ Retro Games)
+   * Fetch games from Internet Archive Live API (Over 10,000+ Retro Games) with CORS Proxy Fallbacks
    */
   async searchOnlineArchive(query = "game") {
     const grid = document.getElementById("games-grid");
@@ -79,18 +79,31 @@ class RetroApp {
     grid.innerHTML = `
       <div class="col-span-full py-20 text-center space-y-4">
         <div class="w-12 h-12 border-4 border-purple-500/30 border-t-purple-400 rounded-full animate-spin mx-auto"></div>
-        <p class="font-arcade text-xs text-purple-400 animate-pulse">SEARCHING 10,000+ ONLINE RETRO ARCHIVE...</p>
-        <p class="text-xs text-gray-500">กำลังเชื่อมต่อคลังเกมโบราณออนไลน์และดึงรายการเกม</p>
+        <p class="font-arcade text-xs text-purple-400 animate-pulse">CONNECTING 10,000+ ONLINE RETRO ARCHIVE...</p>
+        <p class="text-xs text-gray-400">กำลังเชื่อมต่อฐานข้อมูลเกมคลาสสิกออนไลน์</p>
       </div>
     `;
 
     try {
       const q = encodeURIComponent(query || "game");
-      const url = `https://archive.org/advancedsearch.php?q=collection%3A(softwarelibrary_msdos_games)+AND+title%3A(${q})&fl[]=identifier,title,description,year,downloads&sort[]=downloads+desc&rows=30&page=1&output=json`;
+      const targetApi = `https://archive.org/advancedsearch.php?q=collection%3A(softwarelibrary_msdos_games)+AND+${q}&fl[]=identifier,title,description,year,downloads&sort[]=downloads+desc&rows=30&page=1&output=json`;
       
-      const res = await fetch(url);
+      let res;
+      try {
+        // Try direct fetch first
+        res = await fetch(targetApi);
+      } catch (e) {
+        // Fallback to CORS proxy if browser blocks direct call
+        const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(targetApi)}`;
+        res = await fetch(proxyUrl);
+      }
+
       const data = await res.json();
       const docs = data.response?.docs || [];
+
+      if (!docs.length) {
+        throw new Error("No games found");
+      }
 
       this.onlineGamesCache = docs.map(doc => {
         const id = doc.identifier;
@@ -114,14 +127,16 @@ class RetroApp {
       if (countEl) countEl.innerText = `${this.onlineGamesCache.length} เกมจาก Online Archive`;
       this.renderGames();
     } catch (err) {
-      console.error("Archive Search Error:", err);
-      grid.innerHTML = `
-        <div class="col-span-full py-16 text-center text-red-400">
-          <i class="fas fa-wifi text-4xl mb-3"></i>
-          <p class="font-bold">ไม่สามารถเชื่อมต่อ Online Archive ได้</p>
-          <p class="text-xs text-gray-400 mt-1">โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ต</p>
-        </div>
-      `;
+      console.warn("Archive Search Fallback to Built-in Full Catalog:", err);
+      // Seamless Fallback to filtered built-in games matching query so user always gets games
+      this.onlineGamesCache = this.games.filter(g => 
+        g.title.toLowerCase().includes(query.toLowerCase()) || 
+        g.genre.toLowerCase().includes(query.toLowerCase()) ||
+        g.platformName.toLowerCase().includes(query.toLowerCase())
+      );
+      if (!this.onlineGamesCache.length) this.onlineGamesCache = this.games;
+      if (countEl) countEl.innerText = `${this.onlineGamesCache.length} เกมพร้อมเล่น`;
+      this.renderGames();
     } finally {
       this.isSearchingOnline = false;
     }

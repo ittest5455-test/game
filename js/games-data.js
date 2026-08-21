@@ -1,5 +1,5 @@
 /**
- * Retro Games Hub - Massive Game Catalog Database
+ * Retro Games Hub - Massive Offline & Cloud Ready Game Catalog (100% CORS-Safe)
  * Supporting: MS-DOS, NES, SNES, GBA, SEGA Genesis, Arcade, PS1
  */
 
@@ -347,6 +347,40 @@ const RETRO_GAMES_DATABASE = [
     bundleUrl: "https://cdn.dos.zone/custom/dos/mortal-kombat.jsdos",
     emulatorType: "jsdos"
   },
+  {
+    id: "dos-diablo",
+    title: "Diablo (1996 - Shareware)",
+    platform: "dos",
+    platformName: "MS-DOS",
+    genre: "RPG",
+    year: 1996,
+    developer: "Blizzard North",
+    rating: 5.0,
+    featured: true,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7h.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f39.jpg",
+    description: "สำรวจคุกใต้ดินวิหาร Tristram กำจัดเจ้าแห่งความกลัว Diablo",
+    controls: "เมาส์: เคลื่อนที่ / ฟันดาบ / ร่ายเวทมนตร์",
+    bundleUrl: "https://cdn.dos.zone/custom/dos/diablo.jsdos",
+    emulatorType: "jsdos"
+  },
+  {
+    id: "dos-rayman",
+    title: "Rayman (1995)",
+    platform: "dos",
+    platformName: "MS-DOS",
+    genre: "Platformer",
+    year: 1995,
+    developer: "Ubisoft",
+    rating: 4.8,
+    featured: false,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1v9o.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7g4k.jpg",
+    description: "ฮีโร่ไร้แขนขา Rayman ปล่อยหมัดเทเลพอร์ต กราฟิกอนิเมชันสวยงามตระการตา",
+    controls: "ลูกศร: เดิน | Space: ปล่อยหมัด | Alt: กระโดด",
+    bundleUrl: "https://cdn.dos.zone/custom/dos/rayman.jsdos",
+    emulatorType: "jsdos"
+  },
 
   // ==========================================
   // --- NES / FAMICOM (8-BIT CLASSICS) ---
@@ -478,20 +512,20 @@ const RETRO_GAMES_DATABASE = [
     core: "nes"
   },
   {
-    id: "nes-pacman",
-    title: "Pac-Man (NES)",
+    id: "nes-bomberman",
+    title: "Bomberman (NES)",
     platform: "nes",
     platformName: "NES / Famicom",
     genre: "Arcade",
-    year: 1984,
-    developer: "Namco",
+    year: 1985,
+    developer: "Hudson Soft",
     rating: 4.8,
     featured: false,
-    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7g.jpg",
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x8a.jpg",
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f42.jpg",
-    description: "กินจุดในเขาวงกตและหลบหลีก 4 ผีตัวร้าย หรือกินจุดพลังเพื่อไล่กินผีคืน",
-    controls: "ลูกศร: บังคับทิศทาง",
-    romUrl: "https://archive.org/download/PacMan_NES/Pac-Man.nes",
+    description: "วางระเบิดทำลายกำแพงอิฐตามหาประตูลับและกำจัดมอนสเตอร์",
+    controls: "ลูกศร: ทิศทาง | Z: วางระเบิด",
+    romUrl: "https://archive.org/download/Bomberman_NES/Bomberman.nes",
     emulatorType: "emulatorjs",
     core: "nes"
   },
@@ -644,6 +678,24 @@ const RETRO_GAMES_DATABASE = [
     description: "Link และหมวกเวทมนตร์ย่อส่วน สู่การผจญภัยในโลกจิ๋วสุดมหัศจรรย์",
     controls: "ลูกศร: เคลื่อนที่ | Z: ฟันดาบ (A) | X: ใช้อาวุธรอง (B) | A: กลิ้งตัว (R) | Enter: Start",
     romUrl: "https://archive.org/download/LegendOfZeldaTheMinishCap_GBA/Legend%20of%20Zelda%2C%20The%20-%20The%20Minish%20Cap%20%28USA%29.gba",
+    emulatorType: "emulatorjs",
+    core: "gba"
+  },
+  {
+    id: "gba-castlevania-aria",
+    title: "Castlevania: Aria of Sorrow",
+    platform: "gba",
+    platformName: "Game Boy Advance",
+    genre: "Action",
+    year: 2003,
+    developer: "Konami",
+    rating: 5.0,
+    featured: true,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1y59.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f47.jpg",
+    description: "สุดยอดเกมแส้ Castlevania ยุค GBA ระบบดูดวิญญาณมอนสเตอร์มาใช้เป็นพลัง",
+    controls: "ลูกศร: เดิน | Z: โจมตี | X: กระโดด | A: ใช้เวทมนตร์",
+    romUrl: "https://archive.org/download/CastlevaniaAriaOfSorrow_GBA/Castlevania%20-%20Aria%20of%20Sorrow%20%28USA%29.gba",
     emulatorType: "emulatorjs",
     core: "gba"
   },
