@@ -1,6 +1,6 @@
 /**
  * Multi-Engine Web Emulator Manager
- * Supports: JS-DOS (MS-DOS) and EmulatorJS (NES, SNES, GBA, Genesis, Arcade)
+ * Supports: JS-DOS (MS-DOS) and EmulatorJS (NES, SNES, GBA, Genesis, Arcade, PS1/PSX)
  */
 
 class RetroEmulatorManager {
@@ -23,7 +23,7 @@ class RetroEmulatorManager {
     const controlsGuide = document.getElementById("player-controls-guide");
 
     if (titleEl) titleEl.innerText = game.title;
-    if (controlsGuide) controlsGuide.innerText = game.controls || "ใช้ปุ่มลูกศร และ Gamepad ในการควบคุม";
+    if (controlsGuide) controlsGuide.innerText = game.controls || "ใช้ปุ่มลูกศร, Z, X, C, Space และ Gamepad ในการควบคุม";
 
     viewport.innerHTML = "";
     loader.classList.remove("hidden");
@@ -52,7 +52,6 @@ class RetroEmulatorManager {
   async startJsDos(container, loader, game, customFile) {
     this.currentEngine = "jsdos";
     
-    // Create iframe to isolate JS-DOS environment and prevent memory leaks
     const iframe = document.createElement("iframe");
     iframe.className = "w-full h-full border-0 bg-black";
     iframe.allow = "autoplay; fullscreen; gamepad";
@@ -100,14 +99,13 @@ class RetroEmulatorManager {
       }
     }, { once: true });
 
-    // Fallback timer to hide loader if message missed
     setTimeout(() => {
       loader.classList.add("hidden");
     }, 2500);
   }
 
   /**
-   * Launch Console Game using EmulatorJS (NES, SNES, GBA, Genesis, Arcade)
+   * Launch Console Game using EmulatorJS (NES, SNES, GBA, Genesis, Arcade, PS1)
    */
   async startEmulatorJS(container, loader, game, customFile) {
     this.currentEngine = "emulatorjs";
@@ -139,6 +137,7 @@ class RetroEmulatorManager {
           EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
           EJS_startOnLoaded = true;
           EJS_color = '#00f0ff';
+          EJS_biosUrl = '${game.biosUrl || ""}';
           EJS_ready = function() {
             window.parent.postMessage({ type: "EMULATOR_READY" }, "*");
           };
@@ -159,7 +158,7 @@ class RetroEmulatorManager {
 
     setTimeout(() => {
       loader.classList.add("hidden");
-    }, 3000);
+    }, 3500);
   }
 
   /**
