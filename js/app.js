@@ -1,5 +1,5 @@
 /**
- * Retro Games Hub - Main Application
+ * Retro Games Hub - Main Application & Live Archive Explorer
  */
 
 class RetroApp {
@@ -9,6 +9,9 @@ class RetroApp {
     this.currentGenre = "all";
     this.searchQuery = "";
     this.favorites = JSON.parse(localStorage.getItem("retro_favorites") || "[]");
+    this.isOnlineArchiveMode = false;
+    this.onlineGamesCache = [];
+    this.isSearchingOnline = false;
 
     this.init();
   }
@@ -25,6 +28,10 @@ class RetroApp {
    * Filter games by platform, genre, and search query
    */
   getFilteredGames() {
+    if (this.isOnlineArchiveMode) {
+      return this.onlineGamesCache;
+    }
+
     return this.games.filter(game => {
       const matchPlatform = this.currentPlatform === "all" || 
         (this.currentPlatform === "favorites" ? this.favorites.includes(game.id) : game.platform === this.currentPlatform);
@@ -48,7 +55,7 @@ class RetroApp {
     const bannerEl = document.getElementById("featured-banner");
     if (!bannerEl) return;
 
-    const game = featuredGames[0]; // Featured headline game
+    const game = featuredGames[Math.floor(Math.random() * featuredGames.length)] || featuredGames[0];
     bannerEl.style.backgroundImage = `linear-gradient(to right, rgba(11, 14, 23, 0.95) 30%, rgba(11, 14, 23, 0.6) 70%, rgba(11, 14, 23, 0.85)), url('${game.banner || game.thumbnail}')`;
 
     document.getElementById("featured-title").innerText = game.title;
@@ -62,6 +69,65 @@ class RetroApp {
   }
 
   /**
+   * Fetch games from Internet Archive Live API (Over 10,000+ Retro Games)
+   */
+  async searchOnlineArchive(query = "game") {
+    const grid = document.getElementById("games-grid");
+    const countEl = document.getElementById("results-count");
+    
+    this.isSearchingOnline = true;
+    grid.innerHTML = `
+      <div class="col-span-full py-20 text-center space-y-4">
+        <div class="w-12 h-12 border-4 border-purple-500/30 border-t-purple-400 rounded-full animate-spin mx-auto"></div>
+        <p class="font-arcade text-xs text-purple-400 animate-pulse">SEARCHING 10,000+ ONLINE RETRO ARCHIVE...</p>
+        <p class="text-xs text-gray-500">กำลังเชื่อมต่อคลังเกมโบราณออนไลน์และดึงรายการเกม</p>
+      </div>
+    `;
+
+    try {
+      const q = encodeURIComponent(query || "game");
+      const url = `https://archive.org/advancedsearch.php?q=collection%3A(softwarelibrary_msdos_games)+AND+title%3A(${q})&fl[]=identifier,title,description,year,downloads&sort[]=downloads+desc&rows=30&page=1&output=json`;
+      
+      const res = await fetch(url);
+      const data = await res.json();
+      const docs = data.response?.docs || [];
+
+      this.onlineGamesCache = docs.map(doc => {
+        const id = doc.identifier;
+        return {
+          id: `ia-${id}`,
+          title: doc.title || id,
+          platform: "dos",
+          platformName: "MS-DOS Archive",
+          genre: "Archive Classic",
+          year: doc.year || 1995,
+          developer: "Internet Archive",
+          rating: 4.8,
+          thumbnail: `https://archive.org/services/img/${id}`,
+          description: (doc.description ? doc.description.replace(/<[^>]*>?/gm, '').slice(0, 140) : "เล่นเกมคลาสสิกจาก Internet Archive") + "...",
+          controls: "ใช้ปุ่มลูกศร, Space, Enter และ Gamepad",
+          bundleUrl: `https://archive.org/cors/${id}/${id}.zip`,
+          emulatorType: "jsdos"
+        };
+      });
+
+      if (countEl) countEl.innerText = `${this.onlineGamesCache.length} เกมจาก Online Archive`;
+      this.renderGames();
+    } catch (err) {
+      console.error("Archive Search Error:", err);
+      grid.innerHTML = `
+        <div class="col-span-full py-16 text-center text-red-400">
+          <i class="fas fa-wifi text-4xl mb-3"></i>
+          <p class="font-bold">ไม่สามารถเชื่อมต่อ Online Archive ได้</p>
+          <p class="text-xs text-gray-400 mt-1">โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ต</p>
+        </div>
+      `;
+    } finally {
+      this.isSearchingOnline = false;
+    }
+  }
+
+  /**
    * Render Game Cards Grid
    */
   renderGames() {
@@ -70,20 +136,22 @@ class RetroApp {
     if (!grid) return;
 
     const filtered = this.getFilteredGames();
-    if (countEl) countEl.innerText = `${filtered.length} เกมพร้อมเล่น`;
+    if (!this.isOnlineArchiveMode && countEl) {
+      countEl.innerText = `${filtered.length} เกมพร้อมเล่น`;
+    }
 
     if (filtered.length === 0) {
       grid.innerHTML = `
         <div class="col-span-full py-16 text-center text-gray-400">
           <i class="fas fa-gamepad text-5xl mb-4 text-cyan-400 opacity-60"></i>
           <p class="text-lg font-medium">ไม่พบเกมที่ตรงกับการค้นหา</p>
-          <p class="text-sm text-gray-500 mt-1">ลองเปลี่ยนคำค้นหา หรือเลือกแพลตฟอร์มอื่น</p>
+          <p class="text-sm text-gray-500 mt-1">ลองพิมพ์ค้นหาในแท็บ Online Archive เพื่อค้นหาเกมอื่นๆ ในคลังออนไลน์</p>
         </div>
       `;
       return;
     }
 
-    grid.innerHTML = filtered.map((game, index) => {
+    grid.innerHTML = filtered.map((game) => {
       const isFav = this.favorites.includes(game.id);
       return `
         <div class="tv-focusable group relative bg-[#131b2e] rounded-xl overflow-hidden border border-slate-800/80 hover:border-cyan-500/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-500/10 flex flex-col cursor-pointer"
@@ -92,7 +160,7 @@ class RetroApp {
           
           <!-- Image Container -->
           <div class="relative w-full aspect-[4/3] bg-black overflow-hidden">
-            <img src="${game.thumbnail}" alt="${game.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <img src="${game.thumbnail}" alt="${game.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.src='https://images.igdb.com/igdb/image/upload/t_cover_big/co1x77.jpg'" />
             
             <div class="absolute inset-0 bg-gradient-to-t from-[#131b2e] via-transparent to-black/40 opacity-70"></div>
             
@@ -177,7 +245,10 @@ class RetroApp {
    * Open Game In Player Modal
    */
   openPlayerModalById(id) {
-    const game = this.games.find(g => g.id === id);
+    let game = this.games.find(g => g.id === id);
+    if (!game && this.isOnlineArchiveMode) {
+      game = this.onlineGamesCache.find(g => g.id === id);
+    }
     if (game) this.openPlayerModal(game);
   }
 
@@ -206,14 +277,24 @@ class RetroApp {
     document.querySelectorAll(".platform-tab-btn").forEach(btn => {
       btn.addEventListener("click", () => {
         document.querySelectorAll(".platform-tab-btn").forEach(b => {
-          b.classList.remove("bg-cyan-500", "text-black", "border-cyan-400");
+          b.classList.remove("bg-cyan-500", "text-black", "border-cyan-400", "bg-purple-600");
           b.classList.add("bg-slate-800/80", "text-gray-300", "border-slate-700");
         });
-        btn.classList.remove("bg-slate-800/80", "text-gray-300", "border-slate-700");
-        btn.classList.add("bg-cyan-500", "text-black", "border-cyan-400");
 
-        this.currentPlatform = btn.dataset.platform;
-        this.renderGames();
+        const platform = btn.dataset.platform;
+
+        if (platform === "online-archive") {
+          btn.classList.remove("bg-slate-800/80", "text-gray-300", "border-slate-700");
+          btn.classList.add("bg-purple-600", "text-white", "border-purple-400");
+          this.isOnlineArchiveMode = true;
+          this.searchOnlineArchive(this.searchQuery || "mario");
+        } else {
+          btn.classList.remove("bg-slate-800/80", "text-gray-300", "border-slate-700");
+          btn.classList.add("bg-cyan-500", "text-black", "border-cyan-400");
+          this.isOnlineArchiveMode = false;
+          this.currentPlatform = platform;
+          this.renderGames();
+        }
       });
     });
 
@@ -235,9 +316,18 @@ class RetroApp {
     // Search Input
     const searchInput = document.getElementById("search-input");
     if (searchInput) {
+      let debounceTimeout;
       searchInput.addEventListener("input", (e) => {
         this.searchQuery = e.target.value.trim();
-        this.renderGames();
+        clearTimeout(debounceTimeout);
+
+        if (this.isOnlineArchiveMode) {
+          debounceTimeout = setTimeout(() => {
+            this.searchOnlineArchive(this.searchQuery || "action");
+          }, 600);
+        } else {
+          this.renderGames();
+        }
       });
     }
 

@@ -1,10 +1,12 @@
 /**
- * Retro Games Hub - Game Catalog Database
- * Supporting: MS-DOS, NES, SNES, GBA, SEGA Genesis, Arcade
+ * Retro Games Hub - Massive Game Catalog Database
+ * Supporting: MS-DOS, NES, SNES, GBA, SEGA Genesis, Arcade, PS1
  */
 
 const RETRO_GAMES_DATABASE = [
-  // --- MS-DOS GAMES ---
+  // ==========================================
+  // --- MS-DOS GAMES (PC CLASSICS) ---
+  // ==========================================
   {
     id: "dos-doom",
     title: "DOOM (1993)",
@@ -20,6 +22,23 @@ const RETRO_GAMES_DATABASE = [
     description: "เกมยิงมุมมองบุคคลที่หนึ่งระดับตำนาน บุกตะลุยฝูงปีศาจจากนรกบนดาวอังคาร",
     controls: "ลูกศร: เดิน / หัน | Ctrl: ยิง | Alt: สไลด์ข้าง | Space: เปิดประตู | 1-7: เปลี่ยนอาวุธ",
     bundleUrl: "https://cdn.dos.zone/custom/dos/doom.jsdos",
+    emulatorType: "jsdos"
+  },
+  {
+    id: "dos-doom2",
+    title: "DOOM II: Hell on Earth",
+    platform: "dos",
+    platformName: "MS-DOS",
+    genre: "Shooter",
+    year: 1994,
+    developer: "id Software",
+    rating: 4.9,
+    featured: false,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x78.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f39.jpg",
+    description: "ภาคต่อสุดมันส์ นำทัพอาวุธ Super Shotgun ปราบฝูงอสูรที่บุกมายังโลกมนุษย์",
+    controls: "ลูกศร: เดิน | Ctrl: ยิง | Alt: Strafe | Space: เปิดประตู",
+    bundleUrl: "https://cdn.dos.zone/custom/dos/doom-2.jsdos",
     emulatorType: "jsdos"
   },
   {
@@ -40,8 +59,25 @@ const RETRO_GAMES_DATABASE = [
     emulatorType: "jsdos"
   },
   {
+    id: "dos-prince-of-persia-2",
+    title: "Prince of Persia 2: The Shadow and the Flame",
+    platform: "dos",
+    platformName: "MS-DOS",
+    genre: "Platformer",
+    year: 1993,
+    developer: "Brøderbund",
+    rating: 4.8,
+    featured: false,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co205w.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7g4q.jpg",
+    description: "ภาคต่อมหากาพย์เจ้าชายเปอร์เซีย กราฟิกและระบบต่อสู้ดาบที่อัปเกรดยิ่งใหญ่ขึ้น",
+    controls: "ลูกศร: เคลื่อนที่ | Shift: ต่อสู้ / หยิบของ / เดินย่อง",
+    bundleUrl: "https://cdn.dos.zone/custom/dos/prince-of-persia-2.jsdos",
+    emulatorType: "jsdos"
+  },
+  {
     id: "dos-dangerous-dave",
-    title: "Dangerous Dave in the Deserted Pirate's Hideout",
+    title: "Dangerous Dave",
     platform: "dos",
     platformName: "MS-DOS",
     genre: "Platformer",
@@ -52,7 +88,7 @@ const RETRO_GAMES_DATABASE = [
     thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co294m.jpg",
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     description: "เกมเก็บถ้วยทองในตำนานห้องคอมโรงเรียน เก็บไอเทมและเจ็ทแพ็คเพื่อผ่านด่าน",
-    controls: "ลูกศร: ซ้าย / ขวา | Space / ลูกศรขึ้น: กระโดด | Ctrl: ยิงปืน (เมื่อมีปืน)",
+    controls: "ลูกศร: ซ้าย / ขวา | Space / ลูกศรขึ้น: กระโดด | Ctrl: ยิงปืน",
     bundleUrl: "https://cdn.dos.zone/custom/dos/dave.jsdos",
     emulatorType: "jsdos"
   },
@@ -74,6 +110,142 @@ const RETRO_GAMES_DATABASE = [
     emulatorType: "jsdos"
   },
   {
+    id: "dos-spear-of-destiny",
+    title: "Spear of Destiny",
+    platform: "dos",
+    platformName: "MS-DOS",
+    genre: "Shooter",
+    year: 1992,
+    developer: "id Software",
+    rating: 4.6,
+    featured: false,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co294n.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f3v.jpg",
+    description: "ภาคแยกของ Wolfenstein 3D ตามล่าหอกศักดิ์สิทธิ์แห่งโชคชะตา",
+    controls: "ลูกศร: เดิน | Ctrl: ยิง | Space: เปิดประตู",
+    bundleUrl: "https://cdn.dos.zone/custom/dos/spear-of-destiny.jsdos",
+    emulatorType: "jsdos"
+  },
+  {
+    id: "dos-duke-nukem-3d",
+    title: "Duke Nukem 3D (1996)",
+    platform: "dos",
+    platformName: "MS-DOS",
+    genre: "Shooter",
+    year: 1996,
+    developer: "3D Realms",
+    rating: 4.9,
+    featured: true,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r3k.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
+    description: "ฮีโร่กล้ามโต Duke Nukem บุกกวาดล้างเอเลี่ยนที่มายึดครองลอสแองเจลิส",
+    controls: "ลูกศร / WASD: เคลื่อนที่ | Ctrl: ยิง | Space: เปิดประตู/สำรวจ | E: เตะ",
+    bundleUrl: "https://cdn.dos.zone/custom/dos/duke3d.jsdos",
+    emulatorType: "jsdos"
+  },
+  {
+    id: "dos-warcraft-2",
+    title: "Warcraft II: Tides of Darkness",
+    platform: "dos",
+    platformName: "MS-DOS",
+    genre: "Strategy",
+    year: 1995,
+    developer: "Blizzard Entertainment",
+    rating: 4.9,
+    featured: true,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r8c.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f40.jpg",
+    description: "มหากาพย์สงครามวางแผนการรบแบบ Real-Time ระหว่างเผ่ามนุษย์ (Humans) และ ออร์ค (Orcs)",
+    controls: "เมาส์: ควบคุม ยูนิต และสร้างสิ่งปลูกสร้าง",
+    bundleUrl: "https://cdn.dos.zone/custom/dos/warcraft-2.jsdos",
+    emulatorType: "jsdos"
+  },
+  {
+    id: "dos-warcraft-1",
+    title: "Warcraft: Orcs & Humans",
+    platform: "dos",
+    platformName: "MS-DOS",
+    genre: "Strategy",
+    year: 1994,
+    developer: "Blizzard Entertainment",
+    rating: 4.7,
+    featured: false,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r8b.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f40.jpg",
+    description: "จุดเริ่มต้นของจักรวาล Warcraft ศึกปฐมบทบนแผ่นดิน Azeroth",
+    controls: "เมาส์: คลิกสั่งการยูนิต",
+    bundleUrl: "https://cdn.dos.zone/custom/dos/warcraft.jsdos",
+    emulatorType: "jsdos"
+  },
+  {
+    id: "dos-simcity-2000",
+    title: "SimCity 2000",
+    platform: "dos",
+    platformName: "MS-DOS",
+    genre: "Strategy",
+    year: 1993,
+    developer: "Maxis",
+    rating: 4.9,
+    featured: true,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7c.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f39.jpg",
+    description: "สุดยอดเกมสร้างเมืองมุมมอง Isometric วางผังเมือง ท่อประปา โรงไฟฟ้า และรับมือภัยพิบัติ",
+    controls: "เมาส์: เลือกเครื่องมือสร้างและจัดการเมือง",
+    bundleUrl: "https://cdn.dos.zone/custom/dos/simcity-2000.jsdos",
+    emulatorType: "jsdos"
+  },
+  {
+    id: "dos-heroes-2",
+    title: "Heroes of Might and Magic II",
+    platform: "dos",
+    platformName: "MS-DOS",
+    genre: "Strategy",
+    year: 1996,
+    developer: "New World Computing",
+    rating: 4.9,
+    featured: false,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r5a.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f45.jpg",
+    description: "เกมวางแผนผลัดตากลยุทธ์สไตล์แฟนตาซียอดเยี่ยม นำทัพมังกรและอัศวินครองแผ่นดิน",
+    controls: "เมาส์: สั่งการกองทัพ",
+    bundleUrl: "https://cdn.dos.zone/custom/dos/heroes-2.jsdos",
+    emulatorType: "jsdos"
+  },
+  {
+    id: "dos-command-and-conquer",
+    title: "Command & Conquer (1995)",
+    platform: "dos",
+    platformName: "MS-DOS",
+    genre: "Strategy",
+    year: 1995,
+    developer: "Westwood Studios",
+    rating: 4.9,
+    featured: true,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7a.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f42.jpg",
+    description: "สงครามแย่งชิงแร่ไทบีเรียมระหว่างฝ่าย GDI และกองกำลังภราดรภาพแห่ง Nod",
+    controls: "เมาส์: ควบคุมฐานทัพและสั่งการกองกำลัง",
+    bundleUrl: "https://cdn.dos.zone/custom/dos/command-and-conquer.jsdos",
+    emulatorType: "jsdos"
+  },
+  {
+    id: "dos-red-alert",
+    title: "Command & Conquer: Red Alert",
+    platform: "dos",
+    platformName: "MS-DOS",
+    genre: "Strategy",
+    year: 1996,
+    developer: "Westwood Studios",
+    rating: 5.0,
+    featured: true,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7b.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f42.jpg",
+    description: "สงครามเย็นย้อนเวลา ไอน์สไตน์ย้อนอดีตลบฮิตเลอร์ เกิดสงครามฝ่ายพันธมิตร vs โซเวียต",
+    controls: "เมาส์: สั่งการสร้างฐานและรถถังแมมมอธ",
+    bundleUrl: "https://cdn.dos.zone/custom/dos/red-alert.jsdos",
+    emulatorType: "jsdos"
+  },
+  {
     id: "dos-aladdin",
     title: "Disney's Aladdin (DOS)",
     platform: "dos",
@@ -82,7 +254,7 @@ const RETRO_GAMES_DATABASE = [
     year: 1994,
     developer: "Virgin Interactive",
     rating: 4.8,
-    featured: true,
+    featured: false,
     thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1z54.jpg",
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7g4a.jpg",
     description: "การผจญภัยของอะลาดินในเมืองอัคราบาห์ กราฟิกและเพลงประกอบสุดคลาสสิก",
@@ -133,7 +305,7 @@ const RETRO_GAMES_DATABASE = [
     year: 1994,
     developer: "Epic MegaGames",
     rating: 4.8,
-    featured: true,
+    featured: false,
     thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co203t.jpg",
     banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7g4k.jpg",
     description: "กระต่ายเขียวติดปืนซิ่งความเร็วสูง ต่อสู้กับกองทัพเต่าร้าย",
@@ -141,11 +313,47 @@ const RETRO_GAMES_DATABASE = [
     bundleUrl: "https://cdn.dos.zone/custom/dos/jazz-jackrabbit.jsdos",
     emulatorType: "jsdos"
   },
+  {
+    id: "dos-lemmings",
+    title: "Lemmings (1991)",
+    platform: "dos",
+    platformName: "MS-DOS",
+    genre: "Puzzle",
+    year: 1991,
+    developer: "DMA Design",
+    rating: 4.8,
+    featured: false,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2062.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
+    description: "มอบหมายหน้าที่ให้ฝูงเลมมิ่งตัวจิ๋วสร้างสะพาน ขุดอุโมงค์ เพื่อเอาชีวิตรอดถึงทางออก",
+    controls: "เมาส์: เลือกคำสั่งและคลิกเลมมิ่ง",
+    bundleUrl: "https://cdn.dos.zone/custom/dos/lemmings.jsdos",
+    emulatorType: "jsdos"
+  },
+  {
+    id: "dos-mortal-kombat",
+    title: "Mortal Kombat (DOS)",
+    platform: "dos",
+    platformName: "MS-DOS",
+    genre: "Fighting",
+    year: 1993,
+    developer: "Midway",
+    rating: 4.7,
+    featured: false,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x82.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f44.jpg",
+    description: "ศึกต่อสู้หมัดสะท้านโลกพร้อมระบบ Fatality ปลิดชีพศัตรูในตำนาน",
+    controls: "ลูกศร: ทิศทาง | A,S: ต่อย | Z,X: เตะ | Space: ป้องกัน",
+    bundleUrl: "https://cdn.dos.zone/custom/dos/mortal-kombat.jsdos",
+    emulatorType: "jsdos"
+  },
 
-  // --- NES / FAMICOM GAMES ---
+  // ==========================================
+  // --- NES / FAMICOM (8-BIT CLASSICS) ---
+  // ==========================================
   {
     id: "nes-super-mario-bros",
-    title: "Super Mario Bros (1985)",
+    title: "Super Mario Bros",
     platform: "nes",
     platformName: "NES / Famicom",
     genre: "Platformer",
@@ -158,6 +366,24 @@ const RETRO_GAMES_DATABASE = [
     description: "จุดเริ่มต้นของลุงหนวด มาริโอ้ ตะลุยอาณาจักรเห็ดช่วยเจ้าหญิงพีช",
     controls: "D-Pad / ลูกศร: เคลื่อนที่ | Z: ปุ่ม B (วิ่ง/ยิงไฟ) | X: ปุ่ม A (กระโดด) | Enter: Start",
     romUrl: "https://archive.org/download/SuperMarioBros.Nes/Super%20Mario%20Bros..nes",
+    emulatorType: "emulatorjs",
+    core: "nes"
+  },
+  {
+    id: "nes-super-mario-bros-3",
+    title: "Super Mario Bros 3",
+    platform: "nes",
+    platformName: "NES / Famicom",
+    genre: "Platformer",
+    year: 1988,
+    developer: "Nintendo",
+    rating: 5.0,
+    featured: true,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7f.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f3u.jpg",
+    description: "สุดยอดเกมมาริโอ้ 8-บิต แปลงร่างเป็นทานุกิบิบบินได้ มีแผนที่โลกและไอเทมมากมาย",
+    controls: "ลูกศร: เดิน | Z: วิ่ง/ถือของ | X: กระโดด/บิน | Enter: Start",
+    romUrl: "https://archive.org/download/SuperMarioBros3_NES/Super%20Mario%20Bros.%203.nes",
     emulatorType: "emulatorjs",
     core: "nes"
   },
@@ -176,6 +402,24 @@ const RETRO_GAMES_DATABASE = [
     description: "เกมยิงบู๊ล้างผลาญระดับตำนาน พร้อมสูตร 30 ตัว บน บน ล่าง ล่าง ซ้าย ขวา ซ้าย ขวา B A",
     controls: "ลูกศร: เล็ง/เดิน | Z: ปุ่ม B (ยิง) | X: ปุ่ม A (กระโดด) | Enter: Start",
     romUrl: "https://archive.org/download/Contra_1988_Konami/Contra.nes",
+    emulatorType: "emulatorjs",
+    core: "nes"
+  },
+  {
+    id: "nes-super-contra",
+    title: "Super Contra (Super C)",
+    platform: "nes",
+    platformName: "NES / Famicom",
+    genre: "Shooter",
+    year: 1990,
+    developer: "Konami",
+    rating: 4.8,
+    featured: false,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1y7n.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f40.jpg",
+    description: "คอนทร้าภาค 2 เพิ่มฉากมุมมอง Bird's Eye View และอาวุธระเบิดสุดอลังการ",
+    controls: "ลูกศร: ทิศทาง | Z: ยิง | X: กระโดด",
+    romUrl: "https://archive.org/download/SuperContra_NES/Super%20C.nes",
     emulatorType: "emulatorjs",
     core: "nes"
   },
@@ -215,8 +459,46 @@ const RETRO_GAMES_DATABASE = [
     emulatorType: "emulatorjs",
     core: "nes"
   },
+  {
+    id: "nes-circus-charlie",
+    title: "Circus Charlie",
+    platform: "nes",
+    platformName: "NES / Famicom",
+    genre: "Arcade",
+    year: 1986,
+    developer: "Konami",
+    rating: 4.7,
+    featured: false,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2047.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f42.jpg",
+    description: "เกมละครสัตว์ในตำนาน ขี่สิงโตกระโดดลอดห่วงไฟ และไต่เชือกผาดโผน",
+    controls: "ลูกศร: ซ้าย/ขวา | X: กระโดด",
+    romUrl: "https://archive.org/download/CircusCharlie_NES/Circus%20Charlie.nes",
+    emulatorType: "emulatorjs",
+    core: "nes"
+  },
+  {
+    id: "nes-pacman",
+    title: "Pac-Man (NES)",
+    platform: "nes",
+    platformName: "NES / Famicom",
+    genre: "Arcade",
+    year: 1984,
+    developer: "Namco",
+    rating: 4.8,
+    featured: false,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7g.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f42.jpg",
+    description: "กินจุดในเขาวงกตและหลบหลีก 4 ผีตัวร้าย หรือกินจุดพลังเพื่อไล่กินผีคืน",
+    controls: "ลูกศร: บังคับทิศทาง",
+    romUrl: "https://archive.org/download/PacMan_NES/Pac-Man.nes",
+    emulatorType: "emulatorjs",
+    core: "nes"
+  },
 
-  // --- SNES (SUPER NINTENDO) ---
+  // ==========================================
+  // --- SNES (SUPER NINTENDO 16-BIT) ---
+  // ==========================================
   {
     id: "snes-super-mario-world",
     title: "Super Mario World (1990)",
@@ -271,8 +553,46 @@ const RETRO_GAMES_DATABASE = [
     emulatorType: "emulatorjs",
     core: "snes"
   },
+  {
+    id: "snes-donkey-kong-country",
+    title: "Donkey Kong Country",
+    platform: "snes",
+    platformName: "Super Nintendo",
+    genre: "Platformer",
+    year: 1994,
+    developer: "Rare / Nintendo",
+    rating: 4.9,
+    featured: false,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x8o.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f43.jpg",
+    description: "คู่หูกอริลลา ดองกี้คอง และ ดิดดี้คอง ตะลุยทวงกล้วยคืน กราฟิก 3D Pre-rendered ล้ำยุค",
+    controls: "ลูกศร: เดิน | Z: กระโดด | A: วิ่ง/กลิ้งตัว",
+    romUrl: "https://archive.org/download/DonkeyKongCountry_SNES/Donkey%20Kong%20Country.sfc",
+    emulatorType: "emulatorjs",
+    core: "snes"
+  },
+  {
+    id: "snes-super-mario-kart",
+    title: "Super Mario Kart (SNES)",
+    platform: "snes",
+    platformName: "Super Nintendo",
+    genre: "Racing",
+    year: 1992,
+    developer: "Nintendo",
+    rating: 4.9,
+    featured: false,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x8p.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f3t.jpg",
+    description: "ต้นกำเนิดศึกแข่งรถโกคาร์ทปาเปลือกกล้วยและกระดองเต่าสุดฮา",
+    controls: "ลูกศร: เลี้ยว | Z: เร่งความเร็ว | X: ใช้ไอเทม | A: ดริฟท์",
+    romUrl: "https://archive.org/download/SuperMarioKart_SNES/Super%20Mario%20Kart.sfc",
+    emulatorType: "emulatorjs",
+    core: "snes"
+  },
 
-  // --- GAME BOY ADVANCE (GBA) ---
+  // ==========================================
+  // --- GAME BOY ADVANCE (GBA 32-BIT) ---
+  // ==========================================
   {
     id: "gba-pokemon-emerald",
     title: "Pokemon Emerald Version",
@@ -288,6 +608,24 @@ const RETRO_GAMES_DATABASE = [
     description: "ภาคยอดนิยมตลอดกาลในดินแดน Hoenn หยุดยั้งศึกเทพ Rayquaza, Kyogre และ Groudon",
     controls: "ลูกศร: เดิน | Z: ปุ่ม A (ตกลง) | X: ปุ่ม B (ยกเลิก/วิ่ง) | A: ปุ่ม L | S: ปุ่ม R | Enter: Start | Shift: Select",
     romUrl: "https://archive.org/download/PokemonEmerald_GBA/Pokemon%20-%20Emerald%20Version%20%28USA%2C%20Europe%29.gba",
+    emulatorType: "emulatorjs",
+    core: "gba"
+  },
+  {
+    id: "gba-pokemon-firered",
+    title: "Pokemon FireRed Version",
+    platform: "gba",
+    platformName: "Game Boy Advance",
+    genre: "RPG",
+    year: 2004,
+    developer: "Game Freak",
+    rating: 4.9,
+    featured: false,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1y58.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f46.jpg",
+    description: "ผจญภัยในดินแดนคันโต รียูเนียน 151 โปเกมอนยุคแรกและลุยยิมทั้ง 8",
+    controls: "ลูกศร: เดิน | Z: A | X: B | Enter: Start",
+    romUrl: "https://archive.org/download/PokemonFireRed_GBA/Pokemon%20-%20FireRed%20Version%20%28USA%29.gba",
     emulatorType: "emulatorjs",
     core: "gba"
   },
@@ -310,7 +648,9 @@ const RETRO_GAMES_DATABASE = [
     core: "gba"
   },
 
+  // ==========================================
   // --- SEGA GENESIS / MEGA DRIVE ---
+  // ==========================================
   {
     id: "sega-sonic-the-hedgehog-2",
     title: "Sonic The Hedgehog 2 (1992)",
@@ -329,8 +669,28 @@ const RETRO_GAMES_DATABASE = [
     emulatorType: "emulatorjs",
     core: "segaMD"
   },
+  {
+    id: "sega-golden-axe",
+    title: "Golden Axe",
+    platform: "sega",
+    platformName: "Sega Genesis",
+    genre: "Action",
+    year: 1989,
+    developer: "Sega",
+    rating: 4.8,
+    featured: false,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x9x.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f49.jpg",
+    description: "ศึกคนเถื่อน ฟันดาบ ขี่สัตว์ประหลาด และร่ายเวทมนตร์กวาดล้างศัตรู",
+    controls: "ลูกศร: ทิศทาง | Z: ฟันดาบ | X: กระโดด | C: ร่ายเวทมนตร์",
+    romUrl: "https://archive.org/download/GoldenAxe_Genesis/Golden%20Axe%20%28World%29.md",
+    emulatorType: "emulatorjs",
+    core: "segaMD"
+  },
 
-  // --- ARCADE / MAME ---
+  // ==========================================
+  // --- ARCADE / NEO GEO (COIN-OP) ---
+  // ==========================================
   {
     id: "arcade-metal-slug",
     title: "Metal Slug - Super Vehicle-001",
@@ -346,6 +706,24 @@ const RETRO_GAMES_DATABASE = [
     description: "เกมอาร์เคดยิงแหลก 2D ระดับมาสเตอร์พีซ กราฟิกอนิเมชันพิกเซลสุดประณีต",
     controls: "ลูกศร: ทิศทาง | Z: ยิงปืน | X: กระโดด | C: ปาระเบิด | Space: หยอดเหรียญ (Insert Coin) | Enter: 1P Start",
     romUrl: "https://archive.org/download/MetalSlug_Arcade/mslug.zip",
+    emulatorType: "emulatorjs",
+    core: "neogeo"
+  },
+  {
+    id: "arcade-kof-98",
+    title: "The King of Fighters '98",
+    platform: "arcade",
+    platformName: "Neo Geo / Arcade",
+    genre: "Fighting",
+    year: 1998,
+    developer: "SNK",
+    rating: 5.0,
+    featured: false,
+    thumbnail: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1y3y.jpg",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f4a.jpg",
+    description: "สุดยอดศึกประลองยุทธ์ 3 ต่อ 3 ที่สมดุลและมันส์ที่สุดในประวัติศาสตร์เกมไฟต์ติ้ง 2D",
+    controls: "ลูกศร: ทิศทาง | A,S,Z,X: ต่อยเบา/หนัก, เตะเบา/หนัก | Space: หยอดเหรียญ | Enter: Start",
+    romUrl: "https://archive.org/download/KOF98_Arcade/kof98.zip",
     emulatorType: "emulatorjs",
     core: "neogeo"
   }
