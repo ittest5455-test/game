@@ -26,6 +26,7 @@ class RetroEmulatorManager {
     if (loader) loader.classList.remove("hidden");
 
     const iframe = document.createElement("iframe");
+    iframe.id = "active-game-iframe";
     iframe.className = "w-full h-full border-0 bg-black";
     iframe.allow = "autoplay; fullscreen; gamepad; focus-without-user-activation; cross-origin-isolated";
     iframe.setAttribute("allowfullscreen", "true");
@@ -42,7 +43,12 @@ class RetroEmulatorManager {
     iframe.onload = () => {
       setTimeout(() => {
         if (loader) loader.classList.add("hidden");
-      }, 1500);
+        // Focus iframe for gamepad & keyboard control
+        try {
+          iframe.focus();
+          iframe.contentWindow?.focus();
+        } catch (e) {}
+      }, 1200);
     };
 
     viewport.appendChild(iframe);
@@ -50,7 +56,11 @@ class RetroEmulatorManager {
     // Fallback timer
     setTimeout(() => {
       if (loader) loader.classList.add("hidden");
-    }, 3000);
+      try {
+        iframe.focus();
+        iframe.contentWindow?.focus();
+      } catch (e) {}
+    }, 2500);
   }
 
   /**

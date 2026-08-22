@@ -68,50 +68,41 @@ class TVNavigationManager {
 
       const modalOpen = !document.getElementById("player-modal").classList.contains("hidden");
 
+      // While playing in modal, let game receive all controls except ESC / Exit
+      if (modalOpen) {
+        if (e.key === "Escape") {
+          e.preventDefault();
+          window.retroApp.closePlayerModal();
+        }
+        return;
+      }
+
       switch (e.key) {
         case "ArrowRight":
-          if (!modalOpen) {
-            e.preventDefault();
-            this.setFocus(this.currentFocusIndex + 1);
-          }
+          e.preventDefault();
+          this.setFocus(this.currentFocusIndex + 1);
           break;
         case "ArrowLeft":
-          if (!modalOpen) {
-            e.preventDefault();
-            this.setFocus(this.currentFocusIndex - 1);
-          }
+          e.preventDefault();
+          this.setFocus(this.currentFocusIndex - 1);
           break;
         case "ArrowDown":
-          if (!modalOpen) {
-            e.preventDefault();
-            // Jump roughly a row ahead (e.g. 4 cards per row)
-            this.setFocus(this.currentFocusIndex + 4);
-          }
+          e.preventDefault();
+          this.setFocus(this.currentFocusIndex + 4);
           break;
         case "ArrowUp":
-          if (!modalOpen) {
-            e.preventDefault();
-            this.setFocus(this.currentFocusIndex - 4);
-          }
+          e.preventDefault();
+          this.setFocus(this.currentFocusIndex - 4);
           break;
         case "Enter":
-          if (!modalOpen && this.focusableElements[this.currentFocusIndex]) {
+          if (this.focusableElements[this.currentFocusIndex]) {
             this.focusableElements[this.currentFocusIndex].click();
           }
           break;
-        case "Escape":
-        case "Backspace":
-          if (modalOpen) {
-            e.preventDefault();
-            window.retroApp.closePlayerModal();
-          }
-          break;
         case "/":
-          if (!modalOpen) {
-            e.preventDefault();
-            const searchInput = document.getElementById("search-input");
-            if (searchInput) searchInput.focus();
-          }
+          e.preventDefault();
+          const searchInput = document.getElementById("search-input");
+          if (searchInput) searchInput.focus();
           break;
       }
     });
@@ -157,10 +148,27 @@ class TVNavigationManager {
       const gp = gamepads[0];
       if (!gp) return;
 
-      const now = Date.now();
-      if (now - this.lastButtonPress < 200) return; // Debounce
-
       const modalOpen = !document.getElementById("player-modal").classList.contains("hidden");
+
+      // While playing in modal, DO NOT hijack standard buttons (Circle, Square, Cross, Triangle)
+      // Only close if user presses Guide/Home button (button 16) or holds Select + Start (buttons 8+9)
+      if (modalOpen) {
+        const btnHome = gp.buttons[16]?.pressed;
+        const btnSelect = gp.buttons[8]?.pressed;
+        const btnStart = gp.buttons[9]?.pressed;
+
+        if (btnHome || (btnSelect && btnStart)) {
+          const now = Date.now();
+          if (now - this.lastButtonPress > 500) {
+            this.lastButtonPress = now;
+            window.retroApp.closePlayerModal();
+          }
+        }
+        return; // Let all other buttons pass into the game!
+      }
+
+      const now = Date.now();
+      if (now - this.lastButtonPress < 180) return; // Debounce menu navigation
 
       // D-Pad or Left Stick
       const up = gp.buttons[12]?.pressed || gp.axes[1] < -0.5;
@@ -168,24 +176,16 @@ class TVNavigationManager {
       const left = gp.buttons[14]?.pressed || gp.axes[0] < -0.5;
       const right = gp.buttons[15]?.pressed || gp.axes[0] > 0.5;
 
-      // Action buttons (A = Button 0, B = Button 1)
+      // Action button A / Cross to select
       const btnA = gp.buttons[0]?.pressed;
-      const btnB = gp.buttons[1]?.pressed;
 
-      if (!modalOpen) {
-        if (right) { this.setFocus(this.currentFocusIndex + 1); this.lastButtonPress = now; }
-        else if (left) { this.setFocus(this.currentFocusIndex - 1); this.lastButtonPress = now; }
-        else if (down) { this.setFocus(this.currentFocusIndex + 4); this.lastButtonPress = now; }
-        else if (up) { this.setFocus(this.currentFocusIndex - 4); this.lastButtonPress = now; }
-        else if (btnA) {
-          if (this.focusableElements[this.currentFocusIndex]) {
-            this.focusableElements[this.currentFocusIndex].click();
-            this.lastButtonPress = now;
-          }
-        }
-      } else {
-        if (btnB) {
-          window.retroApp.closePlayerModal();
+      if (right) { this.setFocus(this.currentFocusIndex + 1); this.lastButtonPress = now; }
+      else if (left) { this.setFocus(this.currentFocusIndex - 1); this.lastButtonPress = now; }
+      else if (down) { this.setFocus(this.currentFocusIndex + 4); this.lastButtonPress = now; }
+      else if (up) { this.setFocus(this.currentFocusIndex - 4); this.lastButtonPress = now; }
+      else if (btnA) {
+        if (this.focusableElements[this.currentFocusIndex]) {
+          this.focusableElements[this.currentFocusIndex].click();
           this.lastButtonPress = now;
         }
       }
