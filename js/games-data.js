@@ -8,7 +8,55 @@ const RETRO_GAMES_DATABASE = [
   // =========================================================================
   // --- 1. PLAYSTATION 1 (PS1 TOP 25 LEGENDS) ---
   // =========================================================================
+    {
+    id: "ps1-road-rash-jailbreak",
+    title: "Road Rash: Jailbreak (PS1)",
+    platform: "ps1",
+    platformName: "PlayStation 1",
+    genre: "Racing",
+    year: 2000,
+    developer: "EA Sports / Electronic Arts",
+    rating: 5.0,
+    featured: true,
+    thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Road%20Rash%20-%20Jailbreak%20(USA).png",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f3t.jpg",
+    description: "เกมมอเตอร์ไซค์ส่งส่วยและแหกคุกสุดมันส์ ใช้โซ่ฟาด กระบองหวด ถีบตำรวจ และโหมดรถพ่วงข้าง Sidecar",
+    controls: "ลูกศร: เลี้ยว | Z: เร่งความเร็ว (X) | X: เบรก (Square) | A: ต่อย/ฟาดโซ่ซ้าย | S: ต่อย/ฟาดโซ่ขวา | D: ถีบ",
+    embedUrl: "https://www.retrogames.cc/embed/41724-road-rash-jailbreak.html"
+  },
   {
+    id: "ps1-road-rash-3d",
+    title: "Road Rash 3D (PS1)",
+    platform: "ps1",
+    platformName: "PlayStation 1",
+    genre: "Racing",
+    year: 1998,
+    developer: "Electronic Arts",
+    rating: 4.9,
+    featured: false,
+    thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Road%20Rash%203D%20(USA).png",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f3t.jpg",
+    description: "สิงห์มอเตอร์ไซค์ 3D เต็มรูปแบบ ขี่บิ๊กไบค์ปะทะแก๊งซิ่งคู่แข่ง ชกต่อยและแย่งกระบองกลางถนน",
+    controls: "ลูกศร: บังคับเลี้ยว | Z: คันเร่ง (X) | X: เบรก (Square) | A/S: ชก/หวดอาวุธ ซ้าย-ขวา",
+    embedUrl: "https://www.retrogames.cc/embed/41723-road-rash-3d.html"
+  },
+  {
+    id: "ps1-road-rash",
+    title: "Road Rash (1995 PS1)",
+    platform: "ps1",
+    platformName: "PlayStation 1",
+    genre: "Racing",
+    year: 1995,
+    developer: "Electronic Arts",
+    rating: 4.9,
+    featured: false,
+    thumbnail: "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Road%20Rash%20(USA).png",
+    banner: "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f3t.jpg",
+    description: "ภาคคลาสสิกร็อค 90s พร้อมเพลงประกอบจากวง Soundgarden และคัตซีนคนแสดงสุดกวน",
+    controls: "ลูกศร: เลี้ยว | Z: เร่งความเร็ว | X: เบรก | A: ต่อย/ถีบ | S: ฟาดกระบอง",
+    embedUrl: "https://www.retrogames.cc/embed/41722-road-rash.html"
+  },
+{
     id: "ps1-pepsiman",
     title: "Pepsiman (1999)",
     platform: "ps1",
