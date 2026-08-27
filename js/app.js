@@ -32,9 +32,20 @@ class RetroApp {
       return this.onlineGamesCache;
     }
 
+    const cartridgePlatforms = ["nes", "snes", "gba", "sega"];
+
     return this.games.filter(game => {
-      const matchPlatform = this.currentPlatform === "all" || 
-        (this.currentPlatform === "favorites" ? this.favorites.includes(game.id) : game.platform === this.currentPlatform);
+      let matchPlatform = false;
+      if (this.currentPlatform === "all") {
+        matchPlatform = true;
+      } else if (this.currentPlatform === "favorites") {
+        matchPlatform = this.favorites.includes(game.id);
+      } else if (this.currentPlatform === "cartridges") {
+        matchPlatform = cartridgePlatforms.includes(game.platform);
+      } else {
+        matchPlatform = game.platform === this.currentPlatform;
+      }
+
       const matchGenre = this.currentGenre === "all" || game.genre.toLowerCase() === this.currentGenre.toLowerCase();
       const matchQuery = this.searchQuery === "" || 
         game.title.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
