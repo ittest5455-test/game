@@ -13,6 +13,7 @@ class RetroApp {
     this.isOnlineArchiveMode = false;
     this.onlineGamesCache = [];
     this.isSearchingOnline = false;
+    this.displayLimit = 60;
 
     this.init();
   }
@@ -192,9 +193,13 @@ class RetroApp {
       return;
     }
 
-    grid.innerHTML = filtered.map((game) => {
+    const toRender = filtered.slice(0, this.displayLimit);
+    const hasMore = filtered.length > this.displayLimit;
+
+    grid.innerHTML = toRender.map((game) => {
       const isFav = this.favorites.includes(game.id);
       const isHighSpec = game.platform === "ps1" || 
+                         game.platform === "n64" ||
                          ["dos-doom", "dos-duke-nukem-3d", "dos-red-alert", "dos-warcraft-2", "dos-simcity-2000", "dos-wolfenstein-3d"].includes(game.id) ||
                          ["arcade-kof-98", "arcade-kof-2002", "arcade-marvel-vs-capcom", "arcade-street-fighter-alpha-3"].includes(game.id);
 
@@ -264,9 +269,26 @@ class RetroApp {
       `;
     }).join("");
 
+    if (hasMore) {
+      grid.innerHTML += `
+        <div class="col-span-full py-8 text-center">
+          <button class="tv-focusable px-8 py-3.5 rounded-2xl bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-black font-bold text-sm shadow-xl shadow-cyan-500/20 transform hover:scale-105 transition-all flex items-center gap-2 mx-auto"
+                  onclick="window.retroApp.loadMoreGames()">
+            <i class="fas fa-plus-circle text-base"></i>
+            <span>โหลดเกมเพิ่มเติม (+60 เกม) - เหลืออีก ${filtered.length - this.displayLimit} เกม</span>
+          </button>
+        </div>
+      `;
+    }
+
     if (window.tvNavigation) {
       window.tvNavigation.refreshFocusables();
     }
+  }
+
+  loadMoreGames() {
+    this.displayLimit += 60;
+    this.renderGames();
   }
 
   /**
@@ -345,6 +367,7 @@ class RetroApp {
         btn.classList.add("bg-cyan-500", "text-black", "shadow-cyan-500/20");
 
         this.currentSpecTier = btn.dataset.tier;
+        this.displayLimit = 60;
         this.renderGames();
       });
     });
@@ -369,6 +392,7 @@ class RetroApp {
           btn.classList.add("bg-cyan-500", "text-black", "border-cyan-400");
           this.isOnlineArchiveMode = false;
           this.currentPlatform = platform;
+          this.displayLimit = 60;
           this.renderGames();
         }
       });
@@ -385,6 +409,7 @@ class RetroApp {
         btn.classList.add("bg-purple-600", "text-white");
 
         this.currentGenre = btn.dataset.genre;
+        this.displayLimit = 60;
         this.renderGames();
       });
     });
@@ -395,6 +420,7 @@ class RetroApp {
       let debounceTimeout;
       searchInput.addEventListener("input", (e) => {
         this.searchQuery = e.target.value.trim();
+        this.displayLimit = 60;
         clearTimeout(debounceTimeout);
 
         if (this.isOnlineArchiveMode) {
