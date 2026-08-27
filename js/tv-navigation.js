@@ -134,9 +134,16 @@ class TVNavigationManager {
     if (badge && nameEl) {
       nameEl.innerText = id.split("(")[0] || "Gamepad Connected";
       badge.classList.remove("hidden");
+      badge.classList.remove("opacity-0");
+      badge.classList.add("opacity-100");
+      
+      // Auto fade out and hide completely after 2.5 seconds
       setTimeout(() => {
-        badge.classList.add("opacity-80");
-      }, 3000);
+        badge.classList.add("transition-opacity", "duration-500", "opacity-0");
+        setTimeout(() => {
+          badge.classList.add("hidden");
+        }, 500);
+      }, 2500);
     }
   }
 
