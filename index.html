@@ -118,6 +118,27 @@
         <span id="results-count" class="text-xs text-cyan-400 font-semibold bg-cyan-950/60 px-2.5 py-0.5 rounded-full border border-cyan-500/30">กำลังโหลด...</span>
       </div>
 
+      <!-- TV BOX SPECIFICATION FILTER (ตัวกรองสเปกกล่อง TV Box) -->
+      <div class="flex flex-wrap items-center gap-2 p-2 bg-slate-900/90 rounded-2xl border border-slate-800 shadow-inner">
+        <span class="text-xs font-bold text-gray-300 px-2 flex items-center gap-1.5 whitespace-nowrap">
+          <i class="fas fa-tv text-cyan-400"></i> เลือกรุ่น TV Box:
+        </span>
+        
+        <button class="spec-tier-btn tv-focusable px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 bg-cyan-500 text-black shadow-md shadow-cyan-500/20" data-tier="all">
+          <i class="fas fa-th-large"></i> ทั้งหมด (All Specs)
+        </button>
+
+        <button class="spec-tier-btn tv-focusable px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 bg-slate-800 text-emerald-400 hover:bg-slate-700 border border-emerald-500/30" data-tier="low-spec" title="ลื่น 60 FPS 100% บนทุกกล่อง รวมทั้งแรม 1GB (Famicom, SNES, GBA, Sega, 2D)">
+          <i class="fas fa-bolt text-emerald-400"></i>
+          <span>🟢 สำหรับ TV Box สเปกต่ำ (เล่นลื่น 60 FPS ทุกกล่อง)</span>
+        </button>
+
+        <button class="spec-tier-btn tv-focusable px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 bg-slate-800 text-purple-300 hover:bg-slate-700 border border-purple-500/30" data-tier="high-spec" title="เกม 3D / PS1 แนะนำกล่องแรม 2GB-4GB ขึ้นไปหรือ CPU แรง">
+          <i class="fas fa-rocket text-purple-400"></i>
+          <span>🟣 สำหรับ TV Box สเปกสูง (3D PS1 & Heavy PC)</span>
+        </button>
+      </div>
+
       <!-- Platforms Tabs -->
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-2">
         <button class="tv-focusable platform-tab-btn p-3 rounded-xl text-xs font-bold border transition-all flex flex-col items-center gap-1.5 bg-cyan-500 text-black border-cyan-400 shadow-md shadow-cyan-500/20" data-platform="all">
