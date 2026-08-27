@@ -33,7 +33,7 @@ class RetroApp {
       return this.onlineGamesCache;
     }
 
-    const cartridgePlatforms = ["nes", "snes", "gba", "sega"];
+    const cartridgePlatforms = ["nes", "snes", "gba", "gbc", "sega", "n64"];
 
     return this.games.filter(game => {
       // 1. Check Platform
@@ -50,6 +50,7 @@ class RetroApp {
 
       // 2. Check TV Box Spec Tier
       const isHighSpec = game.platform === "ps1" || 
+                         game.platform === "n64" ||
                          ["dos-doom", "dos-duke-nukem-3d", "dos-red-alert", "dos-warcraft-2", "dos-simcity-2000", "dos-wolfenstein-3d"].includes(game.id) ||
                          ["arcade-kof-98", "arcade-kof-2002", "arcade-marvel-vs-capcom", "arcade-street-fighter-alpha-3"].includes(game.id);
 
