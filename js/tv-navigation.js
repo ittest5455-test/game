@@ -17,6 +17,7 @@ class TVNavigationManager {
   init() {
     this.bindKeyboardEvents();
     this.bindGamepadEvents();
+    this.startGamepadPolling(); // Start polling immediately without waiting for event
     this.refreshFocusables();
   }
 
@@ -99,6 +100,12 @@ class TVNavigationManager {
             this.focusableElements[this.currentFocusIndex].click();
           }
           break;
+        case "Backspace":
+          if (modalOpen) {
+            e.preventDefault();
+            window.retroApp.closePlayerModal();
+          }
+          break;
         case "/":
           e.preventDefault();
           const searchInput = document.getElementById("search-input");
@@ -121,10 +128,12 @@ class TVNavigationManager {
 
     window.addEventListener("gamepaddisconnected", () => {
       console.log("Gamepad disconnected");
-      this.gamepadConnected = false;
-      this.stopGamepadPolling();
-      const banner = document.getElementById("gamepad-status-badge");
-      if (banner) banner.classList.add("hidden");
+      const gamepads = navigator.getGamepads ? Array.from(navigator.getGamepads()).filter(Boolean) : [];
+      this.gamepadConnected = gamepads.length > 0;
+      if (!this.gamepadConnected) {
+        const banner = document.getElementById("gamepad-status-badge");
+        if (banner) banner.classList.add("hidden");
+      }
     });
   }
 
@@ -137,7 +146,6 @@ class TVNavigationManager {
       badge.classList.remove("opacity-0");
       badge.classList.add("opacity-100");
       
-      // Auto fade out and hide completely after 2.5 seconds
       setTimeout(() => {
         badge.classList.add("transition-opacity", "duration-500", "opacity-0");
         setTimeout(() => {
@@ -147,19 +155,46 @@ class TVNavigationManager {
     }
   }
 
+  /**
+   * Continuous Gamepad Polling (Supports multi-controllers & stick/D-pad navigation)
+   */
   startGamepadPolling() {
     if (this.gamepadPollingInterval) return;
 
     this.gamepadPollingInterval = setInterval(() => {
-      const gamepads = navigator.getGamepads ? navigator.getGamepads() : [];
-      const gp = gamepads[0];
+      if (!navigator.getGamepads) return;
+      const gamepads = navigator.getGamepads();
+      if (!gamepads) return;
+
+      // Find first active gamepad with input
+      let gp = null;
+      for (let i = 0; i < gamepads.length; i++) {
+        if (gamepads[i] && gamepads[i].connected) {
+          gp = gamepads[i];
+          break;
+        }
+      }
+
       if (!gp) return;
 
-      const modalOpen = !document.getElementById("player-modal").classList.contains("hidden");
+      const playerModal = document.getElementById("player-modal");
+      const modalOpen = playerModal && !playerModal.classList.contains("hidden");
 
-      // While playing in modal, DO NOT hijack standard buttons (Circle, Square, Cross, Triangle)
-      // Only close if user presses Guide/Home button (button 16) or holds Select + Start (buttons 8+9)
+      // While playing in modal: focus iframe and let all buttons pass through directly to game
       if (modalOpen) {
+        const iframe = document.getElementById("active-game-iframe");
+        if (iframe && document.activeElement !== iframe) {
+          // Check if any button pressed to reclaim iframe focus
+          const anyButtonPressed = gp.buttons.some(b => b && b.pressed);
+          if (anyButtonPressed) {
+            try {
+              iframe.focus();
+              iframe.contentWindow?.focus();
+            } catch (e) {}
+          }
+        }
+
+        // Close game if holding Select + Start or Home (button 8+9 or button 16)
         const btnHome = gp.buttons[16]?.pressed;
         const btnSelect = gp.buttons[8]?.pressed;
         const btnStart = gp.buttons[9]?.pressed;
@@ -171,20 +206,20 @@ class TVNavigationManager {
             window.retroApp.closePlayerModal();
           }
         }
-        return; // Let all other buttons pass into the game!
+        return; // Do not consume or navigate menu while playing
       }
 
       const now = Date.now();
-      if (now - this.lastButtonPress < 180) return; // Debounce menu navigation
+      if (now - this.lastButtonPress < 170) return; // Debounce menu navigation
 
-      // D-Pad or Left Stick
-      const up = gp.buttons[12]?.pressed || gp.axes[1] < -0.5;
-      const down = gp.buttons[13]?.pressed || gp.axes[1] > 0.5;
-      const left = gp.buttons[14]?.pressed || gp.axes[0] < -0.5;
-      const right = gp.buttons[15]?.pressed || gp.axes[0] > 0.5;
+      // D-Pad or Left Analog Stick
+      const up = (gp.buttons[12] && gp.buttons[12].pressed) || (gp.axes[1] && gp.axes[1] < -0.5);
+      const down = (gp.buttons[13] && gp.buttons[13].pressed) || (gp.axes[1] && gp.axes[1] > 0.5);
+      const left = (gp.buttons[14] && gp.buttons[14].pressed) || (gp.axes[0] && gp.axes[0] < -0.5);
+      const right = (gp.buttons[15] && gp.buttons[15].pressed) || (gp.axes[0] && gp.axes[0] > 0.5);
 
-      // Action button A / Cross to select
-      const btnA = gp.buttons[0]?.pressed;
+      // Action Button A / Cross (button 0 or button 1)
+      const btnA = (gp.buttons[0] && gp.buttons[0].pressed) || (gp.buttons[1] && gp.buttons[1].pressed);
 
       if (right) { this.setFocus(this.currentFocusIndex + 1); this.lastButtonPress = now; }
       else if (left) { this.setFocus(this.currentFocusIndex - 1); this.lastButtonPress = now; }
@@ -196,7 +231,7 @@ class TVNavigationManager {
           this.lastButtonPress = now;
         }
       }
-    }, 50);
+    }, 40);
   }
 
   stopGamepadPolling() {
@@ -205,6 +240,7 @@ class TVNavigationManager {
       this.gamepadPollingInterval = null;
     }
   }
+}
 }
 
 window.tvNavigation = new TVNavigationManager();

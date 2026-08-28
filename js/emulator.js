@@ -28,8 +28,9 @@ class RetroEmulatorManager {
     const iframe = document.createElement("iframe");
     iframe.id = "active-game-iframe";
     iframe.className = "w-full h-full border-0 bg-black";
-    iframe.allow = "autoplay; fullscreen; gamepad; focus-without-user-activation; cross-origin-isolated";
+    iframe.allow = "autoplay *; fullscreen *; gamepad *; focus-without-user-activation *; cross-origin-isolated *";
     iframe.setAttribute("allowfullscreen", "true");
+    iframe.tabIndex = 0;
 
     if (customFile) {
       // Local custom file drop
@@ -40,27 +41,28 @@ class RetroEmulatorManager {
       iframe.src = game.embedUrl;
     }
 
-    iframe.onload = () => {
-      setTimeout(() => {
-        if (loader) loader.classList.add("hidden");
-        // Focus iframe for gamepad & keyboard control
-        try {
-          iframe.focus();
-          iframe.contentWindow?.focus();
-        } catch (e) {}
-      }, 1200);
-    };
-
-    viewport.appendChild(iframe);
-
-    // Fallback timer
-    setTimeout(() => {
-      if (loader) loader.classList.add("hidden");
+    const focusGame = () => {
       try {
         iframe.focus();
         iframe.contentWindow?.focus();
       } catch (e) {}
-    }, 2500);
+    };
+
+    iframe.onload = () => {
+      setTimeout(() => {
+        if (loader) loader.classList.add("hidden");
+        focusGame();
+      }, 800);
+    };
+
+    viewport.appendChild(iframe);
+
+    // Multiple aggressive focus intervals to ensure browser hands Gamepad API to iframe
+    [300, 800, 1500, 2500].forEach(delay => setTimeout(focusGame, delay));
+
+    // Re-focus iframe whenever user clicks anywhere inside the viewport or presses a key
+    viewport.onclick = focusGame;
+    viewport.ontouchstart = focusGame;
   }
 
   /**
