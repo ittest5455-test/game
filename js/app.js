@@ -98,8 +98,8 @@ class RetroApp {
       const x = cfg.railExit - (cfg.railExit - cfg.railBirth) * Math.pow(1 - R, cfg.fan);
       const p = cfg.turnBirth + (cfg.turnExit - cfg.turnBirth) * R;
       const opacity = R < 0.1 ? (R / 0.1) : (R > 0.85 ? ((1 - R) / 0.15) : 1);
-      const pointerEvents = (R >= 0.08 && R <= 0.82) ? "auto" : "none";
-      const visibility = (R >= 0.03 && R <= 0.88) ? "visible" : "hidden";
+      const pointerEvents = (R >= 0.02 && R <= 0.94) ? "auto" : "none";
+      const visibility = (R >= 0.01 && R <= 0.96) ? "visible" : "hidden";
       frames.push(`${(R * 100).toFixed(1)}%{transform:translate3d(${(dir * x).toFixed(2)}cqw,0,${z.toFixed(2)}cqw) rotateY(${(-dir * p).toFixed(2)}deg);opacity:${opacity.toFixed(2)};pointer-events:${pointerEvents};visibility:${visibility};}`);
     }
     return `@keyframes ${name}{${frames.join("")}}`;
@@ -157,6 +157,7 @@ class RetroApp {
         height: 100%;
         position: absolute;
         inset: 0;
+        pointer-events: none;
       }
       .ish-stream-inner {
         width: 100%;
@@ -164,6 +165,7 @@ class RetroApp {
         position: absolute;
         inset: 0;
         transform-style: preserve-3d;
+        pointer-events: none;
       }
       /* Animated Slot maintains the 3D trajectory */
       .ish-slot {
@@ -176,6 +178,8 @@ class RetroApp {
         margin-top: -10.75cqw;
         transform-style: preserve-3d;
         will-change: transform, opacity;
+        pointer-events: auto;
+        cursor: pointer;
       }
       /* Inner Card handles smooth scale-up on hover without disrupting the 3D path */
       .ish-card-box {
@@ -191,18 +195,20 @@ class RetroApp {
         transform-origin: center center;
         background: #0f1526;
         transform-style: preserve-3d;
+        pointer-events: auto;
       }
       .ish-card-box img {
         transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.3, 1.25);
         will-change: transform;
+        pointer-events: none;
       }
       /* Scale highlight on rail card when hovered */
       .ish-slot:hover .ish-card-box,
       .ish-slot:focus-within .ish-card-box {
-        transform: scale(1.1);
+        transform: scale(1.18) translateZ(20px);
         border-color: #00f0ff;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9), 0 0 25px rgba(0, 240, 255, 0.6);
-        z-index: 25;
+        box-shadow: 0 18px 42px rgba(0, 0, 0, 0.95), 0 0 32px rgba(0, 240, 255, 0.7);
+        z-index: 35;
       }
       .ish-slot:hover .ish-card-box img:not(.is-tracking) {
         animation: retroImgBreath 2.8s ease-in-out infinite;
@@ -235,7 +241,7 @@ class RetroApp {
              onfocus="window.retroApp.showCenterSpotlight('${g.id}')"
              onblur="window.retroApp.hideCenterSpotlight()"
              onclick="window.retroApp.openPlayerModalById('${g.id}')">
-          <div class="ish-card-box group pointer-events-none">
+          <div class="ish-card-box group">
             <img src="${g.thumbnail}" alt="${g.title}" class="w-full h-full object-cover pointer-events-none" loading="lazy" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
             <div class="ish-card-glare absolute inset-0 pointer-events-none opacity-0 mix-blend-screen transition-opacity duration-300 z-10"></div>
@@ -259,7 +265,7 @@ class RetroApp {
              onfocus="window.retroApp.showCenterSpotlight('${g.id}')"
              onblur="window.retroApp.hideCenterSpotlight()"
              onclick="window.retroApp.openPlayerModalById('${g.id}')">
-          <div class="ish-card-box group pointer-events-none">
+          <div class="ish-card-box group">
             <img src="${g.thumbnail}" alt="${g.title}" class="w-full h-full object-cover pointer-events-none" loading="lazy" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
             <div class="ish-card-glare absolute inset-0 pointer-events-none opacity-0 mix-blend-screen transition-opacity duration-300 z-10"></div>
@@ -689,10 +695,10 @@ class RetroApp {
       });
     }
 
-    // 2. Hero Stream Cards Motion (Event Delegation on #image-stream-root)
-    const heroRoot = document.getElementById("image-stream-root");
-    if (heroRoot) {
-      heroRoot.addEventListener("mouseover", (e) => {
+    // 2. Hero Stream Cards Motion (Event Delegation on #featured-banner)
+    const bannerContainer = document.getElementById("featured-banner");
+    if (bannerContainer) {
+      bannerContainer.addEventListener("mouseover", (e) => {
         const slot = e.target.closest(".ish-slot");
         if (!slot) return;
         const gameId = slot.dataset.gameId;
@@ -701,7 +707,7 @@ class RetroApp {
         }
       });
 
-      heroRoot.addEventListener("mouseout", (e) => {
+      bannerContainer.addEventListener("mouseout", (e) => {
         const slot = e.target.closest(".ish-slot");
         if (slot && (!e.relatedTarget || !slot.contains(e.relatedTarget))) {
           const box = slot.querySelector(".ish-card-box");
@@ -715,11 +721,11 @@ class RetroApp {
             const glare = box.querySelector(".ish-card-glare");
             if (glare) glare.style.opacity = "0";
           }
-          this.hideCenterSpotlight(150);
+          this.hideCenterSpotlight(200);
         }
       });
 
-      heroRoot.addEventListener("mousemove", (e) => {
+      bannerContainer.addEventListener("mousemove", (e) => {
         const slot = e.target.closest(".ish-slot");
         if (!slot) return;
         const box = slot.querySelector(".ish-card-box");
@@ -734,7 +740,7 @@ class RetroApp {
         const tiltX = ((y - centerY) / centerY) * -12;
         const tiltY = ((x - centerX) / centerX) * 12;
 
-        box.style.transform = `perspective(600px) scale(1.12) rotateX(${tiltX.toFixed(2)}deg) rotateY(${tiltY.toFixed(2)}deg)`;
+        box.style.transform = `perspective(600px) scale(1.18) translateZ(20px) rotateX(${tiltX.toFixed(2)}deg) rotateY(${tiltY.toFixed(2)}deg)`;
 
         const img = box.querySelector("img");
         if (img) {
