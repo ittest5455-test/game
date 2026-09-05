@@ -194,8 +194,8 @@ class RetroApp {
              onclick="window.retroApp.openPlayerModalById('${game.id}')">
           
           <!-- Image Container -->
-          <div class="relative w-full aspect-[4/3] bg-black overflow-hidden">
-            <img src="${game.thumbnail}" alt="${game.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.onerror=null; this.src='https://images.igdb.com/igdb/image/upload/t_cover_big/co1x9r.jpg'" />
+          <div class="relative w-full aspect-[4/3] bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 overflow-hidden flex items-center justify-center">
+            <img src="${game.thumbnail}" alt="${game.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.onerror=null; this.classList.add('hidden');" />
             
             <div class="absolute inset-0 bg-gradient-to-t from-[#131b2e] via-transparent to-black/40 opacity-70"></div>
             
