@@ -14,6 +14,8 @@ class RetroApp {
     this.onlineGamesCache = [];
     this.isSearchingOnline = false;
     this.displayLimit = 60;
+    this.spotlightTimeout = null;
+    this.currentSpotlightGame = null;
 
     this.init();
   }
@@ -192,24 +194,16 @@ class RetroApp {
         transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.3, 1.25);
         will-change: transform;
       }
-      /* Scale up smoothly when hovered or focused */
+      /* Scale highlight on rail card when hovered */
       .ish-slot:hover .ish-card-box,
       .ish-slot:focus-within .ish-card-box {
-        transform: scale(1.42);
+        transform: scale(1.1);
         border-color: #00f0ff;
-        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.95), 0 0 35px rgba(0, 240, 255, 0.85);
-        z-index: 999;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9), 0 0 25px rgba(0, 240, 255, 0.6);
+        z-index: 25;
       }
       .ish-slot:hover .ish-card-box img:not(.is-tracking) {
         animation: retroImgBreath 2.8s ease-in-out infinite;
-      }
-      .ish-card-overlay {
-        opacity: 0;
-        transition: opacity 0.25s ease;
-      }
-      .ish-slot:hover .ish-card-overlay,
-      .ish-slot:focus-within .ish-card-overlay {
-        opacity: 1;
       }
       #featured-banner:hover .ish-slot {
         animation-play-state: paused;
@@ -233,34 +227,15 @@ class RetroApp {
              tabindex="0"
              style="animation: ish-r ${speed}s linear infinite ${delay}s;"
              title="กดเล่นเกม: ${g.title}"
+             onmouseenter="window.retroApp.showCenterSpotlight('${g.id}')"
+             onmouseleave="window.retroApp.hideCenterSpotlight()"
+             onfocus="window.retroApp.showCenterSpotlight('${g.id}')"
+             onblur="window.retroApp.hideCenterSpotlight()"
              onclick="window.retroApp.openPlayerModalById('${g.id}')">
           <div class="ish-card-box group">
             <img src="${g.thumbnail}" alt="${g.title}" class="w-full h-full object-cover" loading="lazy" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
             <div class="ish-card-glare absolute inset-0 pointer-events-none opacity-0 mix-blend-screen transition-opacity duration-300 z-10"></div>
-            
-            <!-- Hover Overlay -->
-            <div class="ish-card-overlay absolute inset-0 bg-black/80 backdrop-blur-[1px] flex flex-col justify-between p-2 text-center z-10">
-              <div class="flex justify-between items-center">
-                <span class="text-[9px] font-bold px-1.5 py-0.5 rounded bg-cyan-500 text-black uppercase font-tech shadow">
-                  ${g.platformName}
-                </span>
-                <span class="text-[9px] text-amber-400 font-bold flex items-center gap-0.5">
-                  <i class="fas fa-star text-[8px]"></i> ${g.rating}
-                </span>
-              </div>
-
-              <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-cyan-500 to-purple-500 text-black flex items-center justify-center self-center shadow-xl shadow-cyan-500/60 transform group-hover:scale-110 transition-transform">
-                <i class="fas fa-play text-sm text-black ml-0.5"></i>
-              </div>
-
-              <div>
-                <p class="text-[11px] font-bold text-white line-clamp-1 drop-shadow-md">${g.title}</p>
-                <span class="text-[9px] text-cyan-300 font-bold flex items-center justify-center gap-1 mt-0.5">
-                  <i class="fas fa-gamepad"></i> กดเพื่อเล่นเลย
-                </span>
-              </div>
-            </div>
           </div>
         </div>
       `;
@@ -275,34 +250,15 @@ class RetroApp {
              tabindex="0"
              style="animation: ish-l ${speed}s linear infinite ${delay}s;"
              title="กดเล่นเกม: ${g.title}"
+             onmouseenter="window.retroApp.showCenterSpotlight('${g.id}')"
+             onmouseleave="window.retroApp.hideCenterSpotlight()"
+             onfocus="window.retroApp.showCenterSpotlight('${g.id}')"
+             onblur="window.retroApp.hideCenterSpotlight()"
              onclick="window.retroApp.openPlayerModalById('${g.id}')">
           <div class="ish-card-box group">
             <img src="${g.thumbnail}" alt="${g.title}" class="w-full h-full object-cover" loading="lazy" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
             <div class="ish-card-glare absolute inset-0 pointer-events-none opacity-0 mix-blend-screen transition-opacity duration-300 z-10"></div>
-            
-            <!-- Hover Overlay -->
-            <div class="ish-card-overlay absolute inset-0 bg-black/80 backdrop-blur-[1px] flex flex-col justify-between p-2 text-center z-10">
-              <div class="flex justify-between items-center">
-                <span class="text-[9px] font-bold px-1.5 py-0.5 rounded bg-cyan-500 text-black uppercase font-tech shadow">
-                  ${g.platformName}
-                </span>
-                <span class="text-[9px] text-amber-400 font-bold flex items-center gap-0.5">
-                  <i class="fas fa-star text-[8px]"></i> ${g.rating}
-                </span>
-              </div>
-
-              <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-cyan-500 to-purple-500 text-black flex items-center justify-center self-center shadow-xl shadow-cyan-500/60 transform group-hover:scale-110 transition-transform">
-                <i class="fas fa-play text-sm text-black ml-0.5"></i>
-              </div>
-
-              <div>
-                <p class="text-[11px] font-bold text-white line-clamp-1 drop-shadow-md">${g.title}</p>
-                <span class="text-[9px] text-cyan-300 font-bold flex items-center justify-center gap-1 mt-0.5">
-                  <i class="fas fa-gamepad"></i> กดเพื่อเล่นเลย
-                </span>
-              </div>
-            </div>
           </div>
         </div>
       `;
@@ -742,18 +698,18 @@ class RetroApp {
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
 
-        const tiltX = ((y - centerY) / centerY) * -14;
-        const tiltY = ((x - centerX) / centerX) * 14;
+        const tiltX = ((y - centerY) / centerY) * -12;
+        const tiltY = ((x - centerX) / centerX) * 12;
 
-        box.style.transform = `perspective(600px) scale(1.45) rotateX(${tiltX.toFixed(2)}deg) rotateY(${tiltY.toFixed(2)}deg)`;
+        box.style.transform = `perspective(600px) scale(1.12) rotateX(${tiltX.toFixed(2)}deg) rotateY(${tiltY.toFixed(2)}deg)`;
 
         const img = box.querySelector("img");
         if (img) {
           img.classList.add("is-tracking");
-          const shiftX = ((x - centerX) / centerX) * -12;
-          const shiftY = ((y - centerY) / centerY) * -12;
-          const rotateAngle = ((x - centerX) / centerX) * 2;
-          img.style.transform = `scale(1.18) translate3d(${shiftX.toFixed(1)}px, ${shiftY.toFixed(1)}px, 0) rotate(${rotateAngle.toFixed(1)}deg)`;
+          const shiftX = ((x - centerX) / centerX) * -8;
+          const shiftY = ((y - centerY) / centerY) * -8;
+          const rotateAngle = ((x - centerX) / centerX) * 1.5;
+          img.style.transform = `scale(1.12) translate3d(${shiftX.toFixed(1)}px, ${shiftY.toFixed(1)}px, 0) rotate(${rotateAngle.toFixed(1)}deg)`;
         }
 
         const glare = box.querySelector(".ish-card-glare");
@@ -778,6 +734,98 @@ class RetroApp {
           if (glare) glare.style.opacity = "0";
         }
       });
+    }
+
+    // 3. Center Spotlight Card 3D Motion
+    const spotlight = document.getElementById("hero-center-spotlight");
+    if (spotlight) {
+      spotlight.addEventListener("mousemove", (e) => {
+        const rect = spotlight.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const tiltX = ((y - centerY) / centerY) * -10;
+        const tiltY = ((x - centerX) / centerX) * 10;
+
+        spotlight.style.transform = `translate(-50%, -50%) perspective(800px) rotateX(${tiltX.toFixed(2)}deg) rotateY(${tiltY.toFixed(2)}deg) scale(1.02)`;
+
+        const spotImg = document.getElementById("spotlight-img");
+        if (spotImg) {
+          const shiftX = ((x - centerX) / centerX) * -6;
+          const shiftY = ((y - centerY) / centerY) * -6;
+          spotImg.style.transform = `scale(1.08) translate3d(${shiftX.toFixed(1)}px, ${shiftY.toFixed(1)}px, 0)`;
+        }
+      });
+
+      spotlight.addEventListener("mouseleave", () => {
+        spotlight.style.transform = `translate(-50%, -50%) scale(1)`;
+        const spotImg = document.getElementById("spotlight-img");
+        if (spotImg) spotImg.style.transform = "";
+      });
+    }
+  }
+
+  /**
+   * Show Dynamic Center Spotlight Card (เด้งมาตรงกลางเกมเดียวเมื่อชี้เมาส์)
+   */
+  showCenterSpotlight(gameId) {
+    const spotlight = document.getElementById("hero-center-spotlight");
+    if (!spotlight) return;
+
+    if (this.spotlightTimeout) {
+      clearTimeout(this.spotlightTimeout);
+      this.spotlightTimeout = null;
+    }
+
+    let game = this.games.find(g => g.id === gameId);
+    if (!game && this.isOnlineArchiveMode) {
+      game = this.onlineGamesCache.find(g => g.id === gameId);
+    }
+    if (!game) return;
+
+    this.currentSpotlightGame = game;
+
+    const imgEl = document.getElementById("spotlight-img");
+    const platformEl = document.getElementById("spotlight-platform");
+    const ratingEl = document.getElementById("spotlight-rating");
+    const titleEl = document.getElementById("spotlight-title");
+    const genreEl = document.getElementById("spotlight-genre");
+
+    if (imgEl) {
+      imgEl.src = game.thumbnail;
+      imgEl.alt = game.title;
+    }
+    if (platformEl) platformEl.innerText = game.platformName;
+    if (ratingEl) ratingEl.innerHTML = `<i class="fas fa-star text-[9px]"></i> ${game.rating}`;
+    if (titleEl) titleEl.innerText = game.title;
+    if (genreEl) genreEl.innerText = `${game.genre} • ${game.year || ''}`;
+
+    spotlight.classList.add("is-active");
+  }
+
+  /**
+   * Hide Dynamic Center Spotlight Card smoothly
+   */
+  hideCenterSpotlight(delay = 180) {
+    if (this.spotlightTimeout) clearTimeout(this.spotlightTimeout);
+    this.spotlightTimeout = setTimeout(() => {
+      const spotlight = document.getElementById("hero-center-spotlight");
+      if (spotlight) {
+        spotlight.classList.remove("is-active");
+        spotlight.style.transform = "";
+      }
+      this.currentSpotlightGame = null;
+    }, delay);
+  }
+
+  /**
+   * Launch Game from Center Spotlight
+   */
+  launchSpotlightGame() {
+    if (this.currentSpotlightGame) {
+      this.openPlayerModalById(this.currentSpotlightGame.id);
     }
   }
 

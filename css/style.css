@@ -142,6 +142,27 @@ body {
   border-radius: inherit;
 }
 
+/* Dynamic Center Spotlight Card (เด้งมาตรงกลางเกมเดียวเมื่อชี้เมาส์) */
+.center-preview-card {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.75);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.22s ease-out, transform 0.26s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0.22s;
+  z-index: 45;
+  will-change: transform, opacity;
+}
+
+.center-preview-card.is-active {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
 /* CRT Scanlines Shader Effect */
 .crt-overlay {
   position: relative;

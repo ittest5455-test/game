@@ -112,6 +112,58 @@
         <!-- Injected dynamically via JS: 3D perspective wrapper + styles + animated cards -->
       </div>
 
+      <!-- Dynamic Center Spotlight Card (เด้งมาตรงกลางเกมเดียวเมื่อชี้เมาส์) -->
+      <div id="hero-center-spotlight" 
+           class="center-preview-card w-[92vw] max-w-[320px] sm:max-w-[360px] bg-[#0c101d]/95 backdrop-blur-md rounded-2xl border-2 border-cyan-400 p-3.5 shadow-[0_25px_60px_rgba(0,0,0,0.95),0_0_40px_rgba(0,240,255,0.4)] flex flex-col gap-3 cursor-pointer select-none"
+           onmouseenter="if(window.retroApp && window.retroApp.spotlightTimeout) clearTimeout(window.retroApp.spotlightTimeout);"
+           onmouseleave="window.retroApp && window.retroApp.hideCenterSpotlight(120);"
+           onclick="window.retroApp && window.retroApp.launchSpotlightGame()">
+        
+        <!-- Top Media Section -->
+        <div class="relative w-full aspect-[16/10] rounded-xl overflow-hidden bg-slate-900 border border-slate-700/60 shadow-inner group">
+          <img id="spotlight-img" src="" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0c101d] via-transparent to-transparent opacity-80"></div>
+          
+          <!-- Badges -->
+          <div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+            <span id="spotlight-platform" class="text-[10px] font-bold px-2 py-0.5 rounded bg-cyan-500 text-black uppercase font-tech shadow">
+              NES
+            </span>
+          </div>
+          <div class="absolute top-2.5 right-2.5">
+            <span id="spotlight-rating" class="text-[10px] text-amber-400 font-bold px-2 py-0.5 rounded bg-black/70 backdrop-blur-sm border border-amber-500/30 flex items-center gap-1">
+              <i class="fas fa-star text-[9px]"></i> 4.9
+            </span>
+          </div>
+
+          <!-- Quick Play Hover Overlay Icon -->
+          <div class="absolute inset-0 flex items-center justify-center opacity-80 group-hover:opacity-100 transition-opacity">
+            <div class="w-12 h-12 rounded-full bg-cyan-500 text-black flex items-center justify-center shadow-lg shadow-cyan-500/50 transform group-hover:scale-110 transition-transform">
+              <i class="fas fa-play text-base ml-0.5"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Info & Play Button -->
+        <div class="flex flex-col gap-2.5">
+          <div>
+            <h3 id="spotlight-title" class="font-bold text-base text-white line-clamp-1 drop-shadow-md">
+              Contra
+            </h3>
+            <p id="spotlight-genre" class="text-xs text-gray-400 line-clamp-1">
+              Action / Run and Gun
+            </p>
+          </div>
+
+          <!-- Big Play Button -->
+          <button class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-cyan-400 via-cyan-500 to-purple-600 hover:from-cyan-300 hover:to-purple-500 text-black font-black text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/30 transform hover:scale-[1.02] active:scale-95 transition-all">
+            <i class="fas fa-gamepad text-sm"></i>
+            <span>กดเริ่มเล่นเกมนี้ (PLAY NOW)</span>
+          </button>
+        </div>
+
+      </div>
+
       <!-- Ambient Lighting & Edge Vignettes -->
       <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#070a12] via-transparent to-[#070a12]/40"></div>
       <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#070a12]/70 via-transparent to-[#070a12]/70"></div>
