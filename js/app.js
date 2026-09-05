@@ -59,30 +59,284 @@ class RetroApp {
   }
 
   /**
-   * Render Featured Hero Carousel / Banner
+   * Render 3D Image Stream Hero Banner & Spotlight Selector
    */
   renderFeaturedBanner() {
     const bannerEl = document.getElementById("featured-banner");
     if (!bannerEl) return;
 
-    const featuredGames = this.games.filter(g => g.featured);
-    if (!featuredGames.length) {
-      bannerEl.style.display = "none";
-      return;
+    // Default active game: Contra (or first featured game)
+    const featuredList = this.games.filter(g => g.featured);
+    const contraGame = this.games.find(g => g.id === "nes-contra") || featuredList[0] || this.games[0];
+    
+    this.currentFeaturedGame = contraGame;
+    this.selectFeaturedGame(contraGame.id, false);
+
+    // Initialize the 3D Image Stream Rails
+    this.initImageStreamHero();
+
+    // Render Quick Selection Chips
+    this.renderFeaturedQuickChips();
+
+    // Bind Random Game button
+    const randomBtn = document.getElementById("featured-random-btn");
+    if (randomBtn) {
+      randomBtn.onclick = () => this.selectRandomFeaturedGame();
+    }
+  }
+
+  /**
+   * Generate 3D perspective keyframe math for Image Stream rails (Ruixen UI Image Stream Hero model)
+   */
+  generateStreamKeyframes(dir, name) {
+    const cfg = {
+      perspective: 32,
+      cardWidth: 16,
+      cardHeight: 22,
+      cardRadius: 0.6,
+      birthHeight: 2.5,
+      exitHeight: 44,
+      railBirth: -10,
+      railExit: 42,
+      fan: 3.2,
+      turnBirth: 6,
+      turnExit: 26,
+      stops: 24
+    };
+    const frames = [];
+    for (let step = 0; step <= cfg.stops; step++) {
+      const R = step / cfg.stops;
+      const N = (cfg.birthHeight / cfg.cardHeight) * Math.pow(cfg.exitHeight / cfg.birthHeight, R);
+      const z = cfg.perspective * (1 - 1 / N);
+      const x = cfg.railExit - (cfg.railExit - cfg.railBirth) * Math.pow(1 - R, cfg.fan);
+      const p = cfg.turnBirth + (cfg.turnExit - cfg.turnBirth) * R;
+      const opacity = R < 0.1 ? (R / 0.1) : (R > 0.85 ? ((1 - R) / 0.15) : 1);
+      frames.push(`${(R * 100).toFixed(1)}%{transform:translate3d(${(dir * x).toFixed(2)}cqw,0,${z.toFixed(2)}cqw) rotateY(${(-dir * p).toFixed(2)}deg);opacity:${opacity.toFixed(2)};}`);
+    }
+    return `@keyframes ${name}{${frames.join("")}}`;
+  }
+
+  /**
+   * Initialize 3D Image Stream Rails with retro game covers
+   */
+  initImageStreamHero() {
+    const root = document.getElementById("image-stream-root");
+    if (!root) return;
+
+    // Pick top iconic games for the streaming rails
+    const streamPool = [
+      "nes-contra",
+      "ps1-pepsiman",
+      "snes-contra-iii",
+      "ps1-jackie-chan",
+      "sega-contra-hard-corps",
+      "arcade-metal-slug",
+      "arcade-contra",
+      "snes-super-mario-world",
+      "gba-contra-advance",
+      "snes-chrono-trigger",
+      "sega-sonic-the-hedgehog-2",
+      "gba-pokemon-emerald",
+      "nes-super-c",
+      "ps1-bloody-roar-2",
+      "ps1-chocobo-racing",
+      "n64-super-mario-64"
+    ].map(id => this.games.find(g => g.id === id)).filter(Boolean);
+
+    const streamGames = streamPool.length >= 8 ? streamPool : this.games.slice(0, 16);
+    const speed = 22; // seconds for full loop
+    const cardsPerRail = 8;
+
+    const styleId = "ish-styles";
+    let styleEl = document.getElementById(styleId);
+    if (!styleEl) {
+      styleEl = document.createElement("style");
+      styleEl.id = styleId;
+      document.head.appendChild(styleEl);
     }
 
-    bannerEl.style.display = "flex";
-    const game = featuredGames[Math.floor(Math.random() * featuredGames.length)] || featuredGames[0];
-    bannerEl.style.backgroundImage = `linear-gradient(to right, rgba(11, 14, 23, 0.95) 30%, rgba(11, 14, 23, 0.6) 70%, rgba(11, 14, 23, 0.85)), url('${game.banner || game.thumbnail}')`;
+    styleEl.textContent = `
+      ${this.generateStreamKeyframes(1, "ish-r")}
+      ${this.generateStreamKeyframes(-1, "ish-l")}
+      .ish-stream-wrap {
+        perspective: 32cqw;
+        perspective-origin: 50% 50%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        inset: 0;
+      }
+      .ish-stream-inner {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        inset: 0;
+        transform-style: preserve-3d;
+      }
+      .ish-card {
+        position: absolute;
+        overflow: hidden;
+        cursor: pointer;
+        left: 50%;
+        top: 50%;
+        width: 16cqw;
+        height: 22cqw;
+        margin-left: -8cqw;
+        margin-top: -11cqw;
+        border-radius: 0.8cqw;
+        box-shadow: 0 16px 36px rgba(0,0,0,0.85), 0 0 20px rgba(6, 182, 212, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        backface-visibility: hidden;
+        will-change: transform, opacity;
+        transition: border-color 0.3s ease, filter 0.3s ease;
+      }
+      .ish-card:hover {
+        border-color: rgba(6, 182, 212, 0.9);
+        filter: brightness(1.2) contrast(1.05);
+      }
+      #featured-banner:hover .ish-card {
+        animation-play-state: paused;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .ish-card { animation-play-state: paused !important; }
+      }
+    `;
 
-    document.getElementById("featured-title").innerText = game.title;
-    document.getElementById("featured-desc").innerText = game.description;
-    document.getElementById("featured-platform-badge").innerText = game.platformName;
-    document.getElementById("featured-year").innerText = game.year;
-    document.getElementById("featured-genre").innerText = game.genre;
+    // Render left and right rails
+    let html = `
+      <div class="ish-stream-wrap" aria-hidden="true">
+        <div class="ish-stream-inner">
+    `;
 
+    // Right rail
+    for (let i = 0; i < cardsPerRail; i++) {
+      const g = streamGames[i % streamGames.length];
+      const delay = -(i * speed / cardsPerRail).toFixed(2);
+      html += `
+        <div class="ish-card"
+             style="animation: ish-r ${speed}s linear infinite ${delay}s;"
+             title="คลิกเพื่อเลือกเกม: ${g.title}"
+             onclick="window.retroApp.selectFeaturedGame('${g.id}')">
+          <img src="${g.thumbnail}" alt="${g.title}" class="w-full h-full object-cover" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+        </div>
+      `;
+    }
+
+    // Left rail
+    for (let i = 0; i < cardsPerRail; i++) {
+      const g = streamGames[(i + 4) % streamGames.length];
+      const delay = -(i * speed / cardsPerRail).toFixed(2);
+      html += `
+        <div class="ish-card"
+             style="animation: ish-l ${speed}s linear infinite ${delay}s;"
+             title="คลิกเพื่อเลือกเกม: ${g.title}"
+             onclick="window.retroApp.selectFeaturedGame('${g.id}')">
+          <img src="${g.thumbnail}" alt="${g.title}" class="w-full h-full object-cover" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+        </div>
+      `;
+    }
+
+    html += `
+        </div>
+      </div>
+    `;
+
+    root.innerHTML = html;
+  }
+
+  /**
+   * Select a game to spotlight in the center of the Image Stream Hero
+   */
+  selectFeaturedGame(gameId, animate = true) {
+    const game = this.games.find(g => g.id === gameId);
+    if (!game) return;
+
+    this.currentFeaturedGame = game;
+
+    const titleEl = document.getElementById("featured-title");
+    const descEl = document.getElementById("featured-desc");
+    const badgeEl = document.getElementById("featured-platform-badge");
+    const yearEl = document.getElementById("featured-year");
+    const genreEl = document.getElementById("featured-genre");
+    const ratingEl = document.getElementById("featured-rating");
     const playBtn = document.getElementById("featured-play-btn");
-    playBtn.onclick = () => this.openPlayerModal(game);
+    const spotlightCard = document.getElementById("featured-card-spotlight");
+
+    if (titleEl) titleEl.innerText = game.title;
+    if (descEl) descEl.innerText = game.description;
+    if (badgeEl) badgeEl.innerText = game.platformName;
+    if (yearEl) yearEl.innerText = game.year;
+    if (genreEl) genreEl.innerText = game.genre;
+    if (ratingEl) ratingEl.innerText = game.rating;
+
+    if (playBtn) {
+      playBtn.onclick = () => this.openPlayerModal(game);
+    }
+
+    if (animate && spotlightCard) {
+      spotlightCard.classList.add("scale-[1.02]", "border-cyan-400");
+      setTimeout(() => {
+        spotlightCard.classList.remove("scale-[1.02]", "border-cyan-400");
+      }, 300);
+    }
+
+    // Update active quick chip styling
+    document.querySelectorAll(".featured-quick-chip").forEach(chip => {
+      const isTarget = chip.dataset.id === game.id;
+      chip.classList.toggle("bg-cyan-500", isTarget);
+      chip.classList.toggle("text-black", isTarget);
+      chip.classList.toggle("border-cyan-400", isTarget);
+      chip.classList.toggle("bg-slate-900/90", !isTarget);
+      chip.classList.toggle("text-gray-300", !isTarget);
+      chip.classList.toggle("border-slate-700/80", !isTarget);
+    });
+  }
+
+  /**
+   * Select a random game from featured list
+   */
+  selectRandomFeaturedGame() {
+    const featuredList = this.games.filter(g => g.featured);
+    const candidates = featuredList.length > 0 ? featuredList : this.games;
+    const randomGame = candidates[Math.floor(Math.random() * candidates.length)];
+    if (randomGame) {
+      this.selectFeaturedGame(randomGame.id, true);
+    }
+  }
+
+  /**
+   * Render quick shortcut chips to jump between popular showcase games
+   */
+  renderFeaturedQuickChips() {
+    const container = document.getElementById("featured-quick-chips");
+    if (!container) return;
+
+    const chipsData = [
+      { id: "nes-contra", label: "💥 Contra", platform: "nes" },
+      { id: "ps1-pepsiman", label: "🏃 Pepsiman", platform: "ps1" },
+      { id: "ps1-jackie-chan", label: "🥋 เฉินหลง", platform: "ps1" },
+      { id: "snes-contra-iii", label: "👾 Contra III", platform: "snes" },
+      { id: "sega-contra-hard-corps", label: "🤖 Hard Corps", platform: "sega" },
+      { id: "arcade-metal-slug", label: "🔫 Metal Slug", platform: "arcade" },
+      { id: "snes-super-mario-world", label: "🍄 Mario World", platform: "snes" }
+    ];
+
+    container.innerHTML = chipsData.map(chip => {
+      const isCurrent = this.currentFeaturedGame && this.currentFeaturedGame.id === chip.id;
+      return `
+        <button class="featured-quick-chip tv-focusable text-[11px] font-bold px-3 py-1 rounded-lg border transition-all cursor-pointer ${
+          isCurrent 
+            ? 'bg-cyan-500 text-black border-cyan-400 shadow-sm shadow-cyan-500/20' 
+            : 'bg-slate-900/90 text-gray-300 border-slate-700/80 hover:border-cyan-400/60 hover:text-white'
+        }"
+        data-id="${chip.id}"
+        onclick="window.retroApp.selectFeaturedGame('${chip.id}', true)">
+          ${chip.label}
+        </button>
+      `;
+    }).join("");
   }
 
   /**

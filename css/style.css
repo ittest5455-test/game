@@ -122,3 +122,21 @@ body {
 .animate-neon-pulse {
   animation: neonPulse 2s infinite ease-in-out;
 }
+
+/* Image Stream Hero 3D Perspective & GPU Optimization */
+#featured-banner {
+  contain: layout paint;
+}
+.ish-card {
+  user-select: none;
+  -webkit-user-select: none;
+  transform-style: preserve-3d;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
