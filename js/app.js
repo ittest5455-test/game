@@ -49,6 +49,7 @@ class RetroApp {
       const q = this.searchQuery.toLowerCase().trim();
       const matchQuery = q === "" || 
         game.title.toLowerCase().includes(q) ||
+        (game.id && game.id.toLowerCase().includes(q)) ||
         game.description.toLowerCase().includes(q) ||
         game.platformName.toLowerCase().includes(q) ||
         (game.genre && game.genre.toLowerCase().includes(q));
