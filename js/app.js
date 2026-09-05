@@ -27,14 +27,12 @@ class RetroApp {
   }
 
   /**
-   * Filter games by platform, spec tier, genre, and search query
+   * Filter games by platform and search query
    */
   getFilteredGames() {
     if (this.isOnlineArchiveMode) {
       return this.onlineGamesCache;
     }
-
-    const cartridgePlatforms = ["nes", "snes", "gba", "gbc", "sega", "n64"];
 
     return this.games.filter(game => {
       // 1. Check Platform
@@ -43,32 +41,19 @@ class RetroApp {
         matchPlatform = true;
       } else if (this.currentPlatform === "favorites") {
         matchPlatform = this.favorites.includes(game.id);
-      } else if (this.currentPlatform === "cartridges") {
-        matchPlatform = cartridgePlatforms.includes(game.platform);
       } else {
         matchPlatform = game.platform === this.currentPlatform;
       }
 
-      // 2. Check TV Box Spec Tier
-      const isHighSpec = game.platform === "ps1" || 
-                         game.platform === "n64" ||
-                         ["dos-doom", "dos-duke-nukem-3d", "dos-red-alert", "dos-warcraft-2", "dos-simcity-2000", "dos-wolfenstein-3d"].includes(game.id) ||
-                         ["arcade-kof-98", "arcade-kof-2002", "arcade-marvel-vs-capcom", "arcade-street-fighter-alpha-3"].includes(game.id);
+      // 2. Check Search Query
+      const q = this.searchQuery.toLowerCase().trim();
+      const matchQuery = q === "" || 
+        game.title.toLowerCase().includes(q) ||
+        game.description.toLowerCase().includes(q) ||
+        game.platformName.toLowerCase().includes(q) ||
+        (game.genre && game.genre.toLowerCase().includes(q));
 
-      let matchTier = true;
-      if (this.currentSpecTier === "low-spec") {
-        matchTier = !isHighSpec; // Low-spec includes all 8/16-bit, GBA, 2D DOS & Arcade (Smooth 60FPS on any TV box!)
-      } else if (this.currentSpecTier === "high-spec") {
-        matchTier = isHighSpec; // High-spec includes 3D PS1 & Heavy PC
-      }
-
-      const matchGenre = this.currentGenre === "all" || game.genre.toLowerCase() === this.currentGenre.toLowerCase();
-      const matchQuery = this.searchQuery === "" || 
-        game.title.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
-        game.description.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
-        game.platformName.toLowerCase().includes(this.searchQuery.toLowerCase());
-
-      return matchPlatform && matchTier && matchGenre && matchQuery;
+      return matchPlatform && matchQuery;
     });
   }
 
@@ -202,10 +187,6 @@ class RetroApp {
 
     grid.innerHTML = toRender.map((game) => {
       const isFav = this.favorites.includes(game.id);
-      const isHighSpec = game.platform === "ps1" || 
-                         game.platform === "n64" ||
-                         ["dos-doom", "dos-duke-nukem-3d", "dos-red-alert", "dos-warcraft-2", "dos-simcity-2000", "dos-wolfenstein-3d"].includes(game.id) ||
-                         ["arcade-kof-98", "arcade-kof-2002", "arcade-marvel-vs-capcom", "arcade-street-fighter-alpha-3"].includes(game.id);
 
       return `
         <div class="tv-focusable group relative bg-[#131b2e] rounded-xl overflow-hidden border border-slate-800/80 hover:border-cyan-500/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-500/10 flex flex-col cursor-pointer"
@@ -218,19 +199,11 @@ class RetroApp {
             
             <div class="absolute inset-0 bg-gradient-to-t from-[#131b2e] via-transparent to-black/40 opacity-70"></div>
             
-            <!-- Platform & TV Box Spec Badges -->
-            <div class="absolute top-2.5 left-2.5 flex flex-col gap-1 items-start">
-              <span class="text-[10px] font-bold px-2 py-0.5 rounded-md bg-black/70 backdrop-blur-md text-cyan-400 border border-cyan-500/40 uppercase tracking-wider font-tech">
+            <!-- Platform Badge -->
+            <div class="absolute top-2.5 left-2.5">
+              <span class="text-[10px] font-bold px-2.5 py-1 rounded-md bg-black/80 backdrop-blur-md text-cyan-400 border border-cyan-500/50 uppercase tracking-wider font-tech shadow-md">
                 ${game.platformName}
               </span>
-              ${isHighSpec ? 
-                `<span class="text-[9px] font-bold px-1.5 py-0.5 rounded-md bg-purple-950/90 backdrop-blur-md text-purple-300 border border-purple-500/50 flex items-center gap-1 shadow-sm">
-                   <i class="fas fa-rocket text-[8px]"></i> สเปกสูง
-                 </span>` :
-                `<span class="text-[9px] font-bold px-1.5 py-0.5 rounded-md bg-emerald-950/90 backdrop-blur-md text-emerald-400 border border-emerald-500/50 flex items-center gap-1 shadow-sm">
-                   <i class="fas fa-bolt text-[8px]"></i> สเปกต่ำลื่น 60FPS
-                 </span>`
-              }
             </div>
 
             <!-- Favorite Button -->
@@ -352,118 +325,71 @@ class RetroApp {
    * Bind event listeners for UI tabs and search
    */
   bindEvents() {
-    // TV Box Spec Tier Filter Buttons
-    document.querySelectorAll(".spec-tier-btn").forEach(btn => {
-      btn.addEventListener("click", () => {
-        document.querySelectorAll(".spec-tier-btn").forEach(b => {
-          b.classList.remove("bg-cyan-500", "text-black", "shadow-cyan-500/20");
-          b.classList.add("bg-slate-800");
-          if (b.dataset.tier === "low-spec") {
-            b.classList.add("text-emerald-400");
-          } else if (b.dataset.tier === "high-spec") {
-            b.classList.add("text-purple-300");
-          } else {
-            b.classList.add("text-gray-300");
-          }
-        });
-
-        btn.classList.remove("bg-slate-800", "text-emerald-400", "text-purple-300", "text-gray-300");
-        btn.classList.add("bg-cyan-500", "text-black", "shadow-cyan-500/20");
-
-        this.currentSpecTier = btn.dataset.tier;
-        this.displayLimit = 60;
-        this.renderGames();
-      });
-    });
-
     // Platform tabs
     document.querySelectorAll(".platform-tab-btn").forEach(btn => {
       btn.addEventListener("click", () => {
         document.querySelectorAll(".platform-tab-btn").forEach(b => {
-          b.classList.remove("bg-cyan-500", "text-black", "border-cyan-400", "bg-purple-600");
-          b.classList.add("bg-slate-800/80", "text-gray-300", "border-slate-700");
+          b.classList.remove("bg-cyan-500", "text-black", "border-cyan-400", "shadow-md", "shadow-cyan-500/20");
+          b.classList.add("bg-slate-900/80", "text-gray-300", "border-slate-800");
         });
 
         const platform = btn.dataset.platform;
 
-        if (platform === "online-archive") {
-          btn.classList.remove("bg-slate-800/80", "text-gray-300", "border-slate-700");
-          btn.classList.add("bg-purple-600", "text-white", "border-purple-400");
-          this.isOnlineArchiveMode = true;
-          this.searchOnlineArchive(this.searchQuery || "mario");
-        } else {
-          btn.classList.remove("bg-slate-800/80", "text-gray-300", "border-slate-700");
-          btn.classList.add("bg-cyan-500", "text-black", "border-cyan-400");
-          this.isOnlineArchiveMode = false;
-          this.currentPlatform = platform;
-          this.displayLimit = 60;
-          this.renderGames();
-        }
-      });
-    });
-
-    // Genre Filter Pills
-    document.querySelectorAll(".genre-pill-btn").forEach(btn => {
-      btn.addEventListener("click", () => {
-        document.querySelectorAll(".genre-pill-btn").forEach(b => {
-          b.classList.remove("bg-purple-600", "text-white");
-          b.classList.add("bg-slate-900/60", "text-gray-400");
-        });
-        btn.classList.remove("bg-slate-900/60", "text-gray-400");
-        btn.classList.add("bg-purple-600", "text-white");
-
-        this.currentGenre = btn.dataset.genre;
+        btn.classList.remove("bg-slate-900/80", "text-gray-300", "border-slate-800");
+        btn.classList.add("bg-cyan-500", "text-black", "border-cyan-400", "shadow-md", "shadow-cyan-500/20");
+        
+        this.isOnlineArchiveMode = false;
+        this.currentPlatform = platform;
         this.displayLimit = 60;
         this.renderGames();
       });
     });
 
-    // Search Input
-    const searchInput = document.getElementById("search-input");
-    if (searchInput) {
-      let debounceTimeout;
-      searchInput.addEventListener("input", (e) => {
-        this.searchQuery = e.target.value.trim();
-        this.displayLimit = 60;
-        clearTimeout(debounceTimeout);
+    // Search Input (Real-time live search)
+    const searchInputs = [
+      document.getElementById("search-input"),
+      document.querySelector("input[placeholder*='ค้นหา']")
+    ].filter(Boolean);
 
-        if (this.isOnlineArchiveMode) {
-          debounceTimeout = setTimeout(() => {
-            this.searchOnlineArchive(this.searchQuery || "action");
-          }, 600);
-        } else {
-          this.renderGames();
+    searchInputs.forEach(input => {
+      input.addEventListener("input", (e) => {
+        this.searchQuery = e.target.value;
+        this.displayLimit = 60;
+        this.renderGames();
+      });
+    });
+
+    // Close Player Modal Events
+    const closeBtn = document.getElementById("close-player-btn");
+    if (closeBtn) closeBtn.addEventListener("click", () => this.closePlayerModal());
+
+    const playerModal = document.getElementById("player-modal");
+    if (playerModal) {
+      playerModal.addEventListener("click", (e) => {
+        if (e.target === playerModal) {
+          this.closePlayerModal();
         }
       });
     }
 
-    // Close Player Modal Button
-    const closeBtn = document.getElementById("close-player-btn");
-    if (closeBtn) closeBtn.onclick = () => this.closePlayerModal();
-
-    // Fullscreen button
+    // Fullscreen Toggle
     const fsBtn = document.getElementById("fullscreen-btn");
-    if (fsBtn) fsBtn.onclick = () => window.retroEmulator.toggleFullscreen();
+    if (fsBtn) fsBtn.addEventListener("click", () => window.retroEmulator.toggleFullscreen());
 
-    // CRT Toggle button
+    // CRT Toggle
     const crtBtn = document.getElementById("crt-toggle-btn");
-    if (crtBtn) {
-      crtBtn.onclick = () => {
-        const enabled = window.retroEmulator.toggleCrtFilter();
-        crtBtn.classList.toggle("text-cyan-400", enabled);
-      };
-    }
+    if (crtBtn) crtBtn.addEventListener("click", () => window.retroEmulator.toggleCrt());
 
     // Custom ROM Upload Modal
     const openUploadBtn = document.getElementById("open-upload-btn");
-    const uploadModal = document.getElementById("upload-modal");
     const closeUploadBtn = document.getElementById("close-upload-btn");
+    const uploadModal = document.getElementById("upload-modal");
 
     if (openUploadBtn && uploadModal) {
-      openUploadBtn.onclick = () => uploadModal.classList.remove("hidden");
+      openUploadBtn.addEventListener("click", () => uploadModal.classList.remove("hidden"));
     }
     if (closeUploadBtn && uploadModal) {
-      closeUploadBtn.onclick = () => uploadModal.classList.add("hidden");
+      closeUploadBtn.addEventListener("click", () => uploadModal.classList.add("hidden"));
     }
   }
 

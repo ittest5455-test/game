@@ -109,9 +109,67 @@
       </div>
     </section>
 
-    <!-- GAME SECTION PLACEHOLDER (พร้อมสำหรับออกแบบหมวดหมู่ใหม่) -->
-    <section id="custom-categories-section" class="space-y-4">
-      <!-- Clean Slate: พร้อมสำหรับเพิ่มหมวดหมู่และเลย์เอาต์ใหม่ตามต้องการ -->
+    <!-- PLATFORM CATEGORIES BAR (หมวดหมู่เครื่องเกมยอดฮิต) -->
+    <section class="space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-800/80 pb-2">
+        <h3 class="text-sm sm:text-base font-bold text-slate-200 flex items-center gap-2">
+          <i class="fas fa-layer-group text-cyan-400"></i> หมวดหมู่เครื่องเล่นเกม (Platforms)
+        </h3>
+        <span id="results-count" class="text-xs text-cyan-400 font-semibold bg-cyan-950/60 px-2.5 py-0.5 rounded-full border border-cyan-500/30">กำลังโหลด...</span>
+      </div>
+
+      <!-- Platforms Grid Tabs -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-10 gap-2">
+        <button class="tv-focusable platform-tab-btn p-3 rounded-xl text-xs font-bold border transition-all flex flex-col items-center gap-1.5 bg-cyan-500 text-black border-cyan-400 shadow-md shadow-cyan-500/20" data-platform="all">
+          <i class="fas fa-fire text-lg"></i>
+          <span>ทุกเกม (ALL)</span>
+        </button>
+
+        <button class="tv-focusable platform-tab-btn p-3 rounded-xl text-xs font-bold border transition-all flex flex-col items-center gap-1.5 bg-slate-900/80 text-gray-300 border-slate-800 hover:border-indigo-400 hover:text-indigo-400" data-platform="ps1">
+          <i class="fas fa-compact-disc text-indigo-400 text-lg"></i>
+          <span>PlayStation 1</span>
+        </button>
+
+        <button class="tv-focusable platform-tab-btn p-3 rounded-xl text-xs font-bold border transition-all flex flex-col items-center gap-1.5 bg-slate-900/80 text-gray-300 border-slate-800 hover:border-red-400 hover:text-red-400" data-platform="nes">
+          <i class="fas fa-cube text-red-400 text-lg"></i>
+          <span>NES (Famicom)</span>
+        </button>
+
+        <button class="tv-focusable platform-tab-btn p-3 rounded-xl text-xs font-bold border transition-all flex flex-col items-center gap-1.5 bg-slate-900/80 text-gray-300 border-slate-800 hover:border-purple-400 hover:text-purple-400" data-platform="snes">
+          <i class="fas fa-shapes text-purple-400 text-lg"></i>
+          <span>SNES</span>
+        </button>
+
+        <button class="tv-focusable platform-tab-btn p-3 rounded-xl text-xs font-bold border transition-all flex flex-col items-center gap-1.5 bg-slate-900/80 text-gray-300 border-slate-800 hover:border-cyan-400 hover:text-cyan-400" data-platform="gba">
+          <i class="fas fa-mobile-alt text-cyan-400 text-lg"></i>
+          <span>GBA</span>
+        </button>
+
+        <button class="tv-focusable platform-tab-btn p-3 rounded-xl text-xs font-bold border transition-all flex flex-col items-center gap-1.5 bg-slate-900/80 text-yellow-300 border-slate-800 hover:border-yellow-400 hover:text-yellow-400" data-platform="gbc">
+          <i class="fas fa-gamepad text-yellow-400 text-lg"></i>
+          <span>GBC (Color)</span>
+        </button>
+
+        <button class="tv-focusable platform-tab-btn p-3 rounded-xl text-xs font-bold border transition-all flex flex-col items-center gap-1.5 bg-slate-900/80 text-gray-300 border-slate-800 hover:border-blue-400 hover:text-blue-400" data-platform="sega">
+          <i class="fas fa-bolt text-blue-400 text-lg"></i>
+          <span>Sega Genesis</span>
+        </button>
+
+        <button class="tv-focusable platform-tab-btn p-3 rounded-xl text-xs font-bold border transition-all flex flex-col items-center gap-1.5 bg-slate-900/80 text-pink-300 border-slate-800 hover:border-pink-400 hover:text-pink-400" data-platform="n64">
+          <i class="fas fa-cube text-pink-400 text-lg"></i>
+          <span>Nintendo 64</span>
+        </button>
+
+        <button class="tv-focusable platform-tab-btn p-3 rounded-xl text-xs font-bold border transition-all flex flex-col items-center gap-1.5 bg-slate-900/80 text-gray-300 border-slate-800 hover:border-amber-400 hover:text-amber-400" data-platform="arcade">
+          <i class="fas fa-coins text-amber-400 text-lg"></i>
+          <span>Neo Geo / Arcade</span>
+        </button>
+
+        <button class="tv-focusable platform-tab-btn p-3 rounded-xl text-xs font-bold border transition-all flex flex-col items-center gap-1.5 bg-slate-900/80 text-gray-300 border-slate-800 hover:border-emerald-400 hover:text-emerald-400" data-platform="dos">
+          <i class="fas fa-desktop text-emerald-400 text-lg"></i>
+          <span>MS-DOS</span>
+        </button>
+      </div>
     </section>
 
     <!-- GAMES GRID -->
