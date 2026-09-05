@@ -21,6 +21,22 @@ const RETRO_GAMES_DATABASE = [
     "embedUrl": "https://www.retrogames.cc/embed/42754-pepsiman-japan.html"
   },
   {
+    "id": "ps1-jackie-chan",
+    "title": "Jackie Chan Stuntmaster (เฉินหลง)",
+    "platform": "ps1",
+    "platformName": "PlayStation 1",
+    "genre": "Action / Beat 'em up",
+    "year": 2000,
+    "developer": "Radical Entertainment / Midway",
+    "rating": 5.0,
+    "featured": false,
+    "thumbnail": "https://i.987967.xyz/screenshot/72/2023/07/17/41909_155bbacae094edc96727a006b0f20f57f197f174.png",
+    "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc8d13.jpg",
+    "description": "เกมแอ็กชันกังฟูเฉินหลง บู๊แหลก เตะ ต่อย คว้าเก้าอี้กวาดแก๊งมาเฟียช่วยคุณปู่",
+    "controls": "ปุ่มจอย: D-Pad เดิน | Square: ต่อย | Triangle: เตะ | X: กระโดด | Circle: กลิ้งหลบ/หยิบของ",
+    "embedUrl": "https://www.retrogames.cc/embed/41909-jackie-chan-stuntmaster.html"
+  },
+  {
     "id": "ps1-road-rash",
     "title": "Road Rash (1995)",
     "platform": "ps1",
@@ -115,22 +131,6 @@ const RETRO_GAMES_DATABASE = [
     "description": "เกมต่อสู้แปลงร่างเป็นสัตว์ดุร้าย เสือ สิงโต หมาป่า ค้างคาว คอมโบสะใจ",
     "controls": "ปุ่มจอย: D-Pad เคลื่อนที่ | Square: ต่อย | X: เตะ | Circle: แปลงร่างสัตว์ (Beast Form)",
     "embedUrl": "https://www.retrogames.cc/embed/41804-bloody-roar-ii.html"
-  },
-  {
-    "id": "ps1-jackie-chan",
-    "title": "Jackie Chan Stuntmaster (เฉินหลง)",
-    "platform": "ps1",
-    "platformName": "PlayStation 1",
-    "genre": "Action / Beat 'em up",
-    "year": 2000,
-    "developer": "Radical Entertainment",
-    "rating": 4.9,
-    "featured": false,
-    "thumbnail": "https://images.igdb.com/igdb/image/upload/t_cover_big/co249x.jpg",
-    "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc8d13.jpg",
-    "description": "เกมแอ็กชันกังฟูเฉินหลง บู๊แหลก เตะ ต่อย คว้าเก้าอี้กวาดมาเฟียช่วยคุณปู่",
-    "controls": "ปุ่มจอย: D-Pad เดิน | Square: ต่อย | Triangle: เตะ | X: กระโดด | Circle: กลิ้งหลบ/หยิบของ",
-    "embedUrl": "https://www.retrogames.cc/embed/41838-jackie-chan-stuntmaster.html"
   },
   {
     "id": "ps1-dragonball-gt",
