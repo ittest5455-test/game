@@ -76,12 +76,16 @@ class RetroApp {
    * Render Featured Hero Carousel / Banner
    */
   renderFeaturedBanner() {
-    const featuredGames = this.games.filter(g => g.featured);
-    if (!featuredGames.length) return;
-
     const bannerEl = document.getElementById("featured-banner");
     if (!bannerEl) return;
 
+    const featuredGames = this.games.filter(g => g.featured);
+    if (!featuredGames.length) {
+      bannerEl.style.display = "none";
+      return;
+    }
+
+    bannerEl.style.display = "flex";
     const game = featuredGames[Math.floor(Math.random() * featuredGames.length)] || featuredGames[0];
     bannerEl.style.backgroundImage = `linear-gradient(to right, rgba(11, 14, 23, 0.95) 30%, rgba(11, 14, 23, 0.6) 70%, rgba(11, 14, 23, 0.85)), url('${game.banner || game.thumbnail}')`;
 
@@ -184,10 +188,10 @@ class RetroApp {
 
     if (filtered.length === 0) {
       grid.innerHTML = `
-        <div class="col-span-full py-16 text-center text-gray-400">
-          <i class="fas fa-gamepad text-5xl mb-4 text-cyan-400 opacity-60"></i>
-          <p class="text-lg font-medium">ไม่พบเกมที่ตรงกับการค้นหา</p>
-          <p class="text-sm text-gray-500 mt-1">ลองพิมพ์ค้นหาในแท็บ Online Archive เพื่อค้นหาเกมอื่นๆ ในคลังออนไลน์</p>
+        <div class="col-span-full py-20 text-center text-gray-400 space-y-3">
+          <i class="fas fa-layer-group text-5xl mb-2 text-cyan-400 opacity-60"></i>
+          <p class="text-lg font-bold text-slate-200">คลังเกมว่างเปล่า (ล้างข้อมูลเกมออกทั้งหมดแล้ว)</p>
+          <p class="text-sm text-gray-500">พร้อมสำหรับการเพิ่มรายชื่อเกมใหม่ หรือเปิดเล่นไฟล์ ROM ส่วนตัวได้ทันที</p>
         </div>
       `;
       return;
