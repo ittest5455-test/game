@@ -102,7 +102,7 @@ class RetroApp {
 
   /**
    * Initialize 3D Image Stream Rails with retro game covers
-   * Hovering over any card pauses the stream, enlarges the image, and reveals play button!
+   * Clean, unblocked 3D corridor. Hovering enlarges card smoothly in place with zero jitter!
    */
   initImageStreamHero() {
     const root = document.getElementById("image-stream-root");
@@ -129,8 +129,9 @@ class RetroApp {
     ].map(id => this.games.find(g => g.id === id)).filter(Boolean);
 
     const streamGames = streamPool.length >= 8 ? streamPool : this.games.slice(0, 16);
-    const speed = 22; // seconds for full loop
+    const speed = 24; // seconds for smooth continuous loop
     const cardsPerRail = 8;
+    const axisY = 56; // % perspective origin height (creates the curved U-shaped corridor)
 
     const styleId = "ish-styles";
     let styleEl = document.getElementById(styleId);
@@ -143,9 +144,10 @@ class RetroApp {
     styleEl.textContent = `
       ${this.generateStreamKeyframes(1, "ish-r")}
       ${this.generateStreamKeyframes(-1, "ish-l")}
+
       .ish-stream-wrap {
         perspective: 32cqw;
-        perspective-origin: 50% 50%;
+        perspective-origin: 50% ${axisY}%;
         width: 100%;
         height: 100%;
         position: absolute;
@@ -158,46 +160,56 @@ class RetroApp {
         inset: 0;
         transform-style: preserve-3d;
       }
-      .ish-card {
+      /* Animated Slot maintains the 3D trajectory */
+      .ish-slot {
         position: absolute;
+        left: 50%;
+        top: ${axisY}%;
+        width: 14.5cqw;
+        height: 21.5cqw;
+        margin-left: -7.25cqw;
+        margin-top: -10.75cqw;
+        transform-style: preserve-3d;
+        will-change: transform, opacity;
+      }
+      /* Inner Card handles smooth scale-up on hover without disrupting the 3D path */
+      .ish-card-box {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.9cqw;
         overflow: hidden;
         cursor: pointer;
-        left: 50%;
-        top: 50%;
-        width: 16cqw;
-        height: 22cqw;
-        margin-left: -8cqw;
-        margin-top: -11cqw;
-        border-radius: 0.8cqw;
-        box-shadow: 0 16px 36px rgba(0,0,0,0.85), 0 0 20px rgba(6, 182, 212, 0.15);
-        border: 2px solid rgba(255, 255, 255, 0.18);
-        backface-visibility: hidden;
-        will-change: transform, opacity;
-        transition: transform 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.2), box-shadow 0.35s ease, border-color 0.35s ease;
+        position: relative;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 14px 32px rgba(0, 0, 0, 0.85), 0 0 15px rgba(6, 182, 212, 0.15);
+        transition: transform 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.25), box-shadow 0.35s ease, border-color 0.35s ease;
+        transform-origin: center center;
+        background: #0f1526;
       }
-      .ish-card:hover, .ish-card:focus {
-        animation-play-state: paused !important;
-        transform: scale(1.5) translateZ(80px) !important;
-        z-index: 120 !important;
-        border-color: #00f0ff !important;
-        box-shadow: 0 25px 60px rgba(0,0,0,0.95), 0 0 40px rgba(0, 240, 255, 0.75) !important;
+      /* Scale up smoothly when hovered or focused */
+      .ish-slot:hover .ish-card-box,
+      .ish-slot:focus-within .ish-card-box {
+        transform: scale(1.42);
+        border-color: #00f0ff;
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.95), 0 0 35px rgba(0, 240, 255, 0.85);
+        z-index: 999;
       }
-      .ish-card .ish-hover-overlay {
+      .ish-card-overlay {
         opacity: 0;
         transition: opacity 0.25s ease;
       }
-      .ish-card:hover .ish-hover-overlay, .ish-card:focus .ish-hover-overlay {
+      .ish-slot:hover .ish-card-overlay,
+      .ish-slot:focus-within .ish-card-overlay {
         opacity: 1;
       }
-      #featured-banner:hover .ish-card {
+      #featured-banner:hover .ish-slot {
         animation-play-state: paused;
       }
       @media (prefers-reduced-motion: reduce) {
-        .ish-card { animation-play-state: paused !important; }
+        .ish-slot { animation-play-state: paused !important; }
       }
     `;
 
-    // Render left and right rails
     let html = `
       <div class="ish-stream-wrap" aria-hidden="true">
         <div class="ish-stream-inner">
@@ -208,34 +220,36 @@ class RetroApp {
       const g = streamGames[i % streamGames.length];
       const delay = -(i * speed / cardsPerRail).toFixed(2);
       html += `
-        <div class="ish-card tv-focusable group"
+        <div class="ish-slot tv-focusable"
              tabindex="0"
              style="animation: ish-r ${speed}s linear infinite ${delay}s;"
-             title="คลิกเพื่อเล่นทันที: ${g.title}"
+             title="กดเล่นเกม: ${g.title}"
              onclick="window.retroApp.openPlayerModalById('${g.id}')">
-          <img src="${g.thumbnail}" alt="${g.title}" class="w-full h-full object-cover" loading="lazy" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-          
-          <!-- Hover-to-enlarge overlay with PLAY button -->
-          <div class="ish-hover-overlay absolute inset-0 bg-black/75 backdrop-blur-[1px] flex flex-col justify-between p-2.5 text-center">
-            <div class="flex justify-between items-center">
-              <span class="text-[9px] font-bold px-2 py-0.5 rounded bg-cyan-500 text-black uppercase font-tech shadow">
-                ${g.platformName}
-              </span>
-              <span class="text-[9px] text-amber-400 font-bold flex items-center gap-0.5">
-                <i class="fas fa-star text-[8px]"></i> ${g.rating}
-              </span>
-            </div>
+          <div class="ish-card-box group">
+            <img src="${g.thumbnail}" alt="${g.title}" class="w-full h-full object-cover" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            
+            <!-- Hover Overlay -->
+            <div class="ish-card-overlay absolute inset-0 bg-black/80 backdrop-blur-[1px] flex flex-col justify-between p-2 text-center">
+              <div class="flex justify-between items-center">
+                <span class="text-[9px] font-bold px-1.5 py-0.5 rounded bg-cyan-500 text-black uppercase font-tech shadow">
+                  ${g.platformName}
+                </span>
+                <span class="text-[9px] text-amber-400 font-bold flex items-center gap-0.5">
+                  <i class="fas fa-star text-[8px]"></i> ${g.rating}
+                </span>
+              </div>
 
-            <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-cyan-500 to-purple-500 text-black flex items-center justify-center self-center shadow-xl shadow-cyan-500/60 transform group-hover:scale-110 transition-transform">
-              <i class="fas fa-play text-base text-black ml-0.5"></i>
-            </div>
+              <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-cyan-500 to-purple-500 text-black flex items-center justify-center self-center shadow-xl shadow-cyan-500/60 transform group-hover:scale-110 transition-transform">
+                <i class="fas fa-play text-sm text-black ml-0.5"></i>
+              </div>
 
-            <div>
-              <p class="text-[11px] font-bold text-white line-clamp-1 drop-shadow-md">${g.title}</p>
-              <span class="text-[9px] text-cyan-300 font-bold flex items-center justify-center gap-1 mt-0.5">
-                <i class="fas fa-gamepad"></i> กดเพื่อเล่นเลย
-              </span>
+              <div>
+                <p class="text-[11px] font-bold text-white line-clamp-1 drop-shadow-md">${g.title}</p>
+                <span class="text-[9px] text-cyan-300 font-bold flex items-center justify-center gap-1 mt-0.5">
+                  <i class="fas fa-gamepad"></i> กดเพื่อเล่นเลย
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -247,34 +261,36 @@ class RetroApp {
       const g = streamGames[(i + 4) % streamGames.length];
       const delay = -(i * speed / cardsPerRail).toFixed(2);
       html += `
-        <div class="ish-card tv-focusable group"
+        <div class="ish-slot tv-focusable"
              tabindex="0"
              style="animation: ish-l ${speed}s linear infinite ${delay}s;"
-             title="คลิกเพื่อเล่นทันที: ${g.title}"
+             title="กดเล่นเกม: ${g.title}"
              onclick="window.retroApp.openPlayerModalById('${g.id}')">
-          <img src="${g.thumbnail}" alt="${g.title}" class="w-full h-full object-cover" loading="lazy" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-          
-          <!-- Hover-to-enlarge overlay with PLAY button -->
-          <div class="ish-hover-overlay absolute inset-0 bg-black/75 backdrop-blur-[1px] flex flex-col justify-between p-2.5 text-center">
-            <div class="flex justify-between items-center">
-              <span class="text-[9px] font-bold px-2 py-0.5 rounded bg-cyan-500 text-black uppercase font-tech shadow">
-                ${g.platformName}
-              </span>
-              <span class="text-[9px] text-amber-400 font-bold flex items-center gap-0.5">
-                <i class="fas fa-star text-[8px]"></i> ${g.rating}
-              </span>
-            </div>
+          <div class="ish-card-box group">
+            <img src="${g.thumbnail}" alt="${g.title}" class="w-full h-full object-cover" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            
+            <!-- Hover Overlay -->
+            <div class="ish-card-overlay absolute inset-0 bg-black/80 backdrop-blur-[1px] flex flex-col justify-between p-2 text-center">
+              <div class="flex justify-between items-center">
+                <span class="text-[9px] font-bold px-1.5 py-0.5 rounded bg-cyan-500 text-black uppercase font-tech shadow">
+                  ${g.platformName}
+                </span>
+                <span class="text-[9px] text-amber-400 font-bold flex items-center gap-0.5">
+                  <i class="fas fa-star text-[8px]"></i> ${g.rating}
+                </span>
+              </div>
 
-            <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-cyan-500 to-purple-500 text-black flex items-center justify-center self-center shadow-xl shadow-cyan-500/60 transform group-hover:scale-110 transition-transform">
-              <i class="fas fa-play text-base text-black ml-0.5"></i>
-            </div>
+              <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-cyan-500 to-purple-500 text-black flex items-center justify-center self-center shadow-xl shadow-cyan-500/60 transform group-hover:scale-110 transition-transform">
+                <i class="fas fa-play text-sm text-black ml-0.5"></i>
+              </div>
 
-            <div>
-              <p class="text-[11px] font-bold text-white line-clamp-1 drop-shadow-md">${g.title}</p>
-              <span class="text-[9px] text-cyan-300 font-bold flex items-center justify-center gap-1 mt-0.5">
-                <i class="fas fa-gamepad"></i> กดเพื่อเล่นเลย
-              </span>
+              <div>
+                <p class="text-[11px] font-bold text-white line-clamp-1 drop-shadow-md">${g.title}</p>
+                <span class="text-[9px] text-cyan-300 font-bold flex items-center justify-center gap-1 mt-0.5">
+                  <i class="fas fa-gamepad"></i> กดเพื่อเล่นเลย
+                </span>
+              </div>
             </div>
           </div>
         </div>

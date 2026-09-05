@@ -127,10 +127,9 @@ body {
 #featured-banner {
   contain: layout paint;
 }
-.ish-card {
+.ish-slot, .ish-card-box {
   user-select: none;
   -webkit-user-select: none;
-  transform-style: preserve-3d;
 }
 .scrollbar-none::-webkit-scrollbar {
   display: none;

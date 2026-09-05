@@ -91,22 +91,33 @@
   <main class="flex-1 max-w-7xl mx-auto w-full px-4 lg:px-8 py-6 space-y-6">
 
     <!-- HERO FEATURED BANNER (IMAGE STREAM HERO) -->
-    <section id="featured-banner" class="relative rounded-2xl overflow-hidden min-h-[380px] sm:min-h-[420px] lg:min-h-[460px] border border-slate-800/90 shadow-2xl shadow-cyan-950/20 bg-[#080b13] flex items-center justify-center select-none" style="container-type: inline-size;">
+    <section id="featured-banner" class="relative rounded-2xl overflow-hidden min-h-[400px] sm:min-h-[450px] lg:min-h-[500px] border border-slate-800/90 shadow-2xl shadow-cyan-950/20 bg-[#070a12] flex flex-col justify-between select-none py-6" style="container-type: inline-size;">
       
+      <!-- Top Center Hero Title (Clean & Unobtrusive) -->
+      <div class="pointer-events-none relative z-10 text-center px-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-400 text-xs font-semibold shadow-md mb-1.5">
+          <i class="fas fa-gamepad text-cyan-400 text-xs animate-pulse"></i>
+          <span>PENNUENG RETRO ARCADE</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)]">
+          เลือกเกมแล้วลุยเลย!
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-400 mt-1 max-w-md mx-auto">
+          ชี้ที่รูปเกมส์เพื่อขยายดูชื่อเกม และคลิกเพื่อกดเริ่มเล่นได้ทันที
+        </p>
+      </div>
+
       <!-- 3D Image Stream Container -->
       <div id="image-stream-root" class="absolute inset-0 overflow-hidden pointer-events-auto">
         <!-- Injected dynamically via JS: 3D perspective wrapper + styles + animated cards -->
       </div>
 
       <!-- Ambient Lighting & Edge Vignettes -->
-      <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#080b13] via-transparent to-[#080b13]/60"></div>
-      <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#080b13]/70 via-transparent to-[#080b13]/70"></div>
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#070a12] via-transparent to-[#070a12]/40"></div>
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#070a12]/70 via-transparent to-[#070a12]/70"></div>
 
-      <!-- Subtle Floating Header Badge (Non-blocking) -->
-      <div class="pointer-events-none absolute top-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-cyan-500/30 text-cyan-400 text-xs font-semibold shadow-lg">
-        <i class="fas fa-gamepad text-cyan-400 text-xs animate-pulse"></i>
-        <span>เลือกเกมไฮไลต์: ชี้ที่ภาพเกมเพื่อขยาย แล้วกดคลิกเล่นได้ทันที!</span>
-      </div>
+      <!-- Bottom Spacer -->
+      <div class="pointer-events-none relative z-10 h-6"></div>
 
     </section>
 
