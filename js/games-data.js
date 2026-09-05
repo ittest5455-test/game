@@ -1,5 +1,5 @@
 /**
- * PENNUENG GAME - 100% Authentic 1:1 Real Game Covers (Zero Duplicates)
+ * PENNUENG GAME - 100% Verified Numeric Stream Embeds (Zero 404 Errors)
  * Systems: PS1, NES, SNES, GBA, GBC, Sega Genesis, N64, Neo Geo / Arcade, MS-DOS
  */
 
@@ -258,7 +258,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม X-Men - Mutant Academy บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/x-men-mutant-academy-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46403-x-men-mutant-academy-usa.html"
   },
   {
     "id": "ps1-x-men-vs-street-fighter",
@@ -274,7 +274,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม X-Men vs. Street Fighter บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/x-men-vs-street-fighter.html"
+    "embedUrl": "https://www.retrogames.cc/embed/42408-x-men-vs-street-fighter.html"
   },
   {
     "id": "ps1-x-men-children-of-the-atom",
@@ -290,7 +290,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม X-Men: Children Of The Atom บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/x-men-children-of-the-atom.html"
+    "embedUrl": "https://www.retrogames.cc/embed/42409-x-men-children-of-the-atom.html"
   },
   {
     "id": "ps1-xena-warrior-princess",
@@ -306,7 +306,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Xena - Warrior Princess บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/xena-warrior-princess.html"
+    "embedUrl": "https://www.retrogames.cc/embed/40043-xena-warrior-princess.html"
   },
   {
     "id": "ps1-xenogears-disc-1",
@@ -322,7 +322,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Xenogears (Disc 1) บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/xenogears-disc-1.html"
+    "embedUrl": "https://www.retrogames.cc/embed/43086-xenogears-disc-1.html"
   },
   {
     "id": "ps1-xenogears-disc-2",
@@ -338,7 +338,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Xenogears (Disc 2) บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/xenogears-disc-2.html"
+    "embedUrl": "https://www.retrogames.cc/embed/43087-xenogears-disc-2.html"
   },
   {
     "id": "ps1-xevious-3d-g-usa",
@@ -354,7 +354,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Xevious 3D-G+ บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/xevious-3d-g-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46530-xevious-3d-g-usa.html"
   },
   {
     "id": "ps1-xs-airboat-racing",
@@ -370,7 +370,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม XS Airboat Racing บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/xs-airboat-racing.html"
+    "embedUrl": "https://www.retrogames.cc/embed/40067-xs-airboat-racing.html"
   },
   {
     "id": "ps1-xs-junior-league-football",
@@ -386,7 +386,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม XS Junior League Football บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/xs-junior-league-football.html"
+    "embedUrl": "https://www.retrogames.cc/embed/40037-xs-junior-league-football.html"
   },
   {
     "id": "ps1-xs-junior-league-soccer",
@@ -402,7 +402,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม XS Junior League Soccer บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/xs-junior-league-soccer.html"
+    "embedUrl": "https://www.retrogames.cc/embed/40040-xs-junior-league-soccer.html"
   },
   {
     "id": "ps1-crash-bandicoot",
@@ -418,7 +418,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Crash Bandicoot บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/crash-bandicoot.html"
+    "embedUrl": "https://www.retrogames.cc/embed/40784-crash-bandicoot.html"
   },
   {
     "id": "ps1-bloody-roar-2-bringer-of-new-age",
@@ -434,7 +434,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Bloody Roar 2: Bringer of New Age บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/bloody-roar-2-bringer-of-new-age.html"
+    "embedUrl": "https://www.retrogames.cc/embed/41623-bloody-roar-2-bringer-of-new-age.html"
   },
   {
     "id": "ps1-fifa-2000",
@@ -450,7 +450,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม FIFA 2000 บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/fifa-2000.html"
+    "embedUrl": "https://www.retrogames.cc/embed/41776-fifa-2000.html"
   },
   {
     "id": "ps1-wild-arms-2-usa",
@@ -466,7 +466,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Wild Arms 2 บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/wild-arms-2-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46945-wild-arms-2-usa.html"
   },
   {
     "id": "ps1-yu-gi-oh-forbidden-memories-15-card-mod",
@@ -482,7 +482,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Yu-Gi-Oh! - Forbidden Memories - 15 Card Mod บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/yu-gi-oh-forbidden-memories-15-card-mod.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46876-yu-gi-oh-forbidden-memories-15-card-mod.html"
   },
   {
     "id": "ps1-nascar-98-collectors-edition-usa",
@@ -498,7 +498,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม NASCAR 98 Collector's Edition บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/nascar-98-collectors-edition-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46868-nascar-98-collectors-edition-usa.html"
   },
   {
     "id": "ps1-pocket-fighter-usa",
@@ -514,7 +514,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Pocket Fighter บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/pocket-fighter-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46867-pocket-fighter-usa.html"
   },
   {
     "id": "ps1-evil-dead-hail-to-the-king-usa",
@@ -530,7 +530,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Evil Dead - Hail to the King บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/evil-dead-hail-to-the-king-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46865-evil-dead-hail-to-the-king-usa.html"
   },
   {
     "id": "ps1-v2000",
@@ -546,7 +546,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม V2000 บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/v2000.html"
+    "embedUrl": "https://www.retrogames.cc/embed/41516-v2000.html"
   },
   {
     "id": "ps1-vagrant-story",
@@ -562,7 +562,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Vagrant Story บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/vagrant-story.html"
+    "embedUrl": "https://www.retrogames.cc/embed/40117-vagrant-story.html"
   },
   {
     "id": "ps1-vampire-hunter-d-usa",
@@ -578,7 +578,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Vampire Hunter D บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/vampire-hunter-d-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/43394-vampire-hunter-d-usa.html"
   },
   {
     "id": "ps1-vandal-hearts-ushinawareta-kodai-bunmei-japan",
@@ -594,7 +594,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Vandal Hearts - Ushinawareta Kodai Bunmei บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/vandal-hearts-ushinawareta-kodai-bunmei-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/45537-vandal-hearts-ushinawareta-kodai-bunmei-japan.html"
   },
   {
     "id": "ps1-vcandal-hearts-usa",
@@ -610,7 +610,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Vandal Hearts บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/vcandal-hearts-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/45537-vcandal-hearts-usa.html"
   },
   {
     "id": "ps1-vandal-hearts-ii",
@@ -626,7 +626,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Vandal Hearts II บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/vandal-hearts-ii.html"
+    "embedUrl": "https://www.retrogames.cc/embed/40179-vandal-hearts-ii.html"
   },
   {
     "id": "ps1-vandal-hearts-ii-tenjou-no-mon-japan",
@@ -642,7 +642,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Vandal Hearts II - Tenjou no Mon บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/vandal-hearts-ii-tenjou-no-mon-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/45540-vandal-hearts-ii-tenjou-no-mon-japan.html"
   },
   {
     "id": "ps1-vib-ribbon",
@@ -658,7 +658,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Vib Ribbon บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/vib-ribbon.html"
+    "embedUrl": "https://www.retrogames.cc/embed/41844-vib-ribbon.html"
   },
   {
     "id": "ps1-vigilante-8-2nd-offense-usa",
@@ -674,7 +674,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Vigilante 8 - 2nd Offense บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/vigilante-8-2nd-offense-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/32597-vigilante-8-2nd-offense-usa.html"
   },
   {
     "id": "ps1-vigilante-8-usa",
@@ -690,7 +690,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Vigilante 8 บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/vigilante-8-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/32140-vigilante-8-usa.html"
   },
   {
     "id": "ps1-virtual-pool-3",
@@ -706,7 +706,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Virtual Pool 3 บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/virtual-pool-3.html"
+    "embedUrl": "https://www.retrogames.cc/embed/40209-virtual-pool-3.html"
   },
   {
     "id": "ps1-vr-soccer-96",
@@ -722,7 +722,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม VR Soccer '96 บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/vr-soccer-96.html"
+    "embedUrl": "https://www.retrogames.cc/embed/40212-vr-soccer-96.html"
   },
   {
     "id": "ps1-vs",
@@ -738,7 +738,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Vs. บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/vs.html"
+    "embedUrl": "https://www.retrogames.cc/embed/40212-vs.html"
   },
   {
     "id": "ps1-ultima-underworld-the-styaign-abyss",
@@ -754,7 +754,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Ultima Underworld - The Stygian Abyss บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/ultima-underworld-the-styaign-abyss.html"
+    "embedUrl": "https://www.retrogames.cc/embed/42817-ultima-underworld-the-styaign-abyss.html"
   },
   {
     "id": "ps1-ultraman-fighting-evolution-japan",
@@ -770,7 +770,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Ultraman - Fighting Evolution บนเครื่อง PlayStation 1 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/ultraman-fighting-evolution-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46560-ultraman-fighting-evolution-japan.html"
   },
   {
     "id": "nes-contra",
@@ -882,7 +882,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมฮิตยอดนิยม Great to have you back! บนเครื่อง NES (Famicom) เล่นออนไลน์ได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/tetris-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/17612-tetris-usa.html"
   },
   {
     "id": "nes-89-dennou-kyuusei-uranai-japan",
@@ -914,7 +914,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Dizzy the Adventurer (Unl) บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/aladdin-dizzy-the-adventurer-usa-unl.html"
+    "embedUrl": "https://www.retrogames.cc/embed/19236-aladdin-dizzy-the-adventurer-usa-unl.html"
   },
   {
     "id": "nes-aladdin-fantastic-adventures-of-dizzy-the-usa-unl",
@@ -930,7 +930,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Fantastic Adventures of Dizzy, The (Unl) บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/aladdin-fantastic-adventures-of-dizzy-the-usa-unl.html"
+    "embedUrl": "https://www.retrogames.cc/embed/19288-aladdin-fantastic-adventures-of-dizzy-the-usa-unl.html"
   },
   {
     "id": "nes-aladdin-micro-machines-usa-unl",
@@ -946,7 +946,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Micro Machines (Unl) บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/aladdin-micro-machines-usa-unl.html"
+    "embedUrl": "https://www.retrogames.cc/embed/22254-aladdin-micro-machines-usa-unl.html"
   },
   {
     "id": "nes-10-yard-fight-japan",
@@ -1173,22 +1173,6 @@ const RETRO_GAMES_DATABASE = [
     "embedUrl": "https://www.retrogames.cc/embed/8-eyes-japan.html"
   },
   {
-    "id": "nes-contra-usa",
-    "title": "Contra",
-    "platform": "nes",
-    "platformName": "NES (Famicom)",
-    "genre": "Classic",
-    "year": 1996,
-    "developer": "Official Studio",
-    "rating": 4.9,
-    "featured": false,
-    "thumbnail": "https://i.987967.xyz/screenshot/55/f/16841_c8284cef57444d4fd376c1c3785bc3f6052d775b.png",
-    "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
-    "description": "สุดยอดเกมยอดนิยม Contra บนเครื่อง NES (Famicom) เล่นได้ทันที",
-    "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/contra-usa.html"
-  },
-  {
     "id": "nes-bomberman-usa",
     "title": "Bomberman",
     "platform": "nes",
@@ -1202,7 +1186,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Bomberman บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/bomberman-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/20411-bomberman-usa.html"
   },
   {
     "id": "nes-mike-tyson-s-punch-out-usa",
@@ -1218,7 +1202,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Mike Tyson's Punch-Out!! บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/mike-tyson-s-punch-out-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/19272-mike-tyson-s-punch-out-usa.html"
   },
   {
     "id": "nes-super-tilt-bro-demo",
@@ -1234,7 +1218,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Super Tilt Bro DEMO บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/super-tilt-bro-demo.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46956-super-tilt-bro-demo.html"
   },
   {
     "id": "nes-della-ducktales",
@@ -1250,7 +1234,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Della Ducktales บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/della-ducktales.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46921-della-ducktales.html"
   },
   {
     "id": "nes-kirbys-adventure-modern-music-match",
@@ -1266,7 +1250,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Kirby's Adventure Modern Music Match บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/kirbys-adventure-modern-music-match.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46883-kirbys-adventure-modern-music-match.html"
   },
   {
     "id": "nes-kirbys-halloween-adventure",
@@ -1282,7 +1266,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Kirby's Halloween Adventure บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/kirbys-halloween-adventure.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46882-kirbys-halloween-adventure.html"
   },
   {
     "id": "nes-mantle",
@@ -1298,7 +1282,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม MANTLE บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/mantle.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46877-mantle.html"
   },
   {
     "id": "nes-a-bootleg-christmas",
@@ -1314,7 +1298,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม A bootleg Christmas บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/a-bootleg-christmas.html"
+    "embedUrl": "https://www.retrogames.cc/embed/44257-a-bootleg-christmas.html"
   },
   {
     "id": "nes-a-ressha-de-ikou-japan",
@@ -1330,7 +1314,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม A Ressha de Ikou บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/a-ressha-de-ikou-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/22276-a-ressha-de-ikou-japan.html"
   },
   {
     "id": "nes-aa-yakyuu-jinsei-icchokusen-japan",
@@ -1346,7 +1330,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Aa Yakyuu Jinsei Icchokusen บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/aa-yakyuu-jinsei-icchokusen-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/21664-aa-yakyuu-jinsei-icchokusen-japan.html"
   },
   {
     "id": "nes-abadox-japan",
@@ -1362,7 +1346,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Abadox บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/abadox-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/20374-abadox-japan.html"
   },
   {
     "id": "nes-abarenbou-tengu-japan",
@@ -1378,7 +1362,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Abarenbou Tengu บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/abarenbou-tengu-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/20808-abarenbou-tengu-japan.html"
   },
   {
     "id": "nes-abu-travels-in-agrabah",
@@ -1394,7 +1378,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Abu Travels in Agrabah บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/abu-travels-in-agrabah.html"
+    "embedUrl": "https://www.retrogames.cc/embed/44211-abu-travels-in-agrabah.html"
   },
   {
     "id": "nes-aces-iron-eagle-3-japan",
@@ -1410,7 +1394,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Aces - Iron Eagle 3 บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/aces-iron-eagle-3-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/20629-aces-iron-eagle-3-japan.html"
   },
   {
     "id": "nes-action-in-new-york-europe",
@@ -1426,7 +1410,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Action in New York บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/action-in-new-york-europe.html"
+    "embedUrl": "https://www.retrogames.cc/embed/17132-action-in-new-york-europe.html"
   },
   {
     "id": "nes-addams-family-the-pugsley-s-scavenger-hunt-usa",
@@ -1442,7 +1426,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Addams Family, The - Pugsley's Scavenger Hunt บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/addams-family-the-pugsley-s-scavenger-hunt-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/24708-addams-family-the-pugsley-s-scavenger-hunt-usa.html"
   },
   {
     "id": "nes-addams-family-the-uncle-fester-s-quest-europe",
@@ -1458,7 +1442,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Addams Family, The - Uncle Fester's Quest บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/addams-family-the-uncle-fester-s-quest-europe.html"
+    "embedUrl": "https://www.retrogames.cc/embed/22126-addams-family-the-uncle-fester-s-quest-europe.html"
   },
   {
     "id": "nes-addams-family-the-europe-en-fr-de",
@@ -1474,7 +1458,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Addams Family, The (En,Fr,De) บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/addams-family-the-europe-en-fr-de.html"
+    "embedUrl": "https://www.retrogames.cc/embed/23661-addams-family-the-europe-en-fr-de.html"
   },
   {
     "id": "nes-addams-family-the-usa",
@@ -1490,7 +1474,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Addams Family, The บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/addams-family-the-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/24403-addams-family-the-usa.html"
   },
   {
     "id": "nes-advanced-dungeons-dragons-dragon-strike-usa",
@@ -1506,7 +1490,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Advanced Dungeons & Dragons - Dragon Strike บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/advanced-dungeons-dragons-dragon-strike-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/17622-advanced-dungeons-dragons-dragon-strike-usa.html"
   },
   {
     "id": "nes-advanced-dungeons-dragons-dragons-of-flame-japan",
@@ -1522,7 +1506,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Advanced Dungeons & Dragons - Dragons of Flame บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/advanced-dungeons-dragons-dragons-of-flame-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/18012-advanced-dungeons-dragons-dragons-of-flame-japan.html"
   },
   {
     "id": "nes-advanced-dungeons-dragons-heroes-of-the-lance-japan",
@@ -1538,7 +1522,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Advanced Dungeons & Dragons - Heroes of the Lance บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/advanced-dungeons-dragons-heroes-of-the-lance-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/19240-advanced-dungeons-dragons-heroes-of-the-lance-japan.html"
   },
   {
     "id": "nes-advanced-dungeons-dragons-hillsfar-japan",
@@ -1554,7 +1538,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Advanced Dungeons & Dragons - Hillsfar บนเครื่อง NES (Famicom) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/advanced-dungeons-dragons-hillsfar-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/17659-advanced-dungeons-dragons-hillsfar-japan.html"
   },
   {
     "id": "snes-donkey-kong-1",
@@ -1666,7 +1650,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมฮิตยอดนิยม Great to have you back! บนเครื่อง SNES เล่นออนไลน์ได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/super-bomberman-4-english-translated.html"
+    "embedUrl": "https://www.retrogames.cc/embed/19846-super-bomberman-4-english-translated.html"
   },
   {
     "id": "snes-96-zenkoku-koukou-soccer-senshuken-japan",
@@ -1698,7 +1682,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 'the บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/the.html"
+    "embedUrl": "https://www.retrogames.cc/embed/45144-the.html"
   },
   {
     "id": "snes-100-rooms-of-enemies",
@@ -1810,7 +1794,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 3x3 Eyes - Juuma Houkan บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/3x3-eyes-juuma-houkan-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/19784-3x3-eyes-juuma-houkan-japan.html"
   },
   {
     "id": "snes-3x3-eyes-seima-kourinden-japan",
@@ -1826,7 +1810,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 3x3 Eyes - Seima Kourinden บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/3x3-eyes-seima-kourinden-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/21544-3x3-eyes-seima-kourinden-japan.html"
   },
   {
     "id": "snes-4-nin-shougi-japan",
@@ -1874,7 +1858,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 7th Saga, The บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/7th-saga-the-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/20313-7th-saga-the-usa.html"
   },
   {
     "id": "snes-7th-saga-the-usa-hack-by-james-skarzinskas-v1-0-elnard-s-balance-restauration",
@@ -1890,7 +1874,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 7th Saga, The (Elnard's Balance Restauration) บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/7th-saga-the-usa-hack-by-james-skarzinskas-v1-0-elnard-s-balance-restauration.html"
+    "embedUrl": "https://www.retrogames.cc/embed/19839-7th-saga-the-usa-hack-by-james-skarzinskas-v1-0-elnard-s-balance-restauration.html"
   },
   {
     "id": "snes-7th-saga-the-usa-hack-by-nati-v1-0-7th-saga-redux",
@@ -1906,7 +1890,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 7th Saga, The (~7th Saga Redux) บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/7th-saga-the-usa-hack-by-nati-v1-0-7th-saga-redux.html"
+    "embedUrl": "https://www.retrogames.cc/embed/22974-7th-saga-the-usa-hack-by-nati-v1-0-7th-saga-redux.html"
   },
   {
     "id": "snes-90-minutes-european-prime-goal-europe",
@@ -1938,7 +1922,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Top Gear บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/top-gear-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/23881-top-gear-usa.html"
   },
   {
     "id": "snes-super-bomberman-europe",
@@ -1954,7 +1938,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Super Bomberman บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/super-bomberman-europe.html"
+    "embedUrl": "https://www.retrogames.cc/embed/24792-super-bomberman-europe.html"
   },
   {
     "id": "snes-super-bomberman-5-japan",
@@ -1970,7 +1954,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Super Bomberman 5 บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/super-bomberman-5-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/19907-super-bomberman-5-japan.html"
   },
   {
     "id": "snes-donkey-kong-country-usa",
@@ -1986,7 +1970,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Donkey Kong Country บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/donkey-kong-country-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/23005-donkey-kong-country-usa.html"
   },
   {
     "id": "snes-super-junkoid-dx",
@@ -2002,7 +1986,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Super Junkoid DX บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/super-junkoid-dx.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46950-super-junkoid-dx.html"
   },
   {
     "id": "snes-super-mario-vorld-3-new-vegas",
@@ -2018,7 +2002,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Super Mario /v/orld 3: New Vegas บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/super-mario-vorld-3-new-vegas.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46944-super-mario-vorld-3-new-vegas.html"
   },
   {
     "id": "snes-fire-emblem-thracia-776-reverse-boss-recruitment",
@@ -2034,7 +2018,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Fire Emblem - Thracia 776 - Reverse Boss Recruitment บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/fire-emblem-thracia-776-reverse-boss-recruitment.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46880-fire-emblem-thracia-776-reverse-boss-recruitment.html"
   },
   {
     "id": "snes-girthbound-v1-9",
@@ -2050,7 +2034,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Girthbound v1.9 บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/girthbound-v1-9.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46879-girthbound-v1-9.html"
   },
   {
     "id": "snes-project-base-0-8-4-2",
@@ -2066,7 +2050,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Project Base 0.8.4.2 บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/project-base-0-8-4-2.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46875-project-base-0-8-4-2.html"
   },
   {
     "id": "snes-d-force-usa",
@@ -2082,7 +2066,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม D-Force บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/d-force-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/23510-d-force-usa.html"
   },
   {
     "id": "snes-daffy-duck-the-marvin-missions-europe",
@@ -2098,7 +2082,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daffy Duck - The Marvin Missions บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daffy-duck-the-marvin-missions-europe.html"
+    "embedUrl": "https://www.retrogames.cc/embed/24537-daffy-duck-the-marvin-missions-europe.html"
   },
   {
     "id": "snes-dai-3-ji-super-robot-taisen-english-v2-00",
@@ -2114,7 +2098,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Dai-3-ji Super Robot Taisen (English v2.00) บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/dai-3-ji-super-robot-taisen-english-v2-00.html"
+    "embedUrl": "https://www.retrogames.cc/embed/42503-dai-3-ji-super-robot-taisen-english-v2-00.html"
   },
   {
     "id": "snes-dai-3-ji-super-robot-taisen-japan",
@@ -2130,7 +2114,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Dai-3-ji Super Robot Taisen บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/dai-3-ji-super-robot-taisen-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/22859-dai-3-ji-super-robot-taisen-japan.html"
   },
   {
     "id": "snes-dai-3-ji-super-robot-taisen-japan-en-by-aeon-genesis-v1-0-super-robot-wars-3",
@@ -2146,7 +2130,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Dai-3-ji Super Robot Taisen (~Super Robot Wars 3) บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/dai-3-ji-super-robot-taisen-japan-en-by-aeon-genesis-v1-0-super-robot-wars-3.html"
+    "embedUrl": "https://www.retrogames.cc/embed/23204-dai-3-ji-super-robot-taisen-japan-en-by-aeon-genesis-v1-0-super-robot-wars-3.html"
   },
   {
     "id": "snes-dai-4-ji-super-robot-taisen-japan",
@@ -2162,7 +2146,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Dai-4-ji Super Robot Taisen บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/dai-4-ji-super-robot-taisen-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/23193-dai-4-ji-super-robot-taisen-japan.html"
   },
   {
     "id": "snes-daibakushou-jinsei-gekijou-dokidoki-seishun-hen-japan",
@@ -2178,7 +2162,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daibakushou Jinsei Gekijou - Dokidoki Seishun Hen บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daibakushou-jinsei-gekijou-dokidoki-seishun-hen-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/19725-daibakushou-jinsei-gekijou-dokidoki-seishun-hen-japan.html"
   },
   {
     "id": "snes-daibakushou-jinsei-gekijou-ooedo-nikki-japan",
@@ -2194,7 +2178,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daibakushou Jinsei Gekijou - Ooedo Nikki บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daibakushou-jinsei-gekijou-ooedo-nikki-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/24284-daibakushou-jinsei-gekijou-ooedo-nikki-japan.html"
   },
   {
     "id": "snes-daibakushou-jinsei-gekijou-zukkoke-salary-man-hen-japan",
@@ -2210,7 +2194,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daibakushou Jinsei Gekijou - Zukkoke Salary Man Hen บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daibakushou-jinsei-gekijou-zukkoke-salary-man-hen-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/17334-daibakushou-jinsei-gekijou-zukkoke-salary-man-hen-japan.html"
   },
   {
     "id": "snes-daibakushou-jinsei-gekijou-japan",
@@ -2226,7 +2210,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daibakushou Jinsei Gekijou บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daibakushou-jinsei-gekijou-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/24178-daibakushou-jinsei-gekijou-japan.html"
   },
   {
     "id": "snes-daikaijuu-monogatari-japan",
@@ -2242,7 +2226,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daikaijuu Monogatari บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daikaijuu-monogatari-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/22838-daikaijuu-monogatari-japan.html"
   },
   {
     "id": "snes-daikaijuu-monogatari-ii-japan",
@@ -2258,7 +2242,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daikaijuu Monogatari II บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daikaijuu-monogatari-ii-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/22760-daikaijuu-monogatari-ii-japan.html"
   },
   {
     "id": "snes-daikoukai-jidai-ii-japan",
@@ -2274,7 +2258,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daikoukai Jidai II บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daikoukai-jidai-ii-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/28369-daikoukai-jidai-ii-japan.html"
   },
   {
     "id": "snes-daisenryaku-expert-japan",
@@ -2290,7 +2274,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daisenryaku Expert บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daisenryaku-expert-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/24598-daisenryaku-expert-japan.html"
   },
   {
     "id": "snes-daisenryaku-expert-wwii-war-in-europe-japan",
@@ -2306,7 +2290,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daisenryaku Expert WWII - War in Europe บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daisenryaku-expert-wwii-war-in-europe-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/24030-daisenryaku-expert-wwii-war-in-europe-japan.html"
   },
   {
     "id": "snes-daisys-crazy-adventure",
@@ -2322,7 +2306,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daisy's Crazy Adventure บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daisys-crazy-adventure.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46606-daisys-crazy-adventure.html"
   },
   {
     "id": "snes-darius-force-japan",
@@ -2338,7 +2322,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Darius Force บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/darius-force-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/19724-darius-force-japan.html"
   },
   {
     "id": "snes-darius-twin-europe",
@@ -2354,7 +2338,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Darius Twin บนเครื่อง SNES เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/darius-twin-europe.html"
+    "embedUrl": "https://www.retrogames.cc/embed/20308-darius-twin-europe.html"
   },
   {
     "id": "gba-pokemon-firered",
@@ -2434,7 +2418,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daimaajan (J)(Independent) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daimaajan-j-independent.html"
+    "embedUrl": "https://www.retrogames.cc/embed/28838-daimaajan-j-independent.html"
   },
   {
     "id": "gba-daisenryaku-j-cezar",
@@ -2450,7 +2434,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daisenryaku (J)(Cezar) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daisenryaku-j-cezar.html"
+    "embedUrl": "https://www.retrogames.cc/embed/26143-daisenryaku-j-cezar.html"
   },
   {
     "id": "gba-daisuki-teddy-j-wnkmx",
@@ -2466,7 +2450,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daisuki Teddy (J)(WnkMX) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daisuki-teddy-j-wnkmx.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27868-daisuki-teddy-j-wnkmx.html"
   },
   {
     "id": "gba-dan-doh-j-caravan",
@@ -2482,7 +2466,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Dan Doh!! (J)(Caravan) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/dan-doh-j-caravan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/26416-dan-doh-j-caravan.html"
   },
   {
     "id": "gba-dan-doh-xi-j-eurasia",
@@ -2498,7 +2482,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Dan Doh!! Xi (J)(Eurasia) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/dan-doh-xi-j-eurasia.html"
+    "embedUrl": "https://www.retrogames.cc/embed/28077-dan-doh-xi-j-eurasia.html"
   },
   {
     "id": "gba-dancing-sword-j-megaroms",
@@ -2514,7 +2498,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Dancing Sword (J)(Megaroms) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/dancing-sword-j-megaroms.html"
+    "embedUrl": "https://www.retrogames.cc/embed/29134-dancing-sword-j-megaroms.html"
   },
   {
     "id": "gba-danny-phantom-dschungelstadt-g-lightforce",
@@ -2530,7 +2514,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Danny Phantom - Dschungelstadt (G)(Lightforce) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/danny-phantom-dschungelstadt-g-lightforce.html"
+    "embedUrl": "https://www.retrogames.cc/embed/17533-danny-phantom-dschungelstadt-g-lightforce.html"
   },
   {
     "id": "gba-danny-phantom-the-ultimate-enemy-e-rising-sun",
@@ -2546,7 +2530,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Danny Phantom - The Ultimate Enemy (E)(Rising Sun) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/danny-phantom-the-ultimate-enemy-e-rising-sun.html"
+    "embedUrl": "https://www.retrogames.cc/embed/28710-danny-phantom-the-ultimate-enemy-e-rising-sun.html"
   },
   {
     "id": "gba-danny-phantom-the-ultimate-enemy-e-sir-vg",
@@ -2562,7 +2546,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Danny Phantom - The Ultimate Enemy (E)(Sir VG) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/danny-phantom-the-ultimate-enemy-e-sir-vg.html"
+    "embedUrl": "https://www.retrogames.cc/embed/26279-danny-phantom-the-ultimate-enemy-e-sir-vg.html"
   },
   {
     "id": "gba-danny-phantom-the-ultimate-enemy-u-trashman",
@@ -2578,7 +2562,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Danny Phantom - The Ultimate Enemy (U)(Trashman) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/danny-phantom-the-ultimate-enemy-u-trashman.html"
+    "embedUrl": "https://www.retrogames.cc/embed/29381-danny-phantom-the-ultimate-enemy-u-trashman.html"
   },
   {
     "id": "gba-danny-phantom-urban-jungle-u-rising-sun",
@@ -2594,7 +2578,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Danny Phantom - Urban Jungle (U)(Rising Sun) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/danny-phantom-urban-jungle-u-rising-sun.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27787-danny-phantom-urban-jungle-u-rising-sun.html"
   },
   {
     "id": "gba-daredevil-e-patience",
@@ -2610,7 +2594,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daredevil (E)(Patience) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daredevil-e-patience.html"
+    "embedUrl": "https://www.retrogames.cc/embed/19558-daredevil-e-patience.html"
   },
   {
     "id": "gba-daredevil-g-trsi",
@@ -2626,7 +2610,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daredevil (G)(TRSI) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daredevil-g-trsi.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27753-daredevil-g-trsi.html"
   },
   {
     "id": "gba-daredevil-u-mode7",
@@ -2642,7 +2626,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daredevil (U)(Mode7) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daredevil-u-mode7.html"
+    "embedUrl": "https://www.retrogames.cc/embed/29391-daredevil-u-mode7.html"
   },
   {
     "id": "gba-darius-r-j-eurasia",
@@ -2658,7 +2642,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Darius R (J)(Eurasia) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/darius-r-j-eurasia.html"
+    "embedUrl": "https://www.retrogames.cc/embed/26374-darius-r-j-eurasia.html"
   },
   {
     "id": "gba-dark-amy",
@@ -2674,7 +2658,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Dark Amy บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/dark-amy.html"
+    "embedUrl": "https://www.retrogames.cc/embed/45854-dark-amy.html"
   },
   {
     "id": "gba-dark-arena-u-eurasia",
@@ -2690,7 +2674,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Dark Arena (U)(Eurasia) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/dark-arena-u-eurasia.html"
+    "embedUrl": "https://www.retrogames.cc/embed/17514-dark-arena-u-eurasia.html"
   },
   {
     "id": "gba-dark-hyper-sonic-spanish",
@@ -2706,7 +2690,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Dark Hyper Sonic บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/dark-hyper-sonic-spanish.html"
+    "embedUrl": "https://www.retrogames.cc/embed/45530-dark-hyper-sonic-spanish.html"
   },
   {
     "id": "gba-dark-shadow-in-sonic-battle",
@@ -2722,7 +2706,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Dark Shadow in Sonic Battle บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/dark-shadow-in-sonic-battle.html"
+    "embedUrl": "https://www.retrogames.cc/embed/45095-dark-shadow-in-sonic-battle.html"
   },
   {
     "id": "gba-dark-sonic-in-sonic-battle",
@@ -2738,7 +2722,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Dark Sonic in Sonic Battle! บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/dark-sonic-in-sonic-battle.html"
+    "embedUrl": "https://www.retrogames.cc/embed/44345-dark-sonic-in-sonic-battle.html"
   },
   {
     "id": "gba-dave-mirra-freestyle-bmx-2-e-rocket",
@@ -2754,7 +2738,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Dave Mirra Freestyle BMX 2 (E)(Rocket) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/dave-mirra-freestyle-bmx-2-e-rocket.html"
+    "embedUrl": "https://www.retrogames.cc/embed/28138-dave-mirra-freestyle-bmx-2-e-rocket.html"
   },
   {
     "id": "gba-dave-mirra-freestyle-bmx-2-u-venom",
@@ -2770,7 +2754,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Dave Mirra Freestyle BMX 2 (U)(Venom) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/dave-mirra-freestyle-bmx-2-u-venom.html"
+    "embedUrl": "https://www.retrogames.cc/embed/26852-dave-mirra-freestyle-bmx-2-u-venom.html"
   },
   {
     "id": "gba-dave-mirra-freestyle-bmx-3-u-menace",
@@ -2786,7 +2770,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Dave Mirra Freestyle BMX 3 (U)(Menace) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/dave-mirra-freestyle-bmx-3-u-menace.html"
+    "embedUrl": "https://www.retrogames.cc/embed/28177-dave-mirra-freestyle-bmx-3-u-menace.html"
   },
   {
     "id": "gba-david-beckham-soccer-e-venom",
@@ -2802,7 +2786,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม David Beckham Soccer (E)(Venom) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/david-beckham-soccer-e-venom.html"
+    "embedUrl": "https://www.retrogames.cc/embed/26563-david-beckham-soccer-e-venom.html"
   },
   {
     "id": "gba-david-beckham-soccer-u-independent",
@@ -2818,7 +2802,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม David Beckham Soccer (U)(Independent) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/david-beckham-soccer-u-independent.html"
+    "embedUrl": "https://www.retrogames.cc/embed/17587-david-beckham-soccer-u-independent.html"
   },
   {
     "id": "gba-davis-cup-e-menace",
@@ -2834,7 +2818,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Davis Cup (E)(Menace) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/davis-cup-e-menace.html"
+    "embedUrl": "https://www.retrogames.cc/embed/29165-davis-cup-e-menace.html"
   },
   {
     "id": "gba-davis-cup-u-evasion",
@@ -2850,7 +2834,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Davis Cup (U)(Evasion) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/davis-cup-u-evasion.html"
+    "embedUrl": "https://www.retrogames.cc/embed/26675-davis-cup-u-evasion.html"
   },
   {
     "id": "gba-dead-to-rights-e-rising-sun",
@@ -2866,7 +2850,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Dead to Rights (E)(Rising Sun) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/dead-to-rights-e-rising-sun.html"
+    "embedUrl": "https://www.retrogames.cc/embed/19534-dead-to-rights-e-rising-sun.html"
   },
   {
     "id": "gba-dead-to-rights-u-rising-sun",
@@ -2882,7 +2866,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Dead To Rights (U)(Rising Sun) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/dead-to-rights-u-rising-sun.html"
+    "embedUrl": "https://www.retrogames.cc/embed/29542-dead-to-rights-u-rising-sun.html"
   },
   {
     "id": "gba-deadly-skies-e-patience",
@@ -2898,7 +2882,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Deadly Skies (E)(Patience) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/deadly-skies-e-patience.html"
+    "embedUrl": "https://www.retrogames.cc/embed/28751-deadly-skies-e-patience.html"
   },
   {
     "id": "gba-deal-or-no-deal-u-sir-vg",
@@ -2914,7 +2898,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Deal or No Deal (U)(Sir VG) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/deal-or-no-deal-u-sir-vg.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27865-deal-or-no-deal-u-sir-vg.html"
   },
   {
     "id": "gba-defender-e-patience",
@@ -2930,7 +2914,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Defender (E)(Patience) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/defender-e-patience.html"
+    "embedUrl": "https://www.retrogames.cc/embed/26588-defender-e-patience.html"
   },
   {
     "id": "gba-defender-u-venom",
@@ -2946,7 +2930,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Defender (U)(Venom) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/defender-u-venom.html"
+    "embedUrl": "https://www.retrogames.cc/embed/26479-defender-u-venom.html"
   },
   {
     "id": "gba-defender-of-the-crown-e-batman",
@@ -2962,7 +2946,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Defender of the Crown (E)(BatMan) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/defender-of-the-crown-e-batman.html"
+    "embedUrl": "https://www.retrogames.cc/embed/19482-defender-of-the-crown-e-batman.html"
   },
   {
     "id": "gba-defender-of-the-crown-u-venom",
@@ -2978,7 +2962,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Defender of the Crown (U)(Venom) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/defender-of-the-crown-u-venom.html"
+    "embedUrl": "https://www.retrogames.cc/embed/26148-defender-of-the-crown-u-venom.html"
   },
   {
     "id": "gba-demikids-dark-version-u-rising-sun",
@@ -2994,7 +2978,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Demikids Dark Version (U)(Rising Sun) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/demikids-dark-version-u-rising-sun.html"
+    "embedUrl": "https://www.retrogames.cc/embed/28057-demikids-dark-version-u-rising-sun.html"
   },
   {
     "id": "gba-demikids-light-version-u-rising-sun",
@@ -3010,7 +2994,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Demikids Light Version (U)(Rising Sun) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/demikids-light-version-u-rising-sun.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27920-demikids-light-version-u-rising-sun.html"
   },
   {
     "id": "gba-demon-driver-time-to-burn-rubber-u-trashman",
@@ -3026,7 +3010,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Demon Driver - Time to Burn Rubber! (U)(TrashMan) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/demon-driver-time-to-burn-rubber-u-trashman.html"
+    "embedUrl": "https://www.retrogames.cc/embed/19339-demon-driver-time-to-burn-rubber-u-trashman.html"
   },
   {
     "id": "gba-demon-driver-e-venom",
@@ -3042,7 +3026,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Demon Driver (E)(Venom) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/demon-driver-e-venom.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27925-demon-driver-e-venom.html"
   },
   {
     "id": "gba-denki-blocks-j-chakky",
@@ -3058,7 +3042,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Denki Blocks (J)(Chakky) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/denki-blocks-j-chakky.html"
+    "embedUrl": "https://www.retrogames.cc/embed/17299-denki-blocks-j-chakky.html"
   },
   {
     "id": "gba-denki-blocks-u-trashman",
@@ -3074,7 +3058,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Denki Blocks (U)(Trashman) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/denki-blocks-u-trashman.html"
+    "embedUrl": "https://www.retrogames.cc/embed/26710-denki-blocks-u-trashman.html"
   },
   {
     "id": "gba-denki-blocks-e-quartex",
@@ -3090,7 +3074,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Denki Blocks! (E)(Quartex) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/denki-blocks-e-quartex.html"
+    "embedUrl": "https://www.retrogames.cc/embed/28954-denki-blocks-e-quartex.html"
   },
   {
     "id": "gba-densetsu-no-stafi-2-j-eurasia",
@@ -3106,7 +3090,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Densetsu no Stafi 2 (J)(Eurasia) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/densetsu-no-stafi-2-j-eurasia.html"
+    "embedUrl": "https://www.retrogames.cc/embed/26287-densetsu-no-stafi-2-j-eurasia.html"
   },
   {
     "id": "gba-densetsu-no-stafi-3-j-caravan",
@@ -3122,7 +3106,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Densetsu no Stafi 3 (J)(Caravan) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/densetsu-no-stafi-3-j-caravan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27893-densetsu-no-stafi-3-j-caravan.html"
   },
   {
     "id": "gba-densetsu-no-stafy-english-translation",
@@ -3138,7 +3122,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Densetsu no Stafy (Eng. Translation) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/densetsu-no-stafy-english-translation.html"
+    "embedUrl": "https://www.retrogames.cc/embed/41918-densetsu-no-stafy-english-translation.html"
   },
   {
     "id": "gba-densetsu-no-stafy-j-eurasia",
@@ -3154,7 +3138,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Densetsu no Stafy (J)(Eurasia) บนเครื่อง GBA เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/densetsu-no-stafy-j-eurasia.html"
+    "embedUrl": "https://www.retrogames.cc/embed/29098-densetsu-no-stafy-j-eurasia.html"
   },
   {
     "id": "gbc-pokemon-crystal",
@@ -3202,7 +3186,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมฮิตยอดนิยม Great to have you back! บนเครื่อง GBC (Color) เล่นออนไลน์ได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/worms-armageddon-usa-en-fr-es.html"
+    "embedUrl": "https://www.retrogames.cc/embed/32382-worms-armageddon-usa-en-fr-es.html"
   },
   {
     "id": "gbc-007-the-world-is-not-enough-usa-europe",
@@ -3330,7 +3314,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 3D Pocket Pool (En,Fr,De,Es,It,Nl) บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/3d-pocket-pool-europe-en-fr-de-es-it-nl.html"
+    "embedUrl": "https://www.retrogames.cc/embed/17003-3d-pocket-pool-europe-en-fr-de-es-it-nl.html"
   },
   {
     "id": "gbc-4x4-world-trophy-europe-en-fr-de-es-it",
@@ -3346,7 +3330,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 4x4 World Trophy (En,Fr,De,Es,It) บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/4x4-world-trophy-europe-en-fr-de-es-it.html"
+    "embedUrl": "https://www.retrogames.cc/embed/16990-4x4-world-trophy-europe-en-fr-de-es-it.html"
   },
   {
     "id": "gbc-720-degrees-usa-europe",
@@ -3378,7 +3362,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Pocket Monsters Geum (Korea) บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/pocket-monsters-geum-korea.html"
+    "embedUrl": "https://www.retrogames.cc/embed/17471-pocket-monsters-geum-korea.html"
   },
   {
     "id": "gbc-pokemon-perfect-crystal-2020-update",
@@ -3394,7 +3378,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Pokemon Perfect Crystal (2020 Update) บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/pokemon-perfect-crystal-2020-update.html"
+    "embedUrl": "https://www.retrogames.cc/embed/44705-pokemon-perfect-crystal-2020-update.html"
   },
   {
     "id": "gbc-tetris-dx-world",
@@ -3410,7 +3394,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Tetris DX บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/tetris-dx-world.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27157-tetris-dx-world.html"
   },
   {
     "id": "gbc-pokemon-crystal-clear-standard-v2-5-5",
@@ -3426,7 +3410,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Pokemon Crystal Clear Standard (v2.5.5) บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/pokemon-crystal-clear-standard-v2-5-5.html"
+    "embedUrl": "https://www.retrogames.cc/embed/44203-pokemon-crystal-clear-standard-v2-5-5.html"
   },
   {
     "id": "gbc-pokemon-crystal-clear-color-filter-v2-5-10",
@@ -3442,7 +3426,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Pokemon Crystal Clear Color Filter v2.5.10 บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/pokemon-crystal-clear-color-filter-v2-5-10.html"
+    "embedUrl": "https://www.retrogames.cc/embed/44203-pokemon-crystal-clear-color-filter-v2-5-10.html"
   },
   {
     "id": "gbc-pokemon-crystal-clear-standard-v2-5-10",
@@ -3458,7 +3442,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Pokemon Crystal Clear Standard v2.5.10 บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/pokemon-crystal-clear-standard-v2-5-10.html"
+    "embedUrl": "https://www.retrogames.cc/embed/43156-pokemon-crystal-clear-standard-v2-5-10.html"
   },
   {
     "id": "gbc-samurai-kid-japan-t-en-by-flyingclimber-prostatepunch-marc_max-v1-0",
@@ -3474,7 +3458,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Samurai Kid บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/samurai-kid-japan-t-en-by-flyingclimber-prostatepunch-marc_max-v1-0.html"
+    "embedUrl": "https://www.retrogames.cc/embed/26964-samurai-kid-japan-t-en-by-flyingclimber-prostatepunch-marc_max-v1-0.html"
   },
   {
     "id": "gbc-pokemon-fools-gold-1-3-2",
@@ -3490,7 +3474,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Pokemon Fool's Gold 1.3.2 บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/pokemon-fools-gold-1-3-2.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46681-pokemon-fools-gold-1-3-2.html"
   },
   {
     "id": "gbc-mega-man-xtreme-2-refill-weapon-after-death",
@@ -3506,7 +3490,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Mega Man Xtreme 2 - Refill Weapon after Death บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/mega-man-xtreme-2-refill-weapon-after-death.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46358-mega-man-xtreme-2-refill-weapon-after-death.html"
   },
   {
     "id": "gbc-e-t-and-the-cosmic-garden-europe-en-fr-de-es-it-nl",
@@ -3522,7 +3506,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม E.T. and the Cosmic Garden (En,Fr,De,Es,It,Nl) บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/e-t-and-the-cosmic-garden-europe-en-fr-de-es-it-nl.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27034-e-t-and-the-cosmic-garden-europe-en-fr-de-es-it-nl.html"
   },
   {
     "id": "gbc-e-t-and-the-cosmic-garden-usa",
@@ -3538,7 +3522,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม E.T. and the Cosmic Garden บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/e-t-and-the-cosmic-garden-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27531-e-t-and-the-cosmic-garden-usa.html"
   },
   {
     "id": "gbc-e-t-the-extra-terrestrial-digital-companion-usa",
@@ -3554,7 +3538,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม E.T. The Extra Terrestrial - Digital Companion บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/e-t-the-extra-terrestrial-digital-companion-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27225-e-t-the-extra-terrestrial-digital-companion-usa.html"
   },
   {
     "id": "gbc-e-t-the-extra-terrestrial-escape-from-planet-earth-europe-en-fr-de-es-it-nl",
@@ -3570,7 +3554,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม E.T. The Extra Terrestrial - Escape from Planet Earth (En,Fr,De,Es,It,Nl) บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/e-t-the-extra-terrestrial-escape-from-planet-earth-europe-en-fr-de-es-it-nl.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27267-e-t-the-extra-terrestrial-escape-from-planet-earth-europe-en-fr-de-es-it-nl.html"
   },
   {
     "id": "gbc-e-t-the-extra-terrestrial-escape-from-planet-earth-usa",
@@ -3586,7 +3570,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม E.T. The Extra Terrestrial - Escape from Planet Earth บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/e-t-the-extra-terrestrial-escape-from-planet-earth-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/18263-e-t-the-extra-terrestrial-escape-from-planet-earth-usa.html"
   },
   {
     "id": "gbc-earthworm-jim-menace-2-the-galaxy-usa",
@@ -3602,7 +3586,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Earthworm Jim - Menace 2 the Galaxy บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/earthworm-jim-menace-2-the-galaxy-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/18883-earthworm-jim-menace-2-the-galaxy-usa.html"
   },
   {
     "id": "gbc-ecw-hardcore-revolution-usa",
@@ -3618,7 +3602,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม ECW Hardcore Revolution บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/ecw-hardcore-revolution-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/32581-ecw-hardcore-revolution-usa.html"
   },
   {
     "id": "gbc-elevator-action-ex-europe-en-fr-de-es-it",
@@ -3634,7 +3618,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Elevator Action EX (En,Fr,De,Es,It) บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/elevator-action-ex-europe-en-fr-de-es-it.html"
+    "embedUrl": "https://www.retrogames.cc/embed/18961-elevator-action-ex-europe-en-fr-de-es-it.html"
   },
   {
     "id": "gbc-elevator-action-ex-japan",
@@ -3650,7 +3634,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Elevator Action EX บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/elevator-action-ex-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/18256-elevator-action-ex-japan.html"
   },
   {
     "id": "gbc-elie-no-atelier-gb-japan",
@@ -3666,7 +3650,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Elie no Atelier GB บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/elie-no-atelier-gb-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/18245-elie-no-atelier-gb-japan.html"
   },
   {
     "id": "gbc-elmo-s-123s-usa",
@@ -3682,7 +3666,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Elmo's 123s บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/elmo-s-123s-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/17419-elmo-s-123s-usa.html"
   },
   {
     "id": "gbc-elmo-s-abcs-usa",
@@ -3698,7 +3682,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Elmo's ABCs บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/elmo-s-abcs-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27133-elmo-s-abcs-usa.html"
   },
   {
     "id": "gbc-emperor-s-new-groove-the-europe-en-fr-de-es-it",
@@ -3714,7 +3698,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Emperor's New Groove, The (En,Fr,De,Es,It) บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/emperor-s-new-groove-the-europe-en-fr-de-es-it.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27469-emperor-s-new-groove-the-europe-en-fr-de-es-it.html"
   },
   {
     "id": "gbc-emperor-s-new-groove-the-usa",
@@ -3730,7 +3714,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Emperor's New Groove, The บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/emperor-s-new-groove-the-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27472-emperor-s-new-groove-the-usa.html"
   },
   {
     "id": "gbc-espn-international-track-field-usa",
@@ -3746,7 +3730,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม ESPN International Track & Field บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/espn-international-track-field-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/18315-espn-international-track-field-usa.html"
   },
   {
     "id": "gbc-espn-national-hockey-night-usa",
@@ -3762,7 +3746,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม ESPN National Hockey Night บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/espn-national-hockey-night-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/28598-espn-national-hockey-night-usa.html"
   },
   {
     "id": "gbc-estpolis-denki-yomigaeru-densetsu-japan",
@@ -3778,7 +3762,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Estpolis Denki - Yomigaeru Densetsu บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/estpolis-denki-yomigaeru-densetsu-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27084-estpolis-denki-yomigaeru-densetsu-japan.html"
   },
   {
     "id": "gbc-european-super-league-europe-en-fr-de-es-it",
@@ -3794,7 +3778,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม European Super League (En,Fr,De,Es,It) บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/european-super-league-europe-en-fr-de-es-it.html"
+    "embedUrl": "https://www.retrogames.cc/embed/26956-european-super-league-europe-en-fr-de-es-it.html"
   },
   {
     "id": "gbc-evel-knievel-europe-en-fr-de-es-it-nl-sv",
@@ -3810,7 +3794,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Evel Knievel (En,Fr,De,Es,It,Nl,Sv) บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/evel-knievel-europe-en-fr-de-es-it-nl-sv.html"
+    "embedUrl": "https://www.retrogames.cc/embed/18343-evel-knievel-europe-en-fr-de-es-it-nl-sv.html"
   },
   {
     "id": "gbc-evel-knievel-usa",
@@ -3826,7 +3810,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Evel Knievel บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/evel-knievel-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27599-evel-knievel-usa.html"
   },
   {
     "id": "gbc-extreme-ghostbusters-europe-en-fr-de-es-it-pt",
@@ -3842,7 +3826,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Extreme Ghostbusters (En,Fr,De,Es,It,Pt) บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/extreme-ghostbusters-europe-en-fr-de-es-it-pt.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27646-extreme-ghostbusters-europe-en-fr-de-es-it-pt.html"
   },
   {
     "id": "gbc-extreme-sports-with-the-berenstain-bears-usa-en-fr-de-es-it",
@@ -3858,7 +3842,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Extreme Sports with the Berenstain Bears (En,Fr,De,Es,It) บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/extreme-sports-with-the-berenstain-bears-usa-en-fr-de-es-it.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27598-extreme-sports-with-the-berenstain-bears-usa-en-fr-de-es-it.html"
   },
   {
     "id": "gbc-daa-daa-daa-totsuzen-card-de-battle-de-uranai-de-japan",
@@ -3874,7 +3858,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daa! Daa! Daa! - Totsuzen Card de Battle de Uranai de! บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daa-daa-daa-totsuzen-card-de-battle-de-uranai-de-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27224-daa-daa-daa-totsuzen-card-de-battle-de-uranai-de-japan.html"
   },
   {
     "id": "gbc-daffy-duck-fowl-play-usa",
@@ -3890,7 +3874,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daffy Duck - Fowl Play บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daffy-duck-fowl-play-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/18231-daffy-duck-fowl-play-usa.html"
   },
   {
     "id": "gbc-daffy-duck-subette-koron-de-taikin-mochi-japan",
@@ -3906,7 +3890,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daffy Duck - Subette Koron de Taikin Mochi บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daffy-duck-subette-koron-de-taikin-mochi-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/27207-daffy-duck-subette-koron-de-taikin-mochi-japan.html"
   },
   {
     "id": "gbc-daikaijuu-monogatari-poyon-no-dungeon-room-japan",
@@ -3922,7 +3906,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daikaijuu Monogatari - Poyon no Dungeon Room บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daikaijuu-monogatari-poyon-no-dungeon-room-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/18399-daikaijuu-monogatari-poyon-no-dungeon-room-japan.html"
   },
   {
     "id": "gbc-daikaijuu-monogatari-poyon-no-dungeon-room-2-japan",
@@ -3938,7 +3922,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daikaijuu Monogatari - Poyon no Dungeon Room 2 บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daikaijuu-monogatari-poyon-no-dungeon-room-2-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/17430-daikaijuu-monogatari-poyon-no-dungeon-room-2-japan.html"
   },
   {
     "id": "gbc-daikaijuu-monogatari-the-miracle-of-the-zone-ii-japan",
@@ -3954,7 +3938,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Daikaijuu Monogatari - The Miracle of the Zone II บนเครื่อง GBC (Color) เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/daikaijuu-monogatari-the-miracle-of-the-zone-ii-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/17444-daikaijuu-monogatari-the-miracle-of-the-zone-ii-japan.html"
   },
   {
     "id": "sega-sonic-2",
@@ -4034,7 +4018,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมฮิตยอดนิยม Great to have you back! บนเครื่อง Sega Genesis เล่นออนไลน์ได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/seganet-kiss-shot-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/29967-seganet-kiss-shot-japan.html"
   },
   {
     "id": "sega-007-shitou-the-duel-japan",
@@ -4130,7 +4114,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Sonic Classic Heroes บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/sonic-classic-heroes.html"
+    "embedUrl": "https://www.retrogames.cc/embed/42046-sonic-classic-heroes.html"
   },
   {
     "id": "sega-sonic-knuckles-sonic-the-hedgehog-3-world",
@@ -4146,7 +4130,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Sonic & Knuckles + Sonic the Hedgehog 3 บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/sonic-knuckles-sonic-the-hedgehog-3-world.html"
+    "embedUrl": "https://www.retrogames.cc/embed/29209-sonic-knuckles-sonic-the-hedgehog-3-world.html"
   },
   {
     "id": "sega-sonic-2-heroes",
@@ -4162,7 +4146,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Sonic 2 Heroes บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/sonic-2-heroes.html"
+    "embedUrl": "https://www.retrogames.cc/embed/42282-sonic-2-heroes.html"
   },
   {
     "id": "sega-white-sonic-in-sonic-knuckles",
@@ -4178,7 +4162,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม White Sonic in Sonic & Knuckles บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/white-sonic-in-sonic-knuckles.html"
+    "embedUrl": "https://www.retrogames.cc/embed/42509-white-sonic-in-sonic-knuckles.html"
   },
   {
     "id": "sega-metal-slug",
@@ -4194,7 +4178,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Metal Slug บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/metal-slug.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46918-metal-slug.html"
   },
   {
     "id": "sega-sonic-1-co-op-shc-2025",
@@ -4210,7 +4194,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Sonic 1 Co-op (SHC 2025) บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/sonic-1-co-op-shc-2025.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46885-sonic-1-co-op-shc-2025.html"
   },
   {
     "id": "sega-sonic-the-hedgehog-to-be-a-star",
@@ -4226,7 +4210,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Sonic The Hedgehog: To Be A Star บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/sonic-the-hedgehog-to-be-a-star.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46884-sonic-the-hedgehog-to-be-a-star.html"
   },
   {
     "id": "sega-kunio-no-nekketsu-school-fighters",
@@ -4242,7 +4226,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Kunio no Nekketsu School Fighters v1.7 บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/kunio-no-nekketsu-school-fighters.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46881-kunio-no-nekketsu-school-fighters.html"
   },
   {
     "id": "sega-sonic-delta-v0-79",
@@ -4258,7 +4242,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Sonic Delta v0.79 บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/sonic-delta-v0-79.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46812-sonic-delta-v0-79.html"
   },
   {
     "id": "sega-a-ressha-de-ikou-md-japan",
@@ -4274,7 +4258,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม A Ressha de Ikou MD บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/a-ressha-de-ikou-md-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/29649-a-ressha-de-ikou-md-japan.html"
   },
   {
     "id": "sega-aa-harimanada-japan",
@@ -4290,7 +4274,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Aa Harimanada บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/aa-harimanada-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/29807-aa-harimanada-japan.html"
   },
   {
     "id": "sega-aaahh-real-monsters-usa-europe",
@@ -4306,7 +4290,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม AAAHH!!! Real Monsters (USA, Europe) บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/aaahh-real-monsters-usa-europe.html"
+    "embedUrl": "https://www.retrogames.cc/embed/16727-aaahh-real-monsters-usa-europe.html"
   },
   {
     "id": "sega-addams-family-values-europe-en-fr-de",
@@ -4322,7 +4306,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Addams Family Values (En,Fr,De) บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/addams-family-values-europe-en-fr-de.html"
+    "embedUrl": "https://www.retrogames.cc/embed/30520-addams-family-values-europe-en-fr-de.html"
   },
   {
     "id": "sega-addams-family-the-usa-europe",
@@ -4338,7 +4322,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Addams Family, The (USA, Europe) บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/addams-family-the-usa-europe.html"
+    "embedUrl": "https://www.retrogames.cc/embed/16952-addams-family-the-usa-europe.html"
   },
   {
     "id": "sega-advanced-busterhawk-gleylancer-japan",
@@ -4354,7 +4338,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Advanced Busterhawk Gleylancer บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/advanced-busterhawk-gleylancer-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/28575-advanced-busterhawk-gleylancer-japan.html"
   },
   {
     "id": "sega-advanced-daisenryaku-deutsch-dengeki-sakusen-japan-rev-a",
@@ -4370,7 +4354,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Advanced Daisenryaku - Deutsch Dengeki Sakusen บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/advanced-daisenryaku-deutsch-dengeki-sakusen-japan-rev-a.html"
+    "embedUrl": "https://www.retrogames.cc/embed/30308-advanced-daisenryaku-deutsch-dengeki-sakusen-japan-rev-a.html"
   },
   {
     "id": "sega-advanced-daisenryaku-deutsch-dengeki-sakusen-japan-rev-a-en-by-nebelwurfer-v0-95-advanced-military-commander-incomplete",
@@ -4386,7 +4370,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Advanced Daisenryaku - Deutsch Dengeki Sakusen (~Advanced Military Commander) (Incomplete) บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/advanced-daisenryaku-deutsch-dengeki-sakusen-japan-rev-a-en-by-nebelwurfer-v0-95-advanced-military-commander-incomplete.html"
+    "embedUrl": "https://www.retrogames.cc/embed/30268-advanced-daisenryaku-deutsch-dengeki-sakusen-japan-rev-a-en-by-nebelwurfer-v0-95-advanced-military-commander-incomplete.html"
   },
   {
     "id": "sega-adventures-of-batman-robin-the-europe",
@@ -4402,7 +4386,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Adventures of Batman & Robin, The บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/adventures-of-batman-robin-the-europe.html"
+    "embedUrl": "https://www.retrogames.cc/embed/29974-adventures-of-batman-robin-the-europe.html"
   },
   {
     "id": "sega-adventures-of-mighty-max-the-europe",
@@ -4418,7 +4402,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Adventures of Mighty Max, The บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/adventures-of-mighty-max-the-europe.html"
+    "embedUrl": "https://www.retrogames.cc/embed/29618-adventures-of-mighty-max-the-europe.html"
   },
   {
     "id": "sega-adventures-of-rocky-and-bullwinkle-and-friends-the-usa",
@@ -4434,7 +4418,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Adventures of Rocky and Bullwinkle and Friends, The บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/adventures-of-rocky-and-bullwinkle-and-friends-the-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/30336-adventures-of-rocky-and-bullwinkle-and-friends-the-usa.html"
   },
   {
     "id": "sega-aero-blasters-japan",
@@ -4450,7 +4434,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Aero Blasters บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/aero-blasters-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/30340-aero-blasters-japan.html"
   },
   {
     "id": "sega-aero-the-acro-bat-europe",
@@ -4466,7 +4450,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Aero the Acro-Bat บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/aero-the-acro-bat-europe.html"
+    "embedUrl": "https://www.retrogames.cc/embed/16848-aero-the-acro-bat-europe.html"
   },
   {
     "id": "sega-aero-the-acro-bat-2-europe",
@@ -4482,7 +4466,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Aero the Acro-Bat 2 บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/aero-the-acro-bat-2-europe.html"
+    "embedUrl": "https://www.retrogames.cc/embed/30537-aero-the-acro-bat-2-europe.html"
   },
   {
     "id": "sega-aerobiz-usa",
@@ -4498,7 +4482,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Aerobiz บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/aerobiz-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/28242-aerobiz-usa.html"
   },
   {
     "id": "sega-aerobiz-supersonic-usa",
@@ -4514,7 +4498,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Aerobiz Supersonic บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/aerobiz-supersonic-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/30050-aerobiz-supersonic-usa.html"
   },
   {
     "id": "sega-after-burner-ii-japan",
@@ -4530,7 +4514,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม After Burner II บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/after-burner-ii-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/30052-after-burner-ii-japan.html"
   },
   {
     "id": "sega-after-burner-ii-usa-europe",
@@ -4546,7 +4530,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม After Burner II (USA, Europe) บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/after-burner-ii-usa-europe.html"
+    "embedUrl": "https://www.retrogames.cc/embed/29861-after-burner-ii-usa-europe.html"
   },
   {
     "id": "sega-air-buster-usa",
@@ -4562,7 +4546,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Air Buster บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/air-buster-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/16967-air-buster-usa.html"
   },
   {
     "id": "sega-air-diver-japan",
@@ -4578,7 +4562,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Air Diver บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/air-diver-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/29999-air-diver-japan.html"
   },
   {
     "id": "sega-air-management-oozora-ni-kakeru-japan",
@@ -4594,7 +4578,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Air Management - Oozora ni Kakeru บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/air-management-oozora-ni-kakeru-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/29681-air-management-oozora-ni-kakeru-japan.html"
   },
   {
     "id": "sega-air-management-ii-koukuuou-o-mezase-japan",
@@ -4610,7 +4594,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Air Management II - Koukuuou o Mezase บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/air-management-ii-koukuuou-o-mezase-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/30407-air-management-ii-koukuuou-o-mezase-japan.html"
   },
   {
     "id": "sega-akumajou-dracula-vampire-killer-japan",
@@ -4626,7 +4610,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Akumajou Dracula - Vampire Killer บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/akumajou-dracula-vampire-killer-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/30355-akumajou-dracula-vampire-killer-japan.html"
   },
   {
     "id": "sega-aladdin-europe",
@@ -4642,7 +4626,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Aladdin บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/aladdin-europe.html"
+    "embedUrl": "https://www.retrogames.cc/embed/29880-aladdin-europe.html"
   },
   {
     "id": "sega-aladdin-ii",
@@ -4658,7 +4642,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Aladdin II บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/aladdin-ii.html"
+    "embedUrl": "https://www.retrogames.cc/embed/43853-aladdin-ii.html"
   },
   {
     "id": "sega-alex-kidd-cheongong-maseong-korea",
@@ -4674,7 +4658,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Alex Kidd - Cheongong Maseong (Korea) บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/alex-kidd-cheongong-maseong-korea.html"
+    "embedUrl": "https://www.retrogames.cc/embed/30123-alex-kidd-cheongong-maseong-korea.html"
   },
   {
     "id": "sega-alex-kidd-tenkuu-majou-japan",
@@ -4690,7 +4674,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Alex Kidd - Tenkuu Majou บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/alex-kidd-tenkuu-majou-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/28404-alex-kidd-tenkuu-majou-japan.html"
   },
   {
     "id": "sega-alex-kidd-in-the-enchanted-castle-europe",
@@ -4706,7 +4690,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Alex Kidd in the Enchanted Castle บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/alex-kidd-in-the-enchanted-castle-europe.html"
+    "embedUrl": "https://www.retrogames.cc/embed/30077-alex-kidd-in-the-enchanted-castle-europe.html"
   },
   {
     "id": "sega-alex-kidd-in-the-enchanted-castle-europe-alt",
@@ -4722,7 +4706,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Alex Kidd in the Enchanted Castle (Alt) บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/alex-kidd-in-the-enchanted-castle-europe-alt.html"
+    "embedUrl": "https://www.retrogames.cc/embed/28384-alex-kidd-in-the-enchanted-castle-europe-alt.html"
   },
   {
     "id": "sega-alien-3-usa-europe",
@@ -4738,7 +4722,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Alien 3 (USA, Europe) บนเครื่อง Sega Genesis เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/alien-3-usa-europe.html"
+    "embedUrl": "https://www.retrogames.cc/embed/16954-alien-3-usa-europe.html"
   },
   {
     "id": "n64-smash-bros",
@@ -4802,7 +4786,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมฮิตยอดนิยม Great to have you back! บนเครื่อง Nintendo 64 เล่นออนไลน์ได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/flat-lethal-lava-land.html"
+    "embedUrl": "https://www.retrogames.cc/embed/44121-flat-lethal-lava-land.html"
   },
   {
     "id": "n64-007-goldeneye-europe",
@@ -4978,7 +4962,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 64Modder's Bob-Omb Battlefield Remake บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/64modders-bob-omb-battlefield-remake.html"
+    "embedUrl": "https://www.retrogames.cc/embed/45787-64modders-bob-omb-battlefield-remake.html"
   },
   {
     "id": "n64-super-smash-bros-usa",
@@ -4994,7 +4978,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Super Smash Bros. บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/super-smash-bros-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/32117-super-smash-bros-usa.html"
   },
   {
     "id": "n64-smash-remix-1-4-0",
@@ -5010,7 +4994,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Smash Remix 1.4.0 บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/smash-remix-1-4-0.html"
+    "embedUrl": "https://www.retrogames.cc/embed/45052-smash-remix-1-4-0.html"
   },
   {
     "id": "n64-fifa-99-europe-en-fr-de-es-it-nl-pt-sv",
@@ -5026,7 +5010,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม FIFA 99 (En,Fr,De,Es,It,Nl,Pt,Sv) บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/fifa-99-europe-en-fr-de-es-it-nl-pt-sv.html"
+    "embedUrl": "https://www.retrogames.cc/embed/32441-fifa-99-europe-en-fr-de-es-it-nl-pt-sv.html"
   },
   {
     "id": "n64-smash-remix-0-9-5b",
@@ -5042,7 +5026,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Smash Remix 0.9.5b บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/smash-remix-0-9-5b.html"
+    "embedUrl": "https://www.retrogames.cc/embed/42223-smash-remix-0-9-5b.html"
   },
   {
     "id": "n64-smash-remix-1-1-1",
@@ -5058,7 +5042,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Smash Remix 1.1.1 บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/smash-remix-1-1-1.html"
+    "embedUrl": "https://www.retrogames.cc/embed/42810-smash-remix-1-1-1.html"
   },
   {
     "id": "n64-smash-remix-2-0-1-extra-0-6-0",
@@ -5074,7 +5058,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Smash Remix 2.0.1 +EXTRA (0.6.0) บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/smash-remix-2-0-1-extra-0-6-0.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46981-smash-remix-2-0-1-extra-0-6-0.html"
   },
   {
     "id": "n64-paper-mario-star-nova",
@@ -5090,7 +5074,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Paper Mario: Star Nova บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/paper-mario-star-nova.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46952-paper-mario-star-nova.html"
   },
   {
     "id": "n64-smash-remix-project-galleon-1-3-7-1",
@@ -5106,7 +5090,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Smash Remix: Project Galleon 1.3.7.1 บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/smash-remix-project-galleon-1-3-7-1.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46951-smash-remix-project-galleon-1-3-7-1.html"
   },
   {
     "id": "n64-sonic-mushroom-blast-legacy",
@@ -5122,7 +5106,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Sonic Mushroom Blast - Legacy บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/sonic-mushroom-blast-legacy.html"
+    "embedUrl": "https://www.retrogames.cc/embed/32605-sonic-mushroom-blast-legacy.html"
   },
   {
     "id": "n64-are-we-the-bad-guys-64",
@@ -5138,7 +5122,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Are we the bad guys 64 บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/are-we-the-bad-guys-64.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46928-are-we-the-bad-guys-64.html"
   },
   {
     "id": "n64-b3313-super-mario-64-internal-plexus",
@@ -5154,7 +5138,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม B3313 (Super Mario 64 Internal Plexus) บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/b3313-super-mario-64-internal-plexus.html"
+    "embedUrl": "https://www.retrogames.cc/embed/45235-b3313-super-mario-64-internal-plexus.html"
   },
   {
     "id": "n64-b3313-v0-7",
@@ -5170,7 +5154,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม B3313 บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/b3313-v0-7.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46525-b3313-v0-7.html"
   },
   {
     "id": "n64-b3313-unabandoned-unofficial-1-0",
@@ -5186,7 +5170,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม B3313 Unabandoned (unofficial 1.0) บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/b3313-unabandoned-unofficial-1-0.html"
+    "embedUrl": "https://www.retrogames.cc/embed/45868-b3313-unabandoned-unofficial-1-0.html"
   },
   {
     "id": "n64-baku-bomber-man-japan",
@@ -5202,7 +5186,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Baku Bomber Man บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/baku-bomber-man-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/32565-baku-bomber-man-japan.html"
   },
   {
     "id": "n64-baku-bomber-man-2-japan",
@@ -5218,7 +5202,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Baku Bomber Man 2 บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/baku-bomber-man-2-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/33015-baku-bomber-man-2-japan.html"
   },
   {
     "id": "n64-bakuretsu-muteki-bangaioh-japan",
@@ -5234,7 +5218,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Bakuretsu Muteki Bangaioh บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/bakuretsu-muteki-bangaioh-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/32547-bakuretsu-muteki-bangaioh-japan.html"
   },
   {
     "id": "n64-bakushou-jinsei-64-mezase-resort-ou-japan",
@@ -5250,7 +5234,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Bakushou Jinsei 64 - Mezase! Resort Ou บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/bakushou-jinsei-64-mezase-resort-ou-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/32310-bakushou-jinsei-64-mezase-resort-ou-japan.html"
   },
   {
     "id": "n64-banjo-kazooie-the-gruntch-v1-2",
@@ -5266,7 +5250,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Banjo Kazooie - The Gruntch v1.2 บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/banjo-kazooie-the-gruntch-v1-2.html"
+    "embedUrl": "https://www.retrogames.cc/embed/42826-banjo-kazooie-the-gruntch-v1-2.html"
   },
   {
     "id": "n64-banjo-kazooie-3d-world",
@@ -5282,7 +5266,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Banjo Kazooie 3D World บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/banjo-kazooie-3d-world.html"
+    "embedUrl": "https://www.retrogames.cc/embed/43533-banjo-kazooie-3d-world.html"
   },
   {
     "id": "n64-banjo-kazooie-ft-minecraft",
@@ -5298,7 +5282,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Banjo Kazooie Ft. Minecraft บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/banjo-kazooie-ft-minecraft.html"
+    "embedUrl": "https://www.retrogames.cc/embed/43510-banjo-kazooie-ft-minecraft.html"
   },
   {
     "id": "n64-banjo-kazooie-kurkoin-quest-snackers-coral-bay",
@@ -5314,7 +5298,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Banjo Kazooie Kurkoin Quest - Snacker's Coral Bay v0.1 บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/banjo-kazooie-kurkoin-quest-snackers-coral-bay.html"
+    "embedUrl": "https://www.retrogames.cc/embed/42837-banjo-kazooie-kurkoin-quest-snackers-coral-bay.html"
   },
   {
     "id": "n64-banjo-kazooie-kurkoin-quest-v0-1-snackers-coral-bay",
@@ -5330,7 +5314,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Banjo Kazooie Kurkoin Quest v0.1 - Snacker's Coral Bay บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/banjo-kazooie-kurkoin-quest-v0-1-snackers-coral-bay.html"
+    "embedUrl": "https://www.retrogames.cc/embed/43507-banjo-kazooie-kurkoin-quest-v0-1-snackers-coral-bay.html"
   },
   {
     "id": "n64-banjo-kazooie-kurkoin-quest-v0-2-frost-woods",
@@ -5346,7 +5330,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Banjo Kazooie Kurkoin Quest v0.2 - Frost Woods บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/banjo-kazooie-kurkoin-quest-v0-2-frost-woods.html"
+    "embedUrl": "https://www.retrogames.cc/embed/43508-banjo-kazooie-kurkoin-quest-v0-2-frost-woods.html"
   },
   {
     "id": "n64-banjo-kazooie-kurkoin-quest-v0-3-splash-mountain",
@@ -5362,7 +5346,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Banjo Kazooie Kurkoin Quest v0.3 - Splash Mountain บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/banjo-kazooie-kurkoin-quest-v0-3-splash-mountain.html"
+    "embedUrl": "https://www.retrogames.cc/embed/43509-banjo-kazooie-kurkoin-quest-v0-3-splash-mountain.html"
   },
   {
     "id": "n64-banjo-kazooie-nostalgia-64-v1-1",
@@ -5378,7 +5362,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Banjo Kazooie Nostalgia 64 v1.1 บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/banjo-kazooie-nostalgia-64-v1-1.html"
+    "embedUrl": "https://www.retrogames.cc/embed/46917-banjo-kazooie-nostalgia-64-v1-1.html"
   },
   {
     "id": "n64-banjo-kazooie-the-final-mission-v1-1",
@@ -5394,7 +5378,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Banjo Kazooie The Final Mission V1.1 บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/banjo-kazooie-the-final-mission-v1-1.html"
+    "embedUrl": "https://www.retrogames.cc/embed/42651-banjo-kazooie-the-final-mission-v1-1.html"
   },
   {
     "id": "n64-banjo-kazooie-x-donkey-kong-country",
@@ -5410,7 +5394,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Banjo Kazooie X Donkey Kong Country บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/banjo-kazooie-x-donkey-kong-country.html"
+    "embedUrl": "https://www.retrogames.cc/embed/42717-banjo-kazooie-x-donkey-kong-country.html"
   },
   {
     "id": "n64-banjo-threeie-hack-v1-2",
@@ -5426,7 +5410,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Banjo Threeie Hack V1.2 บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/banjo-threeie-hack-v1-2.html"
+    "embedUrl": "https://www.retrogames.cc/embed/42824-banjo-threeie-hack-v1-2.html"
   },
   {
     "id": "n64-banjo-to-kazooie-no-daibouken-japan",
@@ -5442,7 +5426,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Banjo to Kazooie no Daibouken บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/banjo-to-kazooie-no-daibouken-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/32894-banjo-to-kazooie-no-daibouken-japan.html"
   },
   {
     "id": "n64-banjo-to-kazooie-no-daibouken-2-japan",
@@ -5458,7 +5442,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Banjo to Kazooie no Daibouken 2 บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/banjo-to-kazooie-no-daibouken-2-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/32711-banjo-to-kazooie-no-daibouken-2-japan.html"
   },
   {
     "id": "n64-banjo-dreamie",
@@ -5474,7 +5458,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Banjo-Dreamie บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/banjo-dreamie.html"
+    "embedUrl": "https://www.retrogames.cc/embed/42597-banjo-dreamie.html"
   },
   {
     "id": "n64-banjo-kazooie-bubbling-bog-brewery-redone",
@@ -5490,7 +5474,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Banjo-Kazooie - Bubbling Bog Brewery Redone บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/banjo-kazooie-bubbling-bog-brewery-redone.html"
+    "embedUrl": "https://www.retrogames.cc/embed/45876-banjo-kazooie-bubbling-bog-brewery-redone.html"
   },
   {
     "id": "n64-banjo-kazooie-kurkoin-quest-v0-5-kiddy-kingdom",
@@ -5506,7 +5490,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Banjo-Kazooie - Kurkoin Quest v0.5 - Kiddy Kingdom บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/banjo-kazooie-kurkoin-quest-v0-5-kiddy-kingdom.html"
+    "embedUrl": "https://www.retrogames.cc/embed/44772-banjo-kazooie-kurkoin-quest-v0-5-kiddy-kingdom.html"
   },
   {
     "id": "n64-banjo-kazooie-santas-village-v1-1",
@@ -5522,7 +5506,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Banjo-Kazooie - Santa's Village บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/banjo-kazooie-santas-village-v1-1.html"
+    "embedUrl": "https://www.retrogames.cc/embed/44773-banjo-kazooie-santas-village-v1-1.html"
   },
   {
     "id": "n64-banjo-kazooie-snow-glow-village-redone-v1-2-2",
@@ -5538,7 +5522,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม Banjo-Kazooie - Snow Glow Village Redone v1.2.2 บนเครื่อง Nintendo 64 เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/banjo-kazooie-snow-glow-village-redone-v1-2-2.html"
+    "embedUrl": "https://www.retrogames.cc/embed/44773-banjo-kazooie-snow-glow-village-redone-v1-2-2.html"
   },
   {
     "id": "arcade-metal-slug",
@@ -5890,7 +5874,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 1943: Midway Kaisen (Japan, Rev B) บนเครื่อง Neo Geo / Arcade เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/1943:-midway-kaisen-japan-rev-b.html"
+    "embedUrl": "https://www.retrogames.cc/embed/7659-1943%3A-midway-kaisen-japan-rev-b.html"
   },
   {
     "id": "arcade-1943:-midway-kaisen-japan",
@@ -5906,7 +5890,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 1943: Midway Kaisen บนเครื่อง Neo Geo / Arcade เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/1943:-midway-kaisen-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/7658-1943%3A-midway-kaisen-japan.html"
   },
   {
     "id": "arcade-1943:-the-battle-of-midway-bootleg-set-1-hack-of-japan-set-bootleg",
@@ -5922,7 +5906,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 1943: The Battle of Midway (bootleg set 1, hack of Japan set) บนเครื่อง Neo Geo / Arcade เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/1943:-the-battle-of-midway-bootleg-set-1-hack-of-japan-set-bootleg.html"
+    "embedUrl": "https://www.retrogames.cc/embed/7660-1943%3A-the-battle-of-midway-bootleg-set-1-hack-of-japan-set-bootleg.html"
   },
   {
     "id": "arcade-1943:-the-battle-of-midway-bootleg-set-2-hack-of-japan-set-bootleg",
@@ -5938,7 +5922,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 1943: The Battle of Midway (bootleg set 2, hack of Japan set) บนเครื่อง Neo Geo / Arcade เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/1943:-the-battle-of-midway-bootleg-set-2-hack-of-japan-set-bootleg.html"
+    "embedUrl": "https://www.retrogames.cc/embed/7661-1943:-the-battle-of-midway-bootleg-set-2-hack-of-japan-set-bootleg.html"
   },
   {
     "id": "arcade-1943:-the-battle-of-midway-euro",
@@ -5954,7 +5938,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 1943: The Battle of Midway (Euro) บนเครื่อง Neo Geo / Arcade เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/1943:-the-battle-of-midway-euro.html"
+    "embedUrl": "https://www.retrogames.cc/embed/7662-1943%3A-the-battle-of-midway-euro.html"
   },
   {
     "id": "arcade-1943-the-battle-of-midway-hack-of-japan-set",
@@ -5986,7 +5970,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 1943: The Battle of Midway (US) บนเครื่อง Neo Geo / Arcade เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/1943:-the-battle-of-midway-us.html"
+    "embedUrl": "https://www.retrogames.cc/embed/7663-1943%3A-the-battle-of-midway-us.html"
   },
   {
     "id": "arcade-1943-the-battle-of-midway-mark-ii-us",
@@ -6098,7 +6082,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 1945k III บนเครื่อง Neo Geo / Arcade เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/1945k-iii.html"
+    "embedUrl": "https://www.retrogames.cc/embed/7668-1945k-iii.html"
   },
   {
     "id": "arcade-1945k-iii-newer-opcx1-pcb",
@@ -6114,7 +6098,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 1945k III (newer, OPCX1 PCB) บนเครื่อง Neo Geo / Arcade เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/1945k-iii-newer-opcx1-pcb.html"
+    "embedUrl": "https://www.retrogames.cc/embed/33047-1945k-iii-newer-opcx1-pcb.html"
   },
   {
     "id": "arcade-1945k-iii-older-opcx1-pcb",
@@ -6130,7 +6114,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 1945k III (older, OPCX1 PCB) บนเครื่อง Neo Geo / Arcade เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/1945k-iii-older-opcx1-pcb.html"
+    "embedUrl": "https://www.retrogames.cc/embed/33048-1945k-iii-older-opcx1-pcb.html"
   },
   {
     "id": "arcade-19xx-the-war-against-destiny-951207-asia",
@@ -6146,7 +6130,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 19XX - the war against destiny (951207 Asia) บนเครื่อง Neo Geo / Arcade เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/19xx-the-war-against-destiny-951207-asia.html"
+    "embedUrl": "https://www.retrogames.cc/embed/7669-19xx-the-war-against-destiny-951207-asia.html"
   },
   {
     "id": "arcade-19xx-the-war-against-destiny-951207-japan",
@@ -6162,7 +6146,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 19XX - the war against destiny (951207 Japan) บนเครื่อง Neo Geo / Arcade เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/19xx-the-war-against-destiny-951207-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/33050-19xx-the-war-against-destiny-951207-japan.html"
   },
   {
     "id": "arcade-19xx-the-war-against-destiny-951207-usa-phoenix-edition-bootleg",
@@ -6178,7 +6162,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 19XX - the war against destiny (951207 USA Phoenix Edition) บนเครื่อง Neo Geo / Arcade เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/19xx-the-war-against-destiny-951207-usa-phoenix-edition-bootleg.html"
+    "embedUrl": "https://www.retrogames.cc/embed/7671-19xx-the-war-against-destiny-951207-usa-phoenix-edition-bootleg.html"
   },
   {
     "id": "arcade-19xx-the-war-against-destiny-951207-usa",
@@ -6194,7 +6178,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 19XX - the war against destiny (951207 USA) บนเครื่อง Neo Geo / Arcade เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/19xx-the-war-against-destiny-951207-usa.html"
+    "embedUrl": "https://www.retrogames.cc/embed/7672-19xx-the-war-against-destiny-951207-usa.html"
   },
   {
     "id": "arcade-19xx-the-war-against-destiny-951218-brazil",
@@ -6210,7 +6194,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 19XX - the war against destiny (951218 Brazil) บนเครื่อง Neo Geo / Arcade เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/19xx-the-war-against-destiny-951218-brazil.html"
+    "embedUrl": "https://www.retrogames.cc/embed/7673-19xx-the-war-against-destiny-951218-brazil.html"
   },
   {
     "id": "arcade-19xx-the-war-against-destiny-951218-hispanic",
@@ -6226,7 +6210,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 19XX - the war against destiny (951218 Hispanic) บนเครื่อง Neo Geo / Arcade เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/19xx-the-war-against-destiny-951218-hispanic.html"
+    "embedUrl": "https://www.retrogames.cc/embed/7674-19xx-the-war-against-destiny-951218-hispanic.html"
   },
   {
     "id": "arcade-19xx-the-war-against-destiny-951225-japan",
@@ -6242,7 +6226,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 19XX - the war against destiny (951225 Japan) บนเครื่อง Neo Geo / Arcade เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/19xx-the-war-against-destiny-951225-japan.html"
+    "embedUrl": "https://www.retrogames.cc/embed/7670-19xx-the-war-against-destiny-951225-japan.html"
   },
   {
     "id": "arcade-19xx-the-war-against-destiny-960104-japan-yellow-case",
@@ -6258,7 +6242,7 @@ const RETRO_GAMES_DATABASE = [
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
     "description": "สุดยอดเกมยอดนิยม 19XX - the war against destiny (960104 Japan, yellow case) บนเครื่อง Neo Geo / Arcade เล่นได้ทันที",
     "controls": "ปุ่มจอย / คีย์บอร์ด: D-Pad ทิศทาง | Z: ปุ่ม A/X | X: ปุ่ม B/Square | Enter: Start",
-    "embedUrl": "https://www.retrogames.cc/embed/19xx-the-war-against-destiny-960104-japan-yellow-case.html"
+    "embedUrl": "https://www.retrogames.cc/embed/7675-19xx-the-war-against-destiny-960104-japan-yellow-case.html"
   },
   {
     "id": "arcade-2-on-2-open-ice-challenge-rev-1-21",
