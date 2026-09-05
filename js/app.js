@@ -24,6 +24,7 @@ class RetroApp {
     this.bindEvents();
     this.updateStats();
     this.bindDropzone();
+    this.initCardMotionEffects();
   }
 
   /**
@@ -182,9 +183,14 @@ class RetroApp {
         position: relative;
         border: 2px solid rgba(255, 255, 255, 0.2);
         box-shadow: 0 14px 32px rgba(0, 0, 0, 0.85), 0 0 15px rgba(6, 182, 212, 0.15);
-        transition: transform 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.25), box-shadow 0.35s ease, border-color 0.35s ease;
+        transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.3, 1.25), box-shadow 0.25s ease, border-color 0.25s ease;
         transform-origin: center center;
         background: #0f1526;
+        transform-style: preserve-3d;
+      }
+      .ish-card-box img {
+        transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.3, 1.25);
+        will-change: transform;
       }
       /* Scale up smoothly when hovered or focused */
       .ish-slot:hover .ish-card-box,
@@ -193,6 +199,9 @@ class RetroApp {
         border-color: #00f0ff;
         box-shadow: 0 25px 60px rgba(0, 0, 0, 0.95), 0 0 35px rgba(0, 240, 255, 0.85);
         z-index: 999;
+      }
+      .ish-slot:hover .ish-card-box img:not(.is-tracking) {
+        animation: retroImgBreath 2.8s ease-in-out infinite;
       }
       .ish-card-overlay {
         opacity: 0;
@@ -228,9 +237,10 @@ class RetroApp {
           <div class="ish-card-box group">
             <img src="${g.thumbnail}" alt="${g.title}" class="w-full h-full object-cover" loading="lazy" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <div class="ish-card-glare absolute inset-0 pointer-events-none opacity-0 mix-blend-screen transition-opacity duration-300 z-10"></div>
             
             <!-- Hover Overlay -->
-            <div class="ish-card-overlay absolute inset-0 bg-black/80 backdrop-blur-[1px] flex flex-col justify-between p-2 text-center">
+            <div class="ish-card-overlay absolute inset-0 bg-black/80 backdrop-blur-[1px] flex flex-col justify-between p-2 text-center z-10">
               <div class="flex justify-between items-center">
                 <span class="text-[9px] font-bold px-1.5 py-0.5 rounded bg-cyan-500 text-black uppercase font-tech shadow">
                   ${g.platformName}
@@ -269,9 +279,10 @@ class RetroApp {
           <div class="ish-card-box group">
             <img src="${g.thumbnail}" alt="${g.title}" class="w-full h-full object-cover" loading="lazy" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <div class="ish-card-glare absolute inset-0 pointer-events-none opacity-0 mix-blend-screen transition-opacity duration-300 z-10"></div>
             
             <!-- Hover Overlay -->
-            <div class="ish-card-overlay absolute inset-0 bg-black/80 backdrop-blur-[1px] flex flex-col justify-between p-2 text-center">
+            <div class="ish-card-overlay absolute inset-0 bg-black/80 backdrop-blur-[1px] flex flex-col justify-between p-2 text-center z-10">
               <div class="flex justify-between items-center">
                 <span class="text-[9px] font-bold px-1.5 py-0.5 rounded bg-cyan-500 text-black uppercase font-tech shadow">
                   ${g.platformName}
@@ -414,18 +425,21 @@ class RetroApp {
       const isFav = this.favorites.includes(game.id);
 
       return `
-        <div class="tv-focusable group relative bg-[#131b2e] rounded-xl overflow-hidden border border-slate-800/80 hover:border-cyan-500/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-500/10 flex flex-col cursor-pointer"
+        <div class="interactive-game-card tv-focusable group relative bg-[#131b2e] rounded-xl overflow-hidden border border-slate-800/80 hover:border-cyan-500/80 transition-all duration-300 flex flex-col cursor-pointer"
              tabindex="0"
              onclick="window.retroApp.openPlayerModalById('${game.id}')">
           
-          <!-- Image Container -->
-          <div class="relative w-full aspect-[4/3] bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 overflow-hidden flex items-center justify-center">
-            <img src="${game.thumbnail}" alt="${game.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.onerror=null; this.classList.add('hidden');" />
+          <!-- Image Container with 3D Depth -->
+          <div class="game-cover-container bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 flex items-center justify-center">
+            <img src="${game.thumbnail}" alt="${game.title}" class="game-cover-img" loading="lazy" onerror="this.onerror=null; this.classList.add('hidden');" />
             
             <div class="absolute inset-0 bg-gradient-to-t from-[#131b2e] via-transparent to-black/40 opacity-70"></div>
             
+            <!-- Dynamic Glare Light Reflection -->
+            <div class="game-card-glare"></div>
+
             <!-- Platform Badge -->
-            <div class="absolute top-2.5 left-2.5">
+            <div class="absolute top-2.5 left-2.5 z-10">
               <span class="text-[10px] font-bold px-2.5 py-1 rounded-md bg-black/80 backdrop-blur-md text-cyan-400 border border-cyan-500/50 uppercase tracking-wider font-tech shadow-md">
                 ${game.platformName}
               </span>
@@ -439,7 +453,7 @@ class RetroApp {
             </button>
 
             <!-- Quick Play Hover Overlay -->
-            <div class="absolute inset-0 bg-cyan-950/70 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <div class="absolute inset-0 bg-cyan-950/70 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center z-10">
               <div class="w-12 h-12 rounded-full bg-cyan-500 text-black flex items-center justify-center shadow-lg shadow-cyan-500/50 transform group-hover:scale-110 transition-transform">
                 <i class="fas fa-play text-lg ml-0.5"></i>
               </div>
@@ -651,6 +665,120 @@ class RetroApp {
         this.handleCustomRom(e.dataTransfer.files[0]);
       }
     };
+  }
+
+  /**
+   * Bind interactive 3D mousemove tilt & parallax image motion
+   * When cursor moves over a game card, card tilts and image moves dynamically!
+   */
+  initCardMotionEffects() {
+    // 1. Grid Cards Motion (Event Delegation on #games-grid)
+    const grid = document.getElementById("games-grid");
+    if (grid) {
+      grid.addEventListener("mousemove", (e) => {
+        const card = e.target.closest(".interactive-game-card");
+        if (!card) return;
+
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const tiltX = ((y - centerY) / centerY) * -12;
+        const tiltY = ((x - centerX) / centerX) * 12;
+
+        card.style.transform = `perspective(800px) rotateX(${tiltX.toFixed(2)}deg) rotateY(${tiltY.toFixed(2)}deg) translateY(-8px) scale3d(1.04, 1.04, 1.04)`;
+
+        const img = card.querySelector(".game-cover-img");
+        if (img) {
+          img.classList.add("is-tracking");
+          const shiftX = ((x - centerX) / centerX) * -10;
+          const shiftY = ((y - centerY) / centerY) * -10;
+          const rotateAngle = ((x - centerX) / centerX) * 1.5;
+          img.style.transform = `scale(1.15) translate3d(${shiftX.toFixed(1)}px, ${shiftY.toFixed(1)}px, 15px) rotate(${rotateAngle.toFixed(1)}deg)`;
+        }
+
+        const glare = card.querySelector(".game-card-glare");
+        if (glare) {
+          const px = (x / rect.width) * 100;
+          const py = (y / rect.height) * 100;
+          glare.style.background = `radial-gradient(circle at ${px}% ${py}%, rgba(0, 240, 255, 0.45) 0%, rgba(255, 255, 255, 0.12) 25%, transparent 65%)`;
+          glare.style.opacity = "1";
+        }
+      });
+
+      const resetCard = (card) => {
+        card.style.transform = "";
+        const img = card.querySelector(".game-cover-img");
+        if (img) {
+          img.classList.remove("is-tracking");
+          img.style.transform = "";
+        }
+        const glare = card.querySelector(".game-card-glare");
+        if (glare) {
+          glare.style.opacity = "0";
+        }
+      };
+
+      grid.addEventListener("mouseout", (e) => {
+        const card = e.target.closest(".interactive-game-card");
+        if (card && (!e.relatedTarget || !card.contains(e.relatedTarget))) {
+          resetCard(card);
+        }
+      });
+    }
+
+    // 2. Hero Stream Cards Motion (Event Delegation on #image-stream-root)
+    const heroRoot = document.getElementById("image-stream-root");
+    if (heroRoot) {
+      heroRoot.addEventListener("mousemove", (e) => {
+        const box = e.target.closest(".ish-card-box");
+        if (!box) return;
+
+        const rect = box.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const tiltX = ((y - centerY) / centerY) * -14;
+        const tiltY = ((x - centerX) / centerX) * 14;
+
+        box.style.transform = `perspective(600px) scale(1.45) rotateX(${tiltX.toFixed(2)}deg) rotateY(${tiltY.toFixed(2)}deg)`;
+
+        const img = box.querySelector("img");
+        if (img) {
+          img.classList.add("is-tracking");
+          const shiftX = ((x - centerX) / centerX) * -12;
+          const shiftY = ((y - centerY) / centerY) * -12;
+          const rotateAngle = ((x - centerX) / centerX) * 2;
+          img.style.transform = `scale(1.18) translate3d(${shiftX.toFixed(1)}px, ${shiftY.toFixed(1)}px, 0) rotate(${rotateAngle.toFixed(1)}deg)`;
+        }
+
+        const glare = box.querySelector(".ish-card-glare");
+        if (glare) {
+          const px = (x / rect.width) * 100;
+          const py = (y / rect.height) * 100;
+          glare.style.background = `radial-gradient(circle at ${px}% ${py}%, rgba(0, 240, 255, 0.45) 0%, rgba(255, 255, 255, 0.15) 25%, transparent 65%)`;
+          glare.style.opacity = "1";
+        }
+      });
+
+      heroRoot.addEventListener("mouseout", (e) => {
+        const box = e.target.closest(".ish-card-box");
+        if (box && (!e.relatedTarget || !box.contains(e.relatedTarget))) {
+          box.style.transform = "";
+          const img = box.querySelector("img");
+          if (img) {
+            img.classList.remove("is-tracking");
+            img.style.transform = "";
+          }
+          const glare = box.querySelector(".ish-card-glare");
+          if (glare) glare.style.opacity = "0";
+        }
+      });
+    }
   }
 
   handleCustomRom(file) {

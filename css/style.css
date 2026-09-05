@@ -83,6 +83,65 @@ body {
   z-index: 20;
 }
 
+/* Interactive 3D Game Card Motion & Image Parallax Effects */
+.interactive-game-card {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.22s ease, border-color 0.22s ease;
+  will-change: transform;
+}
+
+.interactive-game-card:hover {
+  border-color: rgba(0, 240, 255, 0.8) !important;
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.9), 0 0 30px rgba(0, 240, 255, 0.3) !important;
+  z-index: 10;
+}
+
+/* Image Container with 3D Depth */
+.game-cover-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+/* Dynamic Game Thumbnail Image */
+.game-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.22s ease;
+  will-change: transform;
+  transform-origin: center center;
+}
+
+/* Animated subtle float/wiggle when card is hovered */
+@keyframes retroImgBreath {
+  0%, 100% {
+    transform: scale(1.08) translateY(0px);
+  }
+  50% {
+    transform: scale(1.14) translateY(-4px);
+  }
+}
+
+.interactive-game-card:hover .game-cover-img:not(.is-tracking) {
+  animation: retroImgBreath 2.8s ease-in-out infinite;
+}
+
+/* Dynamic Glare Reflection Overlay */
+.game-card-glare {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  mix-blend-mode: screen;
+  transition: opacity 0.25s ease;
+  z-index: 8;
+  border-radius: inherit;
+}
+
 /* CRT Scanlines Shader Effect */
 .crt-overlay {
   position: relative;
