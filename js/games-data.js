@@ -5,6 +5,22 @@
 
 const RETRO_GAMES_DATABASE = [
   {
+    "id": "ps1-pepsiman",
+    "title": "Pepsiman (1999)",
+    "platform": "ps1",
+    "platformName": "PlayStation 1",
+    "genre": "Runner / Action",
+    "year": 1999,
+    "developer": "KID",
+    "rating": 5.0,
+    "featured": true,
+    "thumbnail": "https://i.987967.xyz/screenshot/72/2023/07/19/42754_00ac8c67f1589e933443f801022ab45bd456cca3.png",
+    "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
+    "description": "เป๊ปซี่แมนวิ่งส่งน้ำอัดลมหลบสิ่งกีดขวางสุดฮาในตำนานยุค 90s เพลงเป๊ปซี่แมนกระหึ่ม",
+    "controls": "ปุ่มจอย: D-Pad ซ้ายขวา | X: สไลด์มุด | Circle: กระโดด | Triangle: แดชเร่งสปีด",
+    "embedUrl": "https://www.retrogames.cc/embed/42754-pepsiman-japan.html"
+  },
+  {
     "id": "ps1-road-rash",
     "title": "Road Rash (1995)",
     "platform": "ps1",
@@ -35,22 +51,6 @@ const RETRO_GAMES_DATABASE = [
     "description": "ภาคต่อ 3D เต็มรูปแบบ เพลงร็อคมันส์สะใจและกราฟิก 3D สมจริง",
     "controls": "ปุ่มจอย: D-Pad บังคับ | X: เร่งความเร็ว | Square: เบรก | Circle / Triangle: ต่อย/เตะ",
     "embedUrl": "https://www.retrogames.cc/embed/41507-road-rash-3d.html"
-  },
-  {
-    "id": "ps1-pepsiman",
-    "title": "Pepsiman (1999)",
-    "platform": "ps1",
-    "platformName": "PlayStation 1",
-    "genre": "Runner / Action",
-    "year": 1999,
-    "developer": "KID",
-    "rating": 5.0,
-    "featured": false,
-    "thumbnail": "https://images.igdb.com/igdb/image/upload/t_cover_big/co29f0.jpg",
-    "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/sc7f48.jpg",
-    "description": "เป๊ปซี่แมนวิ่งส่งน้ำอัดลมหลบสิ่งกีดขวางสุดฮาในตำนานยุค 90s",
-    "controls": "ปุ่มจอย: D-Pad ซ้ายขวา | X: สไลด์ | Circle: กระโดด | Triangle: แดช",
-    "embedUrl": "https://www.retrogames.cc/embed/42435-pepsiman-japan.html"
   },
   {
     "id": "ps1-harvest-moon-btn",
