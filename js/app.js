@@ -98,7 +98,9 @@ class RetroApp {
       const x = cfg.railExit - (cfg.railExit - cfg.railBirth) * Math.pow(1 - R, cfg.fan);
       const p = cfg.turnBirth + (cfg.turnExit - cfg.turnBirth) * R;
       const opacity = R < 0.1 ? (R / 0.1) : (R > 0.85 ? ((1 - R) / 0.15) : 1);
-      frames.push(`${(R * 100).toFixed(1)}%{transform:translate3d(${(dir * x).toFixed(2)}cqw,0,${z.toFixed(2)}cqw) rotateY(${(-dir * p).toFixed(2)}deg);opacity:${opacity.toFixed(2)};}`);
+      const pointerEvents = (R >= 0.08 && R <= 0.82) ? "auto" : "none";
+      const visibility = (R >= 0.03 && R <= 0.88) ? "visible" : "hidden";
+      frames.push(`${(R * 100).toFixed(1)}%{transform:translate3d(${(dir * x).toFixed(2)}cqw,0,${z.toFixed(2)}cqw) rotateY(${(-dir * p).toFixed(2)}deg);opacity:${opacity.toFixed(2)};pointer-events:${pointerEvents};visibility:${visibility};}`);
     }
     return `@keyframes ${name}{${frames.join("")}}`;
   }
@@ -123,7 +125,7 @@ class RetroApp {
       "snes-super-mario-world",
       "gba-contra-advance",
       "snes-chrono-trigger",
-      "sega-sonic-the-hedgehog-2",
+      "sega-sonic-2",
       "gba-pokemon-emerald",
       "nes-super-c",
       "ps1-bloody-roar-2",
@@ -225,6 +227,7 @@ class RetroApp {
       html += `
         <div class="ish-slot tv-focusable"
              tabindex="0"
+             data-game-id="${g.id}"
              style="animation: ish-r ${speed}s linear infinite ${delay}s;"
              title="กดเล่นเกม: ${g.title}"
              onmouseenter="window.retroApp.showCenterSpotlight('${g.id}')"
@@ -232,9 +235,9 @@ class RetroApp {
              onfocus="window.retroApp.showCenterSpotlight('${g.id}')"
              onblur="window.retroApp.hideCenterSpotlight()"
              onclick="window.retroApp.openPlayerModalById('${g.id}')">
-          <div class="ish-card-box group">
-            <img src="${g.thumbnail}" alt="${g.title}" class="w-full h-full object-cover" loading="lazy" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+          <div class="ish-card-box group pointer-events-none">
+            <img src="${g.thumbnail}" alt="${g.title}" class="w-full h-full object-cover pointer-events-none" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
             <div class="ish-card-glare absolute inset-0 pointer-events-none opacity-0 mix-blend-screen transition-opacity duration-300 z-10"></div>
           </div>
         </div>
@@ -248,6 +251,7 @@ class RetroApp {
       html += `
         <div class="ish-slot tv-focusable"
              tabindex="0"
+             data-game-id="${g.id}"
              style="animation: ish-l ${speed}s linear infinite ${delay}s;"
              title="กดเล่นเกม: ${g.title}"
              onmouseenter="window.retroApp.showCenterSpotlight('${g.id}')"
@@ -255,9 +259,9 @@ class RetroApp {
              onfocus="window.retroApp.showCenterSpotlight('${g.id}')"
              onblur="window.retroApp.hideCenterSpotlight()"
              onclick="window.retroApp.openPlayerModalById('${g.id}')">
-          <div class="ish-card-box group">
-            <img src="${g.thumbnail}" alt="${g.title}" class="w-full h-full object-cover" loading="lazy" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+          <div class="ish-card-box group pointer-events-none">
+            <img src="${g.thumbnail}" alt="${g.title}" class="w-full h-full object-cover pointer-events-none" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
             <div class="ish-card-glare absolute inset-0 pointer-events-none opacity-0 mix-blend-screen transition-opacity duration-300 z-10"></div>
           </div>
         </div>
@@ -688,11 +692,40 @@ class RetroApp {
     // 2. Hero Stream Cards Motion (Event Delegation on #image-stream-root)
     const heroRoot = document.getElementById("image-stream-root");
     if (heroRoot) {
+      heroRoot.addEventListener("mouseover", (e) => {
+        const slot = e.target.closest(".ish-slot");
+        if (!slot) return;
+        const gameId = slot.dataset.gameId;
+        if (gameId) {
+          this.showCenterSpotlight(gameId);
+        }
+      });
+
+      heroRoot.addEventListener("mouseout", (e) => {
+        const slot = e.target.closest(".ish-slot");
+        if (slot && (!e.relatedTarget || !slot.contains(e.relatedTarget))) {
+          const box = slot.querySelector(".ish-card-box");
+          if (box) {
+            box.style.transform = "";
+            const img = box.querySelector("img");
+            if (img) {
+              img.classList.remove("is-tracking");
+              img.style.transform = "";
+            }
+            const glare = box.querySelector(".ish-card-glare");
+            if (glare) glare.style.opacity = "0";
+          }
+          this.hideCenterSpotlight(150);
+        }
+      });
+
       heroRoot.addEventListener("mousemove", (e) => {
-        const box = e.target.closest(".ish-card-box");
+        const slot = e.target.closest(".ish-slot");
+        if (!slot) return;
+        const box = slot.querySelector(".ish-card-box");
         if (!box) return;
 
-        const rect = box.getBoundingClientRect();
+        const rect = slot.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
         const centerX = rect.width / 2;
@@ -718,20 +751,6 @@ class RetroApp {
           const py = (y / rect.height) * 100;
           glare.style.background = `radial-gradient(circle at ${px}% ${py}%, rgba(0, 240, 255, 0.45) 0%, rgba(255, 255, 255, 0.15) 25%, transparent 65%)`;
           glare.style.opacity = "1";
-        }
-      });
-
-      heroRoot.addEventListener("mouseout", (e) => {
-        const box = e.target.closest(".ish-card-box");
-        if (box && (!e.relatedTarget || !box.contains(e.relatedTarget))) {
-          box.style.transform = "";
-          const img = box.querySelector("img");
-          if (img) {
-            img.classList.remove("is-tracking");
-            img.style.transform = "";
-          }
-          const glare = box.querySelector(".ish-card-glare");
-          if (glare) glare.style.opacity = "0";
         }
       });
     }
@@ -803,6 +822,11 @@ class RetroApp {
     if (genreEl) genreEl.innerText = `${game.genre} • ${game.year || ''}`;
 
     spotlight.classList.add("is-active");
+
+    // Force animation re-trigger for vibrant "เด้ง" on every single game
+    spotlight.classList.remove("pop-bounce");
+    void spotlight.offsetWidth;
+    spotlight.classList.add("pop-bounce");
   }
 
   /**
