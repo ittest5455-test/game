@@ -59,30 +59,14 @@ class RetroApp {
   }
 
   /**
-   * Render 3D Image Stream Hero Banner & Spotlight Selector
+   * Render 3D Image Stream Hero Banner (Clean, Unobstructed, Hover to Enlarge & Click to Play)
    */
   renderFeaturedBanner() {
     const bannerEl = document.getElementById("featured-banner");
     if (!bannerEl) return;
 
-    // Default active game: Contra (or first featured game)
-    const featuredList = this.games.filter(g => g.featured);
-    const contraGame = this.games.find(g => g.id === "nes-contra") || featuredList[0] || this.games[0];
-    
-    this.currentFeaturedGame = contraGame;
-    this.selectFeaturedGame(contraGame.id, false);
-
     // Initialize the 3D Image Stream Rails
     this.initImageStreamHero();
-
-    // Render Quick Selection Chips
-    this.renderFeaturedQuickChips();
-
-    // Bind Random Game button
-    const randomBtn = document.getElementById("featured-random-btn");
-    if (randomBtn) {
-      randomBtn.onclick = () => this.selectRandomFeaturedGame();
-    }
   }
 
   /**
@@ -118,12 +102,13 @@ class RetroApp {
 
   /**
    * Initialize 3D Image Stream Rails with retro game covers
+   * Hovering over any card pauses the stream, enlarges the image, and reveals play button!
    */
   initImageStreamHero() {
     const root = document.getElementById("image-stream-root");
     if (!root) return;
 
-    // Pick top iconic games for the streaming rails
+    // Pick top iconic games across platforms
     const streamPool = [
       "nes-contra",
       "ps1-pepsiman",
@@ -185,14 +170,24 @@ class RetroApp {
         margin-top: -11cqw;
         border-radius: 0.8cqw;
         box-shadow: 0 16px 36px rgba(0,0,0,0.85), 0 0 20px rgba(6, 182, 212, 0.15);
-        border: 1px solid rgba(255, 255, 255, 0.16);
+        border: 2px solid rgba(255, 255, 255, 0.18);
         backface-visibility: hidden;
         will-change: transform, opacity;
-        transition: border-color 0.3s ease, filter 0.3s ease;
+        transition: transform 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.2), box-shadow 0.35s ease, border-color 0.35s ease;
       }
-      .ish-card:hover {
-        border-color: rgba(6, 182, 212, 0.9);
-        filter: brightness(1.2) contrast(1.05);
+      .ish-card:hover, .ish-card:focus {
+        animation-play-state: paused !important;
+        transform: scale(1.5) translateZ(80px) !important;
+        z-index: 120 !important;
+        border-color: #00f0ff !important;
+        box-shadow: 0 25px 60px rgba(0,0,0,0.95), 0 0 40px rgba(0, 240, 255, 0.75) !important;
+      }
+      .ish-card .ish-hover-overlay {
+        opacity: 0;
+        transition: opacity 0.25s ease;
+      }
+      .ish-card:hover .ish-hover-overlay, .ish-card:focus .ish-hover-overlay {
+        opacity: 1;
       }
       #featured-banner:hover .ish-card {
         animation-play-state: paused;
@@ -213,12 +208,36 @@ class RetroApp {
       const g = streamGames[i % streamGames.length];
       const delay = -(i * speed / cardsPerRail).toFixed(2);
       html += `
-        <div class="ish-card"
+        <div class="ish-card tv-focusable group"
+             tabindex="0"
              style="animation: ish-r ${speed}s linear infinite ${delay}s;"
-             title="คลิกเพื่อเลือกเกม: ${g.title}"
-             onclick="window.retroApp.selectFeaturedGame('${g.id}')">
+             title="คลิกเพื่อเล่นทันที: ${g.title}"
+             onclick="window.retroApp.openPlayerModalById('${g.id}')">
           <img src="${g.thumbnail}" alt="${g.title}" class="w-full h-full object-cover" loading="lazy" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+          
+          <!-- Hover-to-enlarge overlay with PLAY button -->
+          <div class="ish-hover-overlay absolute inset-0 bg-black/75 backdrop-blur-[1px] flex flex-col justify-between p-2.5 text-center">
+            <div class="flex justify-between items-center">
+              <span class="text-[9px] font-bold px-2 py-0.5 rounded bg-cyan-500 text-black uppercase font-tech shadow">
+                ${g.platformName}
+              </span>
+              <span class="text-[9px] text-amber-400 font-bold flex items-center gap-0.5">
+                <i class="fas fa-star text-[8px]"></i> ${g.rating}
+              </span>
+            </div>
+
+            <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-cyan-500 to-purple-500 text-black flex items-center justify-center self-center shadow-xl shadow-cyan-500/60 transform group-hover:scale-110 transition-transform">
+              <i class="fas fa-play text-base text-black ml-0.5"></i>
+            </div>
+
+            <div>
+              <p class="text-[11px] font-bold text-white line-clamp-1 drop-shadow-md">${g.title}</p>
+              <span class="text-[9px] text-cyan-300 font-bold flex items-center justify-center gap-1 mt-0.5">
+                <i class="fas fa-gamepad"></i> กดเพื่อเล่นเลย
+              </span>
+            </div>
+          </div>
         </div>
       `;
     }
@@ -228,12 +247,36 @@ class RetroApp {
       const g = streamGames[(i + 4) % streamGames.length];
       const delay = -(i * speed / cardsPerRail).toFixed(2);
       html += `
-        <div class="ish-card"
+        <div class="ish-card tv-focusable group"
+             tabindex="0"
              style="animation: ish-l ${speed}s linear infinite ${delay}s;"
-             title="คลิกเพื่อเลือกเกม: ${g.title}"
-             onclick="window.retroApp.selectFeaturedGame('${g.id}')">
+             title="คลิกเพื่อเล่นทันที: ${g.title}"
+             onclick="window.retroApp.openPlayerModalById('${g.id}')">
           <img src="${g.thumbnail}" alt="${g.title}" class="w-full h-full object-cover" loading="lazy" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+          
+          <!-- Hover-to-enlarge overlay with PLAY button -->
+          <div class="ish-hover-overlay absolute inset-0 bg-black/75 backdrop-blur-[1px] flex flex-col justify-between p-2.5 text-center">
+            <div class="flex justify-between items-center">
+              <span class="text-[9px] font-bold px-2 py-0.5 rounded bg-cyan-500 text-black uppercase font-tech shadow">
+                ${g.platformName}
+              </span>
+              <span class="text-[9px] text-amber-400 font-bold flex items-center gap-0.5">
+                <i class="fas fa-star text-[8px]"></i> ${g.rating}
+              </span>
+            </div>
+
+            <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-cyan-500 to-purple-500 text-black flex items-center justify-center self-center shadow-xl shadow-cyan-500/60 transform group-hover:scale-110 transition-transform">
+              <i class="fas fa-play text-base text-black ml-0.5"></i>
+            </div>
+
+            <div>
+              <p class="text-[11px] font-bold text-white line-clamp-1 drop-shadow-md">${g.title}</p>
+              <span class="text-[9px] text-cyan-300 font-bold flex items-center justify-center gap-1 mt-0.5">
+                <i class="fas fa-gamepad"></i> กดเพื่อเล่นเลย
+              </span>
+            </div>
+          </div>
         </div>
       `;
     }
@@ -244,99 +287,10 @@ class RetroApp {
     `;
 
     root.innerHTML = html;
-  }
 
-  /**
-   * Select a game to spotlight in the center of the Image Stream Hero
-   */
-  selectFeaturedGame(gameId, animate = true) {
-    const game = this.games.find(g => g.id === gameId);
-    if (!game) return;
-
-    this.currentFeaturedGame = game;
-
-    const titleEl = document.getElementById("featured-title");
-    const descEl = document.getElementById("featured-desc");
-    const badgeEl = document.getElementById("featured-platform-badge");
-    const yearEl = document.getElementById("featured-year");
-    const genreEl = document.getElementById("featured-genre");
-    const ratingEl = document.getElementById("featured-rating");
-    const playBtn = document.getElementById("featured-play-btn");
-    const spotlightCard = document.getElementById("featured-card-spotlight");
-
-    if (titleEl) titleEl.innerText = game.title;
-    if (descEl) descEl.innerText = game.description;
-    if (badgeEl) badgeEl.innerText = game.platformName;
-    if (yearEl) yearEl.innerText = game.year;
-    if (genreEl) genreEl.innerText = game.genre;
-    if (ratingEl) ratingEl.innerText = game.rating;
-
-    if (playBtn) {
-      playBtn.onclick = () => this.openPlayerModal(game);
+    if (window.tvNavigation) {
+      window.tvNavigation.refreshFocusables();
     }
-
-    if (animate && spotlightCard) {
-      spotlightCard.classList.add("scale-[1.02]", "border-cyan-400");
-      setTimeout(() => {
-        spotlightCard.classList.remove("scale-[1.02]", "border-cyan-400");
-      }, 300);
-    }
-
-    // Update active quick chip styling
-    document.querySelectorAll(".featured-quick-chip").forEach(chip => {
-      const isTarget = chip.dataset.id === game.id;
-      chip.classList.toggle("bg-cyan-500", isTarget);
-      chip.classList.toggle("text-black", isTarget);
-      chip.classList.toggle("border-cyan-400", isTarget);
-      chip.classList.toggle("bg-slate-900/90", !isTarget);
-      chip.classList.toggle("text-gray-300", !isTarget);
-      chip.classList.toggle("border-slate-700/80", !isTarget);
-    });
-  }
-
-  /**
-   * Select a random game from featured list
-   */
-  selectRandomFeaturedGame() {
-    const featuredList = this.games.filter(g => g.featured);
-    const candidates = featuredList.length > 0 ? featuredList : this.games;
-    const randomGame = candidates[Math.floor(Math.random() * candidates.length)];
-    if (randomGame) {
-      this.selectFeaturedGame(randomGame.id, true);
-    }
-  }
-
-  /**
-   * Render quick shortcut chips to jump between popular showcase games
-   */
-  renderFeaturedQuickChips() {
-    const container = document.getElementById("featured-quick-chips");
-    if (!container) return;
-
-    const chipsData = [
-      { id: "nes-contra", label: "💥 Contra", platform: "nes" },
-      { id: "ps1-pepsiman", label: "🏃 Pepsiman", platform: "ps1" },
-      { id: "ps1-jackie-chan", label: "🥋 เฉินหลง", platform: "ps1" },
-      { id: "snes-contra-iii", label: "👾 Contra III", platform: "snes" },
-      { id: "sega-contra-hard-corps", label: "🤖 Hard Corps", platform: "sega" },
-      { id: "arcade-metal-slug", label: "🔫 Metal Slug", platform: "arcade" },
-      { id: "snes-super-mario-world", label: "🍄 Mario World", platform: "snes" }
-    ];
-
-    container.innerHTML = chipsData.map(chip => {
-      const isCurrent = this.currentFeaturedGame && this.currentFeaturedGame.id === chip.id;
-      return `
-        <button class="featured-quick-chip tv-focusable text-[11px] font-bold px-3 py-1 rounded-lg border transition-all cursor-pointer ${
-          isCurrent 
-            ? 'bg-cyan-500 text-black border-cyan-400 shadow-sm shadow-cyan-500/20' 
-            : 'bg-slate-900/90 text-gray-300 border-slate-700/80 hover:border-cyan-400/60 hover:text-white'
-        }"
-        data-id="${chip.id}"
-        onclick="window.retroApp.selectFeaturedGame('${chip.id}', true)">
-          ${chip.label}
-        </button>
-      `;
-    }).join("");
   }
 
   /**

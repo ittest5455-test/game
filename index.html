@@ -99,61 +99,13 @@
       </div>
 
       <!-- Ambient Lighting & Edge Vignettes -->
-      <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#080b13] via-[#080b13]/30 to-[#080b13]/75"></div>
-      <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#080b13] via-transparent to-[#080b13]"></div>
-      <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_25%,_#080b13_85%)] opacity-85"></div>
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#080b13] via-transparent to-[#080b13]/60"></div>
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#080b13]/70 via-transparent to-[#080b13]/70"></div>
 
-      <!-- Center Spotlight Glass Card -->
-      <div id="featured-card-spotlight" class="relative z-10 max-w-2xl mx-auto px-5 py-7 text-center flex flex-col items-center justify-center space-y-3 backdrop-blur-md bg-[#0b1020]/80 border border-cyan-500/30 rounded-2xl shadow-2xl shadow-black/80 my-4 transition-all duration-500 hover:border-cyan-400/50">
-        
-        <!-- Platform & Meta Pills -->
-        <div class="flex items-center gap-2 flex-wrap justify-center">
-          <span id="featured-platform-badge" class="text-[10px] font-bold px-3 py-1 rounded-md bg-gradient-to-r from-cyan-500 to-indigo-500 text-black uppercase tracking-wider font-tech shadow-md shadow-cyan-500/30">
-            NES (FAMICOM)
-          </span>
-          <span id="featured-genre" class="text-[11px] px-2.5 py-0.5 rounded-md bg-slate-900/90 text-gray-300 border border-slate-700/80">
-            Run and Gun
-          </span>
-          <span id="featured-year" class="text-[11px] text-gray-400 font-tech">
-            1988
-          </span>
-          <span class="text-[11px] text-amber-400 font-semibold flex items-center gap-1">
-            <i class="fas fa-star text-[10px]"></i> <span id="featured-rating">5.0</span>
-          </span>
-        </div>
-
-        <!-- Title -->
-        <h2 id="featured-title" class="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)] line-clamp-1 transition-all duration-300">
-          Contra (คอนทรา ภาค 1 - 30 Lives)
-        </h2>
-
-        <!-- Description -->
-        <p id="featured-desc" class="text-xs sm:text-sm text-slate-300 max-w-xl text-center line-clamp-2 drop-shadow-md leading-relaxed">
-          เกมยิงเอเลี่ยนในตำนานของ Bill และ Lance พร้อมสูตรลับ 30 ตัว: บน บน ล่าง ล่าง ซ้าย ขวา ซ้าย ขวา B A
-        </p>
-
-        <!-- Action Buttons -->
-        <div class="pt-1 flex items-center gap-3 flex-wrap justify-center">
-          <button id="featured-play-btn" class="tv-focusable px-7 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-400 to-cyan-500 hover:from-cyan-400 hover:to-teal-300 text-black font-extrabold text-xs sm:text-sm flex items-center gap-2.5 shadow-xl shadow-cyan-500/30 hover:scale-105 active:scale-95 transition-all cursor-pointer">
-            <i class="fas fa-play text-xs"></i> เล่นเกมนี้เลย (PLAY NOW)
-          </button>
-          
-          <button id="featured-random-btn" class="tv-focusable px-4 py-2.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 text-gray-200 font-semibold text-xs sm:text-sm flex items-center gap-2 backdrop-blur-md hover:border-cyan-400/80 transition-all cursor-pointer" title="สุ่มเกมใหม่">
-            <i class="fas fa-random text-cyan-400"></i>
-            <span>สุ่มเกม</span>
-          </button>
-        </div>
-
-        <!-- Quick Game Picker Chips -->
-        <div class="pt-1 flex flex-col items-center gap-1.5 w-full">
-          <span class="text-[10px] text-gray-400 uppercase tracking-wider font-tech flex items-center gap-1.5">
-            <i class="fas fa-stream text-cyan-400 text-[9px]"></i> เลือกเกมไฮไลต์ทันที:
-          </span>
-          <div id="featured-quick-chips" class="flex items-center gap-1.5 overflow-x-auto max-w-full pb-1 scrollbar-none justify-center flex-wrap">
-            <!-- Chips injected via JS -->
-          </div>
-        </div>
-
+      <!-- Subtle Floating Header Badge (Non-blocking) -->
+      <div class="pointer-events-none absolute top-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-cyan-500/30 text-cyan-400 text-xs font-semibold shadow-lg">
+        <i class="fas fa-gamepad text-cyan-400 text-xs animate-pulse"></i>
+        <span>เลือกเกมไฮไลต์: ชี้ที่ภาพเกมเพื่อขยาย แล้วกดคลิกเล่นได้ทันที!</span>
       </div>
 
     </section>
